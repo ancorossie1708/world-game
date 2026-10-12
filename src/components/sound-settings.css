@@ -2,3 +2,5 @@
 .sound-settings>div+div{border-right:1px solid #E2E7D9;padding-right:32px}
 .sound-settings input[type=range]{height:42px;touch-action:pan-x;margin:12px 0 4px}
 .sound-settings .text-button{font-size:18px;min-height:48px}
+.settings-heading{display:flex;align-items:center;justify-content:space-between;padding-inline:25px!important}
+.settings-version{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border:1px solid #DFE4D7;border-radius:14px;background:#FFFDF8;font-size:21px;color:#365B42}
