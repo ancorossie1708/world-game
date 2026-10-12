@@ -1,0 +1,2044 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "countries": [
+    {
+      "id": "japan",
+      "name": "יפן",
+      "capital": "טוקיו",
+      "continentId": "asia",
+      "familiarity": "familiar",
+      "accent": "#BC726A",
+      "emoji": "🌸",
+      "flag": {
+        "viewBox": "0 0 900 600",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 600
+        },
+        "regions": [
+          {
+            "id": "white-field",
+            "path": "M0 0H900V600H0Z M630 300A180 180 0 1 0 270 300A180 180 0 1 0 630 300Z",
+            "colorId": 3,
+            "labelX": 160,
+            "labelY": 300,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "red-disc",
+            "path": "M630 300A180 180 0 1 1 270 300A180 180 0 1 1 630 300Z",
+            "colorId": 1,
+            "labelX": 450,
+            "labelY": 300
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "japan-landscape",
+          "src": "./content/photos/japan-landscape.jpg",
+          "caption": "הר פוג׳י מעל אגם מוטוסו",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Lake_Motosu.jpg",
+          "creator": "Alpsdake",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-landmark",
+          "src": "./content/photos/japan-landmark.jpg",
+          "caption": "שערים אדומים במקדש פושימי אינארי",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:20181110_Fushimi_Inari_Torii_4.jpg",
+          "creator": "Balon Greyjoy",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-capital",
+          "src": "./content/photos/japan-capital.jpg",
+          "caption": "טוקיו — עיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%AE%BF%E3%81%AE%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%B3.JPG",
+          "creator": "keusju",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-landscape-2",
+          "src": "./content/photos/japan-landscape-2.jpg",
+          "caption": "ביתן הזהב והאגם בקיוטו",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Kinkaku-ji%2C_Ky%C5%8Dto.jpg",
+          "creator": "Renate Hano",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-landmark-2",
+          "src": "./content/photos/japan-landmark-2.jpg",
+          "caption": "טירת הימג׳י הלבנה",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Himeji_Castle_01s2048.jpg",
+          "creator": "663highland",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-capital-2",
+          "src": "./content/photos/japan-capital-2.jpg",
+          "caption": "טוקיו — הגשר אל ארמון הקיסר",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Imperial_Palace_Tokyo_Nijubashi_Bridge.JPG",
+          "creator": "Chris 73 / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-arashiyama-bamboo",
+          "src": "./content/photos/japan-arashiyama-bamboo.jpg",
+          "caption": "קיוטו — יער הבמבוק",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Arashiyama_Bamboo_Forest%2C_Kyoto%2C_Japan_(Unsplash).jpg",
+          "creator": "Ståle Grut stalebg",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-hiroshima-castle",
+          "src": "./content/photos/japan-hiroshima-castle.jpg",
+          "caption": "הירושימה — הטירה והגן",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hiroshima_Castle_-_panoramio_(1).jpg",
+          "creator": "RAKKO_TAKASAKA",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-kanazawa-garden",
+          "src": "./content/photos/japan-kanazawa-garden.jpg",
+          "caption": "קנאזאווה — גן קנרוקואן",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hisagoike_Pond_in_Kenroku_Garden.JPG",
+          "creator": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-kyoto-kiyomizu",
+          "src": "./content/photos/japan-kyoto-kiyomizu.jpg",
+          "caption": "קיוטו — מקדש קיומיזו־דרה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera_Temple.Kyoto._Japan_(50361443956).jpg",
+          "creator": "Bernard Spragg. NZ from Christchurch, New Zealand",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-miyajima-torii",
+          "src": "./content/photos/japan-miyajima-torii.jpg",
+          "caption": "מיאג׳ימה — השער האדום בים",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Itsukushima_Gate.jpg",
+          "creator": "JordyMeow",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-nachi-waterfall",
+          "src": "./content/photos/japan-nachi-waterfall.jpg",
+          "caption": "מפל נאצ׳י והמקדש",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Three-storied_Pagoda_of_Seiganto-ji_and_Nachi_Falls.jpg",
+          "creator": "Alpsdake",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-nara-temple",
+          "src": "./content/photos/japan-nara-temple.jpg",
+          "caption": "נארה — מקדש טודאי־ג׳י",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Daibutsu-den_in_Todaiji_Nara01bs3200.jpg",
+          "creator": "663highland",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-nikko-shrine",
+          "src": "./content/photos/japan-nikko-shrine.jpg",
+          "caption": "ניקו — שער מקדש טושוגו",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_gate_(9411949884).jpg",
+          "creator": "Maarten Heerlien from Voorschoten, The Netherlands",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-okinawa-coast",
+          "src": "./content/photos/japan-okinawa-coast.jpg",
+          "caption": "אוקינאווה — חוף ומים כחולים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Cape_Manzamo.JPG",
+          "creator": "そらみみ",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-osaka-castle",
+          "src": "./content/photos/japan-osaka-castle.jpg",
+          "caption": "אוסקה — הטירה והפארק",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Osaka_Castle_01bs3200.jpg",
+          "creator": "663highland",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-sakurajima",
+          "src": "./content/photos/japan-sakurajima.jpg",
+          "caption": "סאקורג׳ימה — הר געש מול המפרץ",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sakurajima_view_from_Yoshino_Park.JPG",
+          "creator": "Sakoppi",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-sapporo",
+          "src": "./content/photos/japan-sapporo.jpg",
+          "caption": "סאפורו — מגדל השעון",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sapporo_Clock_Tower_20110719.jpg",
+          "creator": "Shift",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-tokyo-shibuya",
+          "src": "./content/photos/japan-tokyo-shibuya.jpg",
+          "caption": "טוקיו — שיבויה באורות הלילה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing%2C_Aerial.jpg",
+          "creator": "David Kernan",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "japan-yokohama-port",
+          "src": "./content/photos/japan-yokohama-port.jpg",
+          "caption": "יוקוהמה — העיר והנמל",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Minato_Mirai_21_From_Osambashi_202403.jpg",
+          "creator": "Sunwater~jawiki",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/japan.mp3",
+        "title": "מסע ביפן",
+        "inspiration": "קטע שנוצר ב-Suno עבור יפן",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "japan-capital",
+          "question": "מהי עיר הבירה של יפן?",
+          "answers": [
+            "טוקיו",
+            "פריז",
+            "רומא",
+            "ברלין"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "japan-flag",
+          "question": "איזו צורה מופיעה במרכז דגל יפן?",
+          "answers": [
+            "כוכב כחול",
+            "עיגול אדום",
+            "משולש ירוק",
+            "ריבוע צהוב"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "japan-sushi",
+          "question": "איזה מאכל יפני מוכר מכינים עם אורז?",
+          "answers": [
+            "פיצה",
+            "פלאפל",
+            "סושי",
+            "קרואסון"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "japan-fuji",
+          "question": "איזה הר מפורסם נמצא ביפן?",
+          "answers": [
+            "הכרמל",
+            "החרמון",
+            "האוורסט",
+            "הר פוג׳י"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "japan-sakura",
+          "question": "איזו פריחה נקראת ביפן סאקורה?",
+          "answers": [
+            "פריחת הדובדבן",
+            "פריחת השקד",
+            "פריחת התפוז",
+            "פריחת הלימון"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "japan-kimono",
+          "question": "איך נקרא הבגד היפני המסורתי?",
+          "answers": [
+            "סארי",
+            "קימונו",
+            "קילט",
+            "פונצ׳ו"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "france",
+      "name": "צרפת",
+      "capital": "פריז",
+      "continentId": "europe",
+      "familiarity": "familiar",
+      "accent": "#6A87AD",
+      "emoji": "🗼",
+      "flag": {
+        "viewBox": "0 0 900 600",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 600
+        },
+        "regions": [
+          {
+            "id": "blue-band",
+            "path": "M0 0h300v600h-300Z",
+            "colorId": 2,
+            "labelX": 150,
+            "labelY": 300
+          },
+          {
+            "id": "white-band",
+            "path": "M300 0h300v600h-300Z",
+            "colorId": 3,
+            "labelX": 450,
+            "labelY": 300
+          },
+          {
+            "id": "red-band",
+            "path": "M600 0h300v600h-300Z",
+            "colorId": 1,
+            "labelX": 750,
+            "labelY": 300
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "france-landscape",
+          "src": "./content/photos/france-landscape.jpg",
+          "caption": "לבנדר בפרובאנס",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lavender%2C_Provence%2C_France_(6053005452).jpg",
+          "creator": "Michal Osmenda",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-landmark",
+          "src": "./content/photos/france-landmark.jpg",
+          "caption": "מגדל אייפל בפריז",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg",
+          "creator": "Benh LIEU SONG",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-capital",
+          "src": "./content/photos/france-capital.jpg",
+          "caption": "פריז — נהר הסן בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Seine_from_Pont_de_Sully%2C_Paris.jpg",
+          "creator": "Gerda Arendt",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-landscape-2",
+          "src": "./content/photos/france-landscape-2.jpg",
+          "caption": "מון סן מישל באור הבוקר",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mont_St_Michel_at_sunrise.jpg",
+          "creator": "Lynx1211",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-landmark-2",
+          "src": "./content/photos/france-landmark-2.jpg",
+          "caption": "טירת שנונסו מעל הנהר",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Chateau_de_Chenonceau_2008_NR1.jpg",
+          "creator": "Ra-smit",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-capital-2",
+          "src": "./content/photos/france-capital-2.jpg",
+          "caption": "פריז — שער הניצחון",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_de_l'%C3%89toile_Paris.jpg",
+          "creator": "iankelsall1",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-paris-louvre",
+          "src": "./content/photos/france-paris-louvre.jpg",
+          "caption": "פריז — מוזיאון הלובר בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Louvre_Courtyard,_Looking_West.jpg",
+          "creator": "Benh LIEU SONG (Flickr)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-paris-notre-dame",
+          "src": "./content/photos/france-paris-notre-dame.jpg",
+          "caption": "פריז — קתדרלת נוטרדאם ליד הסן",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris,_across_the_Seine,_before_reopening.jpg",
+          "creator": "Gerda Arendt",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-marseille",
+          "src": "./content/photos/france-marseille.jpg",
+          "caption": "מרסיי — הנמל הישן",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:1_marseille_vieux_port_pano.jpg",
+          "creator": "Chensiyuan",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-lyon",
+          "src": "./content/photos/france-lyon.jpg",
+          "caption": "ליון — העיר ונהר הסון",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lyon_Panorama_Saint-Jean_Part-Dieu_Fourvi%C3%A8re_Saone.JPG",
+          "creator": "Xavier Caré / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-nice",
+          "src": "./content/photos/france-nice.jpg",
+          "caption": "ניס — הטיילת לחוף הים התיכון",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Nice_from_Castle_Hill_01.jpg",
+          "creator": "Spike",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-bordeaux",
+          "src": "./content/photos/france-bordeaux.jpg",
+          "caption": "בורדו — כיכר הבורסה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Bordeaux_place_de_la_bourse_with_tram.JPG",
+          "creator": "Phillip Maiwald (Nikopol)",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-strasbourg",
+          "src": "./content/photos/france-strasbourg.jpg",
+          "caption": "שטרסבורג — בתי העץ והתעלות",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:PetiteFranceStrasbourg_panorma1.jpg",
+          "creator": "Neuceu",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-toulouse",
+          "src": "./content/photos/france-toulouse.jpg",
+          "caption": "טולוז — הגשר מעל נהר הגארון",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_from_pont_Saint-Pierre_in_Toulouse_-_2012-08-31.jpg",
+          "creator": "PierreSelim",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-chamonix",
+          "src": "./content/photos/france-chamonix.jpg",
+          "caption": "שאמוני — פסגות האלפים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mont_Blanc_depuis_Chamonix.JPG",
+          "creator": "Aiguille",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-verdon",
+          "src": "./content/photos/france-verdon.jpg",
+          "caption": "אגם סן־קרואה באזור ורדון",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Lake_of_Sainte-Croix_05.jpg",
+          "creator": "Olivier Cleynen",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-etretat",
+          "src": "./content/photos/france-etretat.jpg",
+          "caption": "אטְרֶטָה — מצוקי החוף בנורמנדי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Etretat_Cliff_Panorama.JPG",
+          "creator": "Utha le",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-versailles",
+          "src": "./content/photos/france-versailles.jpg",
+          "caption": "ארמון ורסאי והגנים",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Garden_facade_of_the_Palace_of_Versailles,_April_2011_(11).jpg",
+          "creator": "Cristian Bortes from Cluj-Napoca, Romania",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-carcassonne",
+          "src": "./content/photos/france-carcassonne.jpg",
+          "caption": "קרקסון — העיר העתיקה המבוצרת",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Cit%C3%A9_de_Carcassonne-20190803.jpg",
+          "creator": "Daniel VILLAFRUELA.",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "france-corsica",
+          "src": "./content/photos/france-corsica.jpg",
+          "caption": "קורסיקה — חופי הים וההרים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sud_de_Bonifacio_Octobre_2012_-_panoramio.jpg",
+          "creator": "stephaneroche01",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/france.mp3",
+        "title": "מסע בצרפת",
+        "inspiration": "קטע שנוצר ב-Suno עבור צרפת",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "france-capital",
+          "question": "מהי עיר הבירה של צרפת?",
+          "answers": [
+            "טוקיו",
+            "ברלין",
+            "פריז",
+            "רומא"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "france-eiffel",
+          "question": "איזה מגדל מפורסם נמצא בפריז?",
+          "answers": [
+            "מגדל פיזה",
+            "ביג בן",
+            "מגדל דוד",
+            "מגדל אייפל"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "france-baguette",
+          "question": "איך נקרא הלחם הצרפתי הארוך?",
+          "answers": [
+            "בגט",
+            "פיתה",
+            "חלה",
+            "לחמנייה"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "france-louvre",
+          "question": "באיזה מוזיאון מוצגת המונה ליזה?",
+          "answers": [
+            "מוזיאון ישראל",
+            "מוזיאון הלובר",
+            "המוזיאון הבריטי",
+            "מוזיאון ואן גוך"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "france-seine",
+          "question": "איזה נהר זורם דרך פריז?",
+          "answers": [
+            "הירדן",
+            "הנילוס",
+            "הסן",
+            "האמזונס"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "france-flag",
+          "question": "מהם צבעי דגל צרפת?",
+          "answers": [
+            "ירוק, לבן ואדום",
+            "שחור, אדום וצהוב",
+            "כחול וצהוב",
+            "כחול, לבן ואדום"
+          ],
+          "correctAnswerIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "italy",
+      "name": "איטליה",
+      "capital": "רומא",
+      "continentId": "europe",
+      "familiarity": "familiar",
+      "accent": "#7F9C79",
+      "emoji": "🌿",
+      "flag": {
+        "viewBox": "0 0 900 600",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 600
+        },
+        "regions": [
+          {
+            "id": "green-band",
+            "path": "M0 0h300v600h-300Z",
+            "colorId": 4,
+            "labelX": 150,
+            "labelY": 300
+          },
+          {
+            "id": "white-band",
+            "path": "M300 0h300v600h-300Z",
+            "colorId": 3,
+            "labelX": 450,
+            "labelY": 300
+          },
+          {
+            "id": "red-band",
+            "path": "M600 0h300v600h-300Z",
+            "colorId": 1,
+            "labelX": 750,
+            "labelY": 300
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "italy-landscape",
+          "src": "./content/photos/italy-landscape.jpg",
+          "caption": "חוף אמלפי והים הכחול",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Amalfi_Coast_(6137331726).jpg",
+          "creator": "jimmyweee (James Gose)",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-landmark",
+          "src": "./content/photos/italy-landmark.jpg",
+          "caption": "הקולוסיאום ברומא",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome%2C_Italy_-_April_2007.jpg",
+          "creator": "DAVID ILIFF",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-capital",
+          "src": "./content/photos/italy-capital.jpg",
+          "caption": "רומא — עיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Rome_Skyline_(8012016319).jpg",
+          "creator": "Bert Kaufmann",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-landscape-2",
+          "src": "./content/photos/italy-landscape-2.jpg",
+          "caption": "התעלה הגדולה וגשר ריאלטו בוונציה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_of_Canal_Grande_and_Ponte_di_Rialto%2C_Venice_-_September_2017.jpg",
+          "creator": "Martin Falbisoner",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-landmark-2",
+          "src": "./content/photos/italy-landmark-2.jpg",
+          "caption": "המגדל הנטוי בפיזה",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:The_Leaning_Tower_of_Pisa_in_Pisa%2C_Italy.jpg",
+          "creator": "Ricardo 6167",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-capital-2",
+          "src": "./content/photos/italy-capital-2.jpg",
+          "caption": "רומא — מזרקת טרווי",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Fontaine_Trevi_-_Rome.jpg",
+          "creator": "Wilfredor",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-rome-forum",
+          "src": "./content/photos/italy-rome-forum.jpg",
+          "caption": "רומא — הפורום הרומי בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Roman_Forum_east_end_panorama.jpg",
+          "creator": "Nhartmannphotos",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-rome-pantheon",
+          "src": "./content/photos/italy-rome-pantheon.jpg",
+          "caption": "רומא — הפנתאון והכיכר",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Pantheon_Rom_1_cropped.jpg",
+          "creator": "Rabax63",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-milan",
+          "src": "./content/photos/italy-milan.jpg",
+          "caption": "מילאנו — הקתדרלה בכיכר המרכזית",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Piazza_Duomo_Milan_panorama.jpg",
+          "creator": "https://www.flickr.com/photos/belboo/",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-naples",
+          "src": "./content/photos/italy-naples.jpg",
+          "caption": "נאפולי — המפרץ והר וזוב",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:NapoliPanoramaDaSanMartino.jpg",
+          "creator": "MM",
+          "license": "Public domain",
+          "licenseURL": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-florence",
+          "src": "./content/photos/italy-florence.jpg",
+          "caption": "פירנצה — העיר ונהר הארנו",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Florence_panorama_as_seen_from_The_Piazza_Michelangelo.jpg",
+          "creator": "Ray in Manila",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-venice-san-marco",
+          "src": "./content/photos/italy-venice-san-marco.jpg",
+          "caption": "ונציה — כיכר סן מרקו",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_Piazza_San_Marco_and_Venice_on_Easter_2013.jpg",
+          "creator": "Wolfgang Moroder",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-bologna",
+          "src": "./content/photos/italy-bologna.jpg",
+          "caption": "בולוניה — הכיכר המרכזית",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Piazza_maggiore_bologna.jpg",
+          "creator": "Fiorry",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-turin",
+          "src": "./content/photos/italy-turin.jpg",
+          "caption": "טורינו — העיר והרי האלפים",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Turin_and_the_Alps.jpg",
+          "creator": "Chivista",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-lake-como",
+          "src": "./content/photos/italy-lake-como.jpg",
+          "caption": "אגם קומו והעיירות על שפתו",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lago_di_Como_panorama.jpg",
+          "creator": "Fiorentino67",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-dolomites",
+          "src": "./content/photos/italy-dolomites.jpg",
+          "caption": "הדולומיטים — פסגות ההרים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Tre_cime_di_Lavaredo_e_cielo_azzurro.jpg",
+          "creator": "Rikmez",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-tuscany",
+          "src": "./content/photos/italy-tuscany.jpg",
+          "caption": "טוסקנה — גבעות ודרכי ברושים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Val-d%27Orcia-landscape-1.jpg",
+          "creator": "Hans A. Rosbach",
+          "license": "CC BY 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.5",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-cinque-terre",
+          "src": "./content/photos/italy-cinque-terre.jpg",
+          "caption": "צ׳ינקווה טרה — כפרים צבעוניים על החוף",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_of_Manarola.jpg",
+          "creator": "СССР",
+          "license": "CC BY-SA 2.5 ca",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-taormina",
+          "src": "./content/photos/italy-taormina.jpg",
+          "caption": "סיציליה — טאורמינה והתיאטרון העתיק",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Taormina_Theater.jpg",
+          "creator": "Clemensfranz",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "italy-alberobello",
+          "src": "./content/photos/italy-alberobello.jpg",
+          "caption": "אלברובלו — בתי הטרולי הלבנים",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:DSC00521_Alberobello_panorama.jpg",
+          "creator": "FalantoTaras",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/italy.mp3",
+        "title": "מסע באיטליה",
+        "inspiration": "קטע שנוצר ב-Suno עבור איטליה",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "italy-capital",
+          "question": "מהי עיר הבירה של איטליה?",
+          "answers": [
+            "רומא",
+            "טוקיו",
+            "פריז",
+            "ברלין"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "italy-venice",
+          "question": "באיזו עיר באיטליה שטים בגונדולות?",
+          "answers": [
+            "מילאנו",
+            "ונציה",
+            "רומא",
+            "פירנצה"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "italy-pisa",
+          "question": "באיזו עיר באיטליה נמצא המגדל הנטוי?",
+          "answers": [
+            "רומא",
+            "מילאנו",
+            "פיזה",
+            "ונציה"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "italy-pizza",
+          "question": "איזה מאכל איטלקי עשוי מבצק, עגבניות וגבינה?",
+          "answers": [
+            "סושי",
+            "פלאפל",
+            "שניצל",
+            "פיצה"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "italy-colosseum",
+          "question": "איזה אתר עתיק ומפורסם נמצא ברומא?",
+          "answers": [
+            "הקולוסיאום",
+            "מגדל אייפל",
+            "החומה הסינית",
+            "מצדה"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "italy-boot",
+          "question": "למה דומה צורת איטליה על המפה?",
+          "answers": [
+            "כדור",
+            "מגף",
+            "לב",
+            "משולש"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "germany",
+      "name": "גרמניה",
+      "capital": "ברלין",
+      "continentId": "europe",
+      "familiarity": "familiar",
+      "accent": "#B09065",
+      "emoji": "🏰",
+      "flag": {
+        "viewBox": "0 0 900 600",
+        "bounds": {
+          "x": 0,
+          "y": 30,
+          "width": 900,
+          "height": 540
+        },
+        "regions": [
+          {
+            "id": "black-band",
+            "path": "M0 30h900v180h-900Z",
+            "colorId": 6,
+            "labelX": 450,
+            "labelY": 120
+          },
+          {
+            "id": "red-band",
+            "path": "M0 210h900v180h-900Z",
+            "colorId": 1,
+            "labelX": 450,
+            "labelY": 300
+          },
+          {
+            "id": "gold-band",
+            "path": "M0 390h900v180h-900Z",
+            "colorId": 5,
+            "labelX": 450,
+            "labelY": 480
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "germany-landscape",
+          "src": "./content/photos/germany-landscape.jpg",
+          "caption": "אגם אייבזה למרגלות האלפים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Eibsee_-_panorama_2.jpg",
+          "creator": "Tiia Monto",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-landmark",
+          "src": "./content/photos/germany-landmark.jpg",
+          "caption": "שער ברנדנבורג",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:The_Brandenburg_Gate.jpg",
+          "creator": "Nirmal Dulal",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-capital",
+          "src": "./content/photos/germany-capital.jpg",
+          "caption": "ברלין — עיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Berlin_skyline_(6270204821)_(3).jpg",
+          "creator": "Leandro Neumann Ciuffo",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-landscape-2",
+          "src": "./content/photos/germany-landscape-2.jpg",
+          "caption": "נהר הריין בין הגבעות",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Loreleyblick_Maria_Ruh_2020.jpg",
+          "creator": "Jörg Braukmann",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-landmark-2",
+          "src": "./content/photos/germany-landmark-2.jpg",
+          "caption": "טירת נוישוונשטיין בבוואריה",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle%2C_Swabia%2C_Bavaria.jpg",
+          "creator": "Unknown author (Piqsels)",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-capital-2",
+          "src": "./content/photos/germany-capital-2.jpg",
+          "caption": "ברלין — בניין הרייכסטאג",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Reichstag_building_Berlin_view_from_west_before_sunset.jpg",
+          "creator": "Jürgen Matern",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-berlin-museum-island",
+          "src": "./content/photos/germany-berlin-museum-island.jpg",
+          "caption": "ברלין — אי המוזיאונים בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Berlin_Museumsinsel_Fernsehturm.jpg",
+          "creator": "Thomas Wolf, www.foto-tw.de",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-hamburg",
+          "src": "./content/photos/germany-hamburg.jpg",
+          "caption": "המבורג — הנמל שליד נהר האלבה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hamburg,_Blick_von_Steinwerder_auf_die_St._Pauli-Landungsbr%C3%BCcken.jpg",
+          "creator": "Thoroe",
+          "license": "CC BY-SA 3.0 de",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-munich",
+          "src": "./content/photos/germany-munich.jpg",
+          "caption": "מינכן — כיכר מריאן ובניין העירייה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Marienplatz_mit_Rathaus_M%C3%BCnchen_(Panorama)_mit_Frauenkirche_(2019).jpg",
+          "creator": "Guido Radig",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-cologne",
+          "src": "./content/photos/germany-cologne.jpg",
+          "caption": "קלן — הקתדרלה וגשר הריין",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Dom_(Deutzer_Br%C3%BCcke).jpg",
+          "creator": "Jörg Braukmann",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-dresden",
+          "src": "./content/photos/germany-dresden.jpg",
+          "caption": "דרזדן — העיר העתיקה ונהר האלבה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Dresden_-_Panorama_an_der_Elbe.JPG",
+          "creator": "Guido Radig",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-frankfurt",
+          "src": "./content/photos/germany-frankfurt.jpg",
+          "caption": "פרנקפורט — קו הרקיע מעל נהר המיין",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Frankfurt_Skyline_2022.jpg",
+          "creator": "Jörg Braukmann",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-heidelberg",
+          "src": "./content/photos/germany-heidelberg.jpg",
+          "caption": "היידלברג — הגשר והטירה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Heidelberg_Old_Bridge_%26_Castle_(9813115355).jpg",
+          "creator": "Gary Todd from Xinzheng, China",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-leipzig",
+          "src": "./content/photos/germany-leipzig.jpg",
+          "caption": "לייפציג — כיכר השוק ובית העירייה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:20200912_Altes_Rathaus_Leipzig_01.jpg",
+          "creator": "Flocci Nivis",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-rothenburg",
+          "src": "./content/photos/germany-rothenburg.jpg",
+          "caption": "רוטנבורג — רחובות העיר העתיקה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Pl%C3%B6nlein_Rothenburg.jpg",
+          "creator": "Einaz80",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-black-forest",
+          "src": "./content/photos/germany-black-forest.jpg",
+          "caption": "היער השחור — גבעות ויערות",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Black_Forest_landscape_national_Parc.jpg",
+          "creator": "Smilla Heckel",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-saxon-switzerland",
+          "src": "./content/photos/germany-saxon-switzerland.jpg",
+          "caption": "שוויץ הסקסונית — גשר הבסטאי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Nationalpark_S%C3%A4chsische_Schweiz_Bastei_lub_2025-04-27_img02_Br%C3%BCcke.jpg",
+          "creator": "Lukas Beck",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-rugen",
+          "src": "./content/photos/germany-rugen.jpg",
+          "caption": "האי ריגן — מצוקים לבנים לחוף הים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Chalk_cliffs_of_Jasmund_National_Park_on_R%C3%BCgen_island_in_autumn_16.jpg",
+          "creator": "Siarhei Besarab",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-konigssee",
+          "src": "./content/photos/germany-konigssee.jpg",
+          "caption": "אגם קניגזה בין הרי בוואריה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:View_of_K%C3%B6nigssee_from_Malerwinkl.jpg",
+          "creator": "Mataksim",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "germany-bremen",
+          "src": "./content/photos/germany-bremen.jpg",
+          "caption": "ברמן — הכיכר ובית העירייה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Marktplatz_mit_Rathaus_-_Dom_-_B%C3%BCrgerschaft.jpg",
+          "creator": "Godewind (talk)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/germany.mp3",
+        "title": "מסע בגרמניה",
+        "inspiration": "קטע שנוצר ב-Suno עבור גרמניה",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "germany-capital",
+          "question": "מהי עיר הבירה של גרמניה?",
+          "answers": [
+            "פריז",
+            "רומא",
+            "ברלין",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "germany-brandenburg",
+          "question": "איזה שער מפורסם נמצא בברלין?",
+          "answers": [
+            "שער יפו",
+            "שער הניצחון",
+            "שער האריות",
+            "שער ברנדנבורג"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "germany-rhine",
+          "question": "איזה נהר גדול זורם בגרמניה?",
+          "answers": [
+            "הריין",
+            "הנילוס",
+            "הירדן",
+            "האמזונס"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "germany-black-forest",
+          "question": "איזה יער מפורסם נמצא בגרמניה?",
+          "answers": [
+            "יער בן שמן",
+            "היער השחור",
+            "יער האמזונס",
+            "יער בירייה"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "germany-pretzel",
+          "question": "איך נקרא המאפה הגרמני בצורת קשר?",
+          "answers": [
+            "קרואסון",
+            "פיתה",
+            "בייגלה",
+            "בגט"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "germany-flag",
+          "question": "מה צבע הפס האמצעי בדגל גרמניה?",
+          "answers": [
+            "לבן",
+            "כחול",
+            "ירוק",
+            "אדום"
+          ],
+          "correctAnswerIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "ukraine",
+      "name": "אוקראינה",
+      "capital": "קייב",
+      "continentId": "europe",
+      "familiarity": "explore",
+      "accent": "#B8A35F",
+      "emoji": "🌻",
+      "flag": {
+        "viewBox": "0 0 900 600",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 600
+        },
+        "regions": [
+          {
+            "id": "blue-band",
+            "path": "M0 0h900v300h-900Z",
+            "colorId": 2,
+            "labelX": 450,
+            "labelY": 150
+          },
+          {
+            "id": "yellow-band",
+            "path": "M0 300h900v300h-900Z",
+            "colorId": 5,
+            "labelX": 450,
+            "labelY": 450
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "ukraine-landscape",
+          "src": "./content/photos/ukraine-landscape.jpg",
+          "caption": "הרי הקרפטים באוקראינה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0_%D1%81%D0%BA%D0%BB%D0%BE%D0%BD%D0%B0%D1%85_%D0%A7%D0%B5%D1%80%D0%BD%D0%BE%D0%B3%D0%BE%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%85%D1%80%D0%B5%D0%B1%D1%82%D0%B0.jpg",
+          "creator": "Nickolay Khoroshkov",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-landmark",
+          "src": "./content/photos/ukraine-landmark.jpg",
+          "caption": "קתדרלת סופיה הקדושה בקייב",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:2019-07-21_Saint_Sophia_Cathedral_in_Kyiv%2C_Ukraine.jpg",
+          "creator": "Maksym Kozlenko",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-capital",
+          "src": "./content/photos/ukraine-capital.jpg",
+          "caption": "קייב — נהר הדניפרו בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Dniepr_river_in_Kyiv.jpg",
+          "creator": "Dmitry A. Mottl",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-landscape-2",
+          "src": "./content/photos/ukraine-landscape-2.jpg",
+          "caption": "שדה חמניות באוקראינה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sunflower_field_in_Ukraine%2C_23_July_2013.jpg",
+          "creator": "Eugenereed1984",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-landmark-2",
+          "src": "./content/photos/ukraine-landmark-2.jpg",
+          "caption": "הכיכר ובתי העיר לביב",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_Rynok_Platz_Blick_NO_Lemberg.JPG",
+          "creator": "Herbert wie",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-capital-2",
+          "src": "./content/photos/ukraine-capital-2.jpg",
+          "caption": "קייב — כיכר העצמאות",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Maidan_Nezalezhnosti_view.jpg",
+          "creator": "Juan Antonio Segal",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-bakota-bay",
+          "src": "./content/photos/ukraine-bakota-bay.jpg",
+          "caption": "מפרץ בקוטה בנהר הדניסטר",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Bakota_Bay-01.jpg",
+          "creator": "Kolyan ilia",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-chernivtsi-university",
+          "src": "./content/photos/ukraine-chernivtsi-university.jpg",
+          "caption": "צ׳רניבצי — האוניברסיטה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:1.%D0%A7%D0%B5%D1%80%D0%BD%D1%96%D0%B2%D1%86%D1%96.%D0%A0%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%86%D1%96%D1%8F-%D1%83%D0%BD%D1%96%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82.JPG",
+          "creator": "Neovitaha777",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-dnipro-riverfront",
+          "src": "./content/photos/ukraine-dnipro-riverfront.jpg",
+          "caption": "דניפרו — העיר על גדת הנהר",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Dnieper_River_Dnipropetrovsk.JPG",
+          "creator": "Leonid Dzhepko",
+          "license": "CC BY-SA 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-hoverla-mountain",
+          "src": "./content/photos/ukraine-hoverla-mountain.jpg",
+          "caption": "הר הוברלה — פסגת הקרפטים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hoverla.jpg",
+          "creator": "Dezidor",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-kamianets-castle",
+          "src": "./content/photos/ukraine-kamianets-castle.jpg",
+          "caption": "קמיאנץ פודילסקי — המבצר",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:68-104-9007_Kamianets-Podilskyi_Fortress_RB_18_2.jpg",
+          "creator": "Rbrechko",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-kharkiv-square",
+          "src": "./content/photos/ukraine-kharkiv-square.jpg",
+          "caption": "חרקיב — כיכר החירות",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%83%D0%B4%D0%B8%D0%BD%D0%BE%D0%BA_%D0%B4%D0%B5%D1%80%D0%B6%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D0%BB%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D1%96%2C_%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2_DJI_0068.jpg",
+          "creator": "Konstantin Brizhnichenko",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-khotyn-fortress",
+          "src": "./content/photos/ukraine-khotyn-fortress.jpg",
+          "caption": "מבצר חוטין מעל נהר הדניסטר",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Khotin_fortress_-_view_from_hill.jpg",
+          "creator": "Курля Сергій",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-kyiv-lavra",
+          "src": "./content/photos/ukraine-kyiv-lavra.jpg",
+          "caption": "קייב — מנזר לאוורת המערות",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Kyiv_Pechersk_Lavra_-_panoramio.jpg",
+          "creator": "S. Karpenko",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-lviv-opera",
+          "src": "./content/photos/ukraine-lviv-opera.jpg",
+          "caption": "לביב — בית האופרה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:LvivOperaHouse.JPG",
+          "creator": "Forestchild (Zavadskiy Nikolay)",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-mukachevo-castle",
+          "src": "./content/photos/ukraine-mukachevo-castle.jpg",
+          "caption": "מוקצ׳בו — טירת פלאנוק",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Palanok_Castle_in_Mukachevo_(Main_view).jpg",
+          "creator": "Sanya7901",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-odesa-opera",
+          "src": "./content/photos/ukraine-odesa-opera.jpg",
+          "caption": "אודסה — בית האופרה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Odessa_Opera_Theatre.jpg",
+          "creator": "Dezidor uploaded and derivative work: MrPanyGoff",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-sofiyivka-park",
+          "src": "./content/photos/ukraine-sofiyivka-park.jpg",
+          "caption": "אומן — פארק סופייבקה",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sofiyivsky_Park.jpg",
+          "creator": "AlexanderVovck",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-synevyr-lake",
+          "src": "./content/photos/ukraine-synevyr-lake.jpg",
+          "caption": "אגם סינביר בין הרי הקרפטים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Synevyr_Lake_IMG_3125.jpg",
+          "creator": "ValeriySh",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "ukraine-uzhhorod-castle",
+          "src": "./content/photos/ukraine-uzhhorod-castle.jpg",
+          "caption": "אוז׳הורוד — הטירה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Uzhhorod_castle_(01).jpg",
+          "creator": "Dmytro Petishkin",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/ukraine.mp3",
+        "title": "מסע באוקראינה",
+        "inspiration": "קטע שנוצר ב-Suno עבור אוקראינה",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "ukraine-capital",
+          "question": "מהי עיר הבירה של אוקראינה?",
+          "answers": [
+            "קייב",
+            "פריז",
+            "רומא",
+            "ברלין"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "ukraine-flag",
+          "question": "מהם צבעי דגל אוקראינה?",
+          "answers": [
+            "אדום ולבן",
+            "כחול וצהוב",
+            "ירוק ולבן",
+            "שחור ואדום"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "ukraine-borscht",
+          "question": "איזה ירק נותן לבורשט האדום את צבעו?",
+          "answers": [
+            "מלפפון",
+            "תפוח אדמה",
+            "סלק",
+            "כרוב לבן"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "ukraine-carpathians",
+          "question": "איזו שרשרת הרים נמצאת באוקראינה?",
+          "answers": [
+            "הרי ההימלאיה",
+            "הרי האנדים",
+            "הרי האטלס",
+            "הרי הקרפטים"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "ukraine-odesa",
+          "question": "על איזה ים נמצאת העיר אודסה?",
+          "answers": [
+            "הים השחור",
+            "הים האדום",
+            "ים המלח",
+            "הים התיכון"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "ukraine-dnipro",
+          "question": "איזה נהר זורם דרך קייב?",
+          "answers": [
+            "הירדן",
+            "הדניפרו",
+            "הנילוס",
+            "האמזונס"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "israel",
+      "name": "ישראל",
+      "capital": "ירושלים",
+      "continentId": "asia",
+      "familiarity": "familiar",
+      "accent": "#688FB4",
+      "emoji": "🕊️",
+      "flag": {
+        "viewBox": "0 0 900 600",
+        "bounds": {
+          "x": 37.5,
+          "y": 0,
+          "width": 825,
+          "height": 600
+        },
+        "regions": [
+          {
+            "id": "white-top",
+            "path": "M37.5 0h825v68.18h-825Z",
+            "colorId": 3,
+            "labelX": 450,
+            "labelY": 34.09
+          },
+          {
+            "id": "blue-top",
+            "path": "M37.5 68.18h825v102.27h-825Z",
+            "colorId": 2,
+            "labelX": 450,
+            "labelY": 119.315
+          },
+          {
+            "id": "white-center",
+            "path": "M37.5 170.45h825v259.1h-825Z",
+            "colorId": 3,
+            "labelX": 190,
+            "labelY": 300
+          },
+          {
+            "id": "blue-bottom",
+            "path": "M37.5 429.55h825v102.27h-825Z",
+            "colorId": 2,
+            "labelX": 450,
+            "labelY": 480.685
+          },
+          {
+            "id": "white-bottom",
+            "path": "M37.5 531.82h825v68.18h-825Z",
+            "colorId": 3,
+            "labelX": 450,
+            "labelY": 565.9100000000001
+          },
+          {
+            "id": "blue-star",
+            "colorId": 2,
+            "labelX": 450,
+            "labelY": 300,
+            "fillRule": "nonzero",
+            "path": "M450 189.82L545.43 355.09H354.57Z M450 213.82L375.37 343.09H524.63Z M450 410.18L354.57 244.91H545.43Z M450 386.18L524.63 256.91H375.37Z",
+            "hitPath": "M450 189.82L481.81 244.91H545.43L513.62 300L545.43 355.09H481.81L450 410.18L418.19 355.09H354.57L386.38 300L354.57 244.91H418.19Z"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "israel-landscape",
+          "src": "./content/photos/israel-landscape.jpg",
+          "caption": "הכנרת וההרים סביבה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sea_of_Galilee%2C_Israel_(Unsplash_f9fJ6nxndoo).jpg",
+          "creator": "Chris Gallimore",
+          "license": "CC0 1.0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-landmark",
+          "src": "./content/photos/israel-landmark.jpg",
+          "caption": "הכותל המערבי בירושלים",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Holy_Land_2016_P0709_Western_Wall.jpg",
+          "creator": "Fallaner",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-capital",
+          "src": "./content/photos/israel-capital.jpg",
+          "caption": "ירושלים — מבט אל העיר",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Jerusalem_panorama_from_scottish_church.jpg",
+          "creator": "Someone35",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-landscape-2",
+          "src": "./content/photos/israel-landscape-2.jpg",
+          "caption": "ים המלח וחופי המלח הלבנים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Dead_Sea_shore.jpg",
+          "creator": "Tiia Monto",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-landmark-2",
+          "src": "./content/photos/israel-landmark-2.jpg",
+          "caption": "אמת המים העתיקה בקיסריה",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Ancient_Roman_aqueduct_in_north_Caesarea.jpg",
+          "creator": "Zicheng yee",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-capital-2",
+          "src": "./content/photos/israel-capital-2.jpg",
+          "caption": "ירושלים — טחנת הרוח במשכנות שאננים",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Moses_Montefiore_Windmill%2C_Jerusalem_2005.jpg",
+          "creator": "Almog",
+          "license": "Public domain",
+          "licenseURL": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-acre-harbor",
+          "src": "./content/photos/israel-acre-harbor.jpg",
+          "caption": "עכו — העיר העתיקה והנמל",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Acre_-_Akko_6_-_the_fishing_port_(6658890981).jpg",
+          "creator": "israeltourism from Israel",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-bahai-gardens",
+          "src": "./content/photos/israel-bahai-gardens.jpg",
+          "caption": "חיפה — הגנים הבהאיים",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Haifa_Bahai_Gardens_-_landscape.jpg",
+          "creator": "Yuval Y",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-banias-waterfall",
+          "src": "./content/photos/israel-banias-waterfall.jpg",
+          "caption": "מפל הבניאס בצפון",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Banias-falls-wasserfall.jpg",
+          "creator": "Mboesch",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-beer-sheva",
+          "src": "./content/photos/israel-beer-sheva.jpg",
+          "caption": "באר שבע — תחנת הרכבת העתיקה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Beer-sheva-turkish-railway-station.jpg",
+          "creator": "Mboesch",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-eilat",
+          "src": "./content/photos/israel-eilat.jpg",
+          "caption": "אילת — העיר והים האדום",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Eilat_VillageBeach_0031.JPG",
+          "creator": "Ludvig14",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-ein-avdat",
+          "src": "./content/photos/israel-ein-avdat.jpg",
+          "caption": "עין עבדת — נחל בין מצוקים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Israel-2013-Ein_Avdat_02.jpg",
+          "creator": "Andrew Shiva / Wikipedia",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-haifa-panorama",
+          "src": "./content/photos/israel-haifa-panorama.jpg",
+          "caption": "חיפה — העיר והמפרץ",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Haifa_Israel_Panoramic_view_Panorama_(35061501866).jpg",
+          "creator": "FLASHPACKER TRAVELGUIDE",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-jaffa-port",
+          "src": "./content/photos/israel-jaffa-port.jpg",
+          "caption": "יפו — הנמל העתיק",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Jaffa_port_-_a_view_from_the_pier.jpg",
+          "creator": "Margalit",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-jerusalem-old-city",
+          "src": "./content/photos/israel-jerusalem-old-city.jpg",
+          "caption": "ירושלים — חומות העיר העתיקה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:The_walls_of_the_old_city_of_jerusalem.JPG",
+          "creator": "Lipaphotography",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-masada",
+          "src": "./content/photos/israel-masada.jpg",
+          "caption": "מצדה מעל ים המלח",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Israel-2013-Aerial_13-Masada.jpg",
+          "creator": "Andrew Shiva / Wikipedia",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-ramon-crater",
+          "src": "./content/photos/israel-ramon-crater.jpg",
+          "caption": "מכתש רמון בנגב",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Small_panorama_of_ramon_crater.jpg",
+          "creator": "Someone35",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-rosh-hanikra",
+          "src": "./content/photos/israel-rosh-hanikra.jpg",
+          "caption": "ראש הנקרה — המצוקים והים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Rocks_and_water_by_Rosh_Hanikra.jpg",
+          "creator": "Limor Noah",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-tel-aviv-skyline",
+          "src": "./content/photos/israel-tel-aviv-skyline.jpg",
+          "caption": "תל אביב — קו הרקיע",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Tel_Aviv_Skyline_02.jpg",
+          "creator": "Ynhockey",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        },
+        {
+          "id": "israel-tiberias",
+          "src": "./content/photos/israel-tiberias.jpg",
+          "caption": "טבריה על שפת הכנרת",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Tiberias_BW_1.JPG",
+          "creator": "Berthold Werner",
+          "license": "Public domain",
+          "licenseURL": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "changes": "Resized to a maximum of 1600 pixels and JPEG compressed; original framing retained. Display may crop responsively."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/israel.mp3",
+        "title": "מסע בישראל",
+        "inspiration": "קטע שנוצר ב-Suno עבור ישראל",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "israel-capital",
+          "question": "מהי עיר הבירה של ישראל?",
+          "answers": [
+            "תל אביב",
+            "חיפה",
+            "ירושלים",
+            "אילת"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "israel-flag",
+          "question": "איזה סמל מופיע במרכז דגל ישראל?",
+          "answers": [
+            "עיגול",
+            "עלה",
+            "לב",
+            "מגן דוד"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "israel-tel-aviv",
+          "question": "על איזה ים נמצאת תל אביב?",
+          "answers": [
+            "הים התיכון",
+            "הים האדום",
+            "ים המלח",
+            "הים השחור"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "israel-dead-sea",
+          "question": "איזה ים מוכר במים המלוחים מאוד שלו?",
+          "answers": [
+            "הים התיכון",
+            "ים המלח",
+            "ים סוף",
+            "הים השחור"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "israel-galilee",
+          "question": "מה שמו של האגם הגדול בצפון ישראל?",
+          "answers": [
+            "אגם ז׳נבה",
+            "אגם בייקל",
+            "הכנרת",
+            "אגם בלד"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "israel-negev",
+          "question": "מה שמו של המדבר הגדול בדרום ישראל?",
+          "answers": [
+            "מדבר סהרה",
+            "מדבר גובי",
+            "מדבר קלהרי",
+            "הנגב"
+          ],
+          "correctAnswerIndex": 3
+        }
+      ]
+    }
+  ]
+}

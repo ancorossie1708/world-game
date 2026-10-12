@@ -1,0 +1,12 @@
+{
+  "name": "מסע בעולם",
+  "short_name": "מסע בעולם",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F8F5EF",
+  "theme_color": "#174B4A",
+  "icons": [{ "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

@@ -1,0 +1,12 @@
+<resources>
+    <style name="JourneyTheme" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorAccent">#147D80</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#F5F4ED</item>
+        <item name="android:statusBarColor">#147D80</item>
+        <item name="android:navigationBarColor">#147D80</item>
+    </style>
+    <color name="launcher_background">#147D80</color>
+</resources>

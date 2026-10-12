@@ -1,0 +1,119 @@
+name: Android APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: App version name (for example 0.1.0)
+        required: false
+        default: '0.1.0'
+        type: string
+      version_code:
+        description: Increasing Android version code (empty uses workflow run number)
+        required: false
+        type: string
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      WORLD_GAME_MANIFEST_URL: ${{ vars.WORLD_GAME_MANIFEST_URL }}
+      VITE_UPDATE_MANIFEST_URL: ${{ vars.WORLD_GAME_MANIFEST_URL }}
+      APP_VERSION_CODE: ${{ inputs.version_code || github.run_number }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v4
+        with:
+          packages: 'platform-tools platforms;android-35 build-tools;35.0.0'
+      - uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '8.11.1'
+          cache-provider: basic
+      - name: Select version
+        env:
+          REQUESTED_VERSION: ${{ inputs.version }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          REF_TYPE: ${{ github.ref_type }}
+        run: |
+          version="${REQUESTED_VERSION:-0.1.0}"
+          if [ "$REF_TYPE" = "tag" ]; then version="${RELEASE_TAG#v}"; fi
+          if [[ ! "$version" =~ ^[A-Za-z0-9._-]+$ ]]; then exit 1; fi
+          if [[ ! "$APP_VERSION_CODE" =~ ^[1-9][0-9]*$ ]]; then exit 1; fi
+          printf 'APP_VERSION=%s\n' "$version" >> "$GITHUB_ENV"
+      - name: Build offline frontend
+        run: |
+          npm ci
+          npm test
+          npm run build
+      - name: Build installable test APK and run Android lint
+        run: gradle -p android --no-daemon assembleDebug lintDebug
+      - name: Prepare test APK artifact
+        run: |
+          mkdir -p apk-artifacts/debug
+          cp android/app/build/outputs/apk/debug/app-debug.apk apk-artifacts/debug/world-game-debug.apk
+          cd apk-artifacts/debug
+          sha256sum world-game-debug.apk > world-game-debug.apk.sha256
+      - uses: actions/upload-artifact@v7
+        with:
+          name: world-game-debug-apk
+          path: apk-artifacts/debug/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Check release signing configuration
+        id: signing
+        if: github.event_name != 'pull_request'
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ] && [ -n "$KEYSTORE_PASSWORD" ] && [ -n "$KEY_ALIAS" ] && [ -n "$KEY_PASSWORD" ]; then
+            printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/world-game-release.jks"
+            printf 'ready=true\n' >> "$GITHUB_OUTPUT"
+          else
+            printf 'ready=false\n' >> "$GITHUB_OUTPUT"
+            printf 'A test APK was built. Add the four ANDROID signing secrets to build a release APK.\n' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Build signed release APK
+        if: steps.signing.outputs.ready == 'true'
+        env:
+          ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/world-game-release.jks
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          gradle -p android --no-daemon assembleRelease
+          mkdir -p apk-artifacts/release
+          cp android/app/build/outputs/apk/release/app-release.apk apk-artifacts/release/world-game.apk
+          cd apk-artifacts/release
+          sha256sum world-game.apk > world-game.apk.sha256
+      - uses: actions/upload-artifact@v7
+        if: steps.signing.outputs.ready == 'true'
+        with:
+          name: world-game-signed-release-apk
+          path: apk-artifacts/release/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Remove ephemeral signing file
+        if: always()
+        run: rm -f -- "$RUNNER_TEMP/world-game-release.jks"

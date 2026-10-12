@@ -1,0 +1,2 @@
+.photo-progress{height:7px;width:176px;max-width:100%;border-radius:99px;background:#D7E0D1;margin:14px auto 23px;overflow:hidden;text-align:right}.photo-progress span{height:100%;display:block;border-radius:99px;background:#6F917B;transition:width .2s ease-out}
+@media(prefers-reduced-motion:reduce){.photo-progress span{transition:none}}

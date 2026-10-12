@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.npm-cache/
+.env.local
+.env.*.local
+android/.gradle/
+android/**/build/
+android/local.properties
+android/app/src/main/assets/www/
+*.jks
+*.keystore
+signing.properties
+test-results/
+*.log
+.preview-logs/
+.work/
+GITHUB_WEB_UPLOAD/

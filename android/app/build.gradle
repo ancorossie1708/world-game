@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+}
+
+def releaseStore = System.getenv('ANDROID_KEYSTORE_PATH')
+def releaseSigningReady = releaseStore && System.getenv('ANDROID_KEYSTORE_PASSWORD') &&
+        System.getenv('ANDROID_KEY_ALIAS') && System.getenv('ANDROID_KEY_PASSWORD')
+def manifestUrl = providers.gradleProperty('worldGameManifestUrl')
+        .orElse(providers.environmentVariable('WORLD_GAME_MANIFEST_URL')).getOrElse('')
+def appVersion = providers.environmentVariable('APP_VERSION').getOrElse('0.1.0')
+def appVersionCode = providers.environmentVariable('APP_VERSION_CODE').getOrElse('1').toInteger()
+
+android {
+    namespace 'com.worldgame.journey'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.worldgame.journey'
+        minSdk 26
+        targetSdk 35
+        versionCode appVersionCode
+        versionName appVersion
+        buildConfigField 'String', 'UPDATE_MANIFEST_URL', groovy.json.JsonOutput.toJson(manifestUrl)
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    signingConfigs {
+        if (releaseSigningReady) {
+            release {
+                storeFile file(releaseStore)
+                storePassword System.getenv('ANDROID_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('ANDROID_KEY_ALIAS')
+                keyPassword System.getenv('ANDROID_KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        release {
+            minifyEnabled false
+            if (releaseSigningReady) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'androidx.webkit:webkit:1.13.0'
+    implementation 'androidx.core:core:1.15.0'
+}
+
+// Always copy the current offline frontend into the APK, including bundled media.
+def copyWebAssets = tasks.register('copyWebAssets', Sync) {
+    from(rootProject.file('../dist'))
+    into(layout.projectDirectory.dir('src/main/assets/www'))
+    doFirst {
+        if (!rootProject.file('../dist/index.html').isFile()) {
+            throw new GradleException('Build the frontend first with npm run build. dist/index.html is missing.')
+        }
+    }
+}
+tasks.named('preBuild').configure { dependsOn(copyWebAssets) }

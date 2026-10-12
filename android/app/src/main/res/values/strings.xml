@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">מסע בעולם</string>
+    <string name="reopen_title">פותחים שוב את המסע</string>
+    <string name="reopen_message">התצוגה נסגרה. האלבום שלכם נשמר, ואפשר להמשיך.</string>
+    <string name="reopen_button">להמשיך</string>
+    <string name="install_permission_title">התקנת עדכון</string>
+    <string name="install_permission_message">העדכון מוכן. כדי להתקין אותו, המלווה צריך לאפשר התקנה מהאפליקציה במסך הבא. אחר כך מאשרים את ההתקנה.</string>
+    <string name="install_permission_button">פתיחת הגדרות</string>
+    <string name="cancel">ביטול</string>
+</resources>
