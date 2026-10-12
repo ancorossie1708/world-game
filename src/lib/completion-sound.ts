@@ -28,7 +28,7 @@ export function playCompletionSound(): void {
   try {
     player = new Audio(VICTORY_SOUND);
     player.preload = 'auto';
-    player.volume = 1;
+    player.volume = 0.3;
     active = player;
     const current = player;
     current.onended = () => release(current);

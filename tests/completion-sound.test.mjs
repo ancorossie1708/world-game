@@ -22,11 +22,11 @@ function mock(){
   return {Player,players};
 }
 
-test('victory uses the bundled MP3 at full volume and lets the complete clip play',async()=>{
+test('victory uses the bundled MP3 at reduced volume and lets the complete clip play',async()=>{
   const {Player,players}=mock();const restore=install(Player);
   try{
     const {playCompletionSound}=await fresh();playCompletionSound();
-    const player=players[0];assert.equal(player.src,'./content/audio/victory.mp3');assert.equal(player.volume,1);
+    const player=players[0];assert.equal(player.src,'./content/audio/victory.mp3');assert.equal(player.volume,0.3);
     player.resolve();await Promise.resolve();assert.equal(player.paused,false);
     player.onended();assert.equal(player.paused,true);assert.equal(player.src,'');
     const bytes=await readFile(new URL('../public/content/audio/victory.mp3',import.meta.url));
