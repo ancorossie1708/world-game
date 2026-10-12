@@ -9,6 +9,9 @@ android/local.properties
 android/app/src/main/assets/www/
 *.jks
 *.keystore
+*.p12
+*.pfx
+.release-private/
 signing.properties
 test-results/
 *.log

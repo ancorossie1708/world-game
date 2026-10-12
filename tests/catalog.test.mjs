@@ -12,9 +12,9 @@ const validTrivia = () => Array.from({ length: 6 }, (_, index) => ({
   correctAnswerIndex: index % 4,
 }));
 
-test('the packaged catalogue preserves all six countries and their media', () => {
+test('the packaged catalogue preserves all fourteen countries and their media', () => {
   const result = parseCatalogue(sample());
-  assert.equal(result.length, 6);
+  assert.equal(result.length, 14);
   assert.deepEqual(result.map((country) => country.id), packaged.countries.map((country) => country.id));
   assert.ok(result.every((country) => country.photos.length === 20 && country.music.src.startsWith('./content/audio/')));
   assert.ok(result.every((country) => country.trivia.length === 6));
@@ -24,7 +24,7 @@ test('older catalogues without trivia remain compatible', () => {
   const value = sample();
   for (const country of value.countries) delete country.trivia;
   const result = parseCatalogue(value);
-  assert.equal(result.length, 6);
+  assert.equal(result.length, 14);
   assert.ok(result.every((country) => country.trivia === undefined));
 });
 
@@ -36,7 +36,7 @@ test('optional trivia must provide exactly six questions', () => {
   }
   const value = sample();
   value.countries[0].trivia = validTrivia();
-  assert.equal(parseCatalogue(value).length, 6);
+  assert.equal(parseCatalogue(value).length, 14);
 });
 
 test('damaged trivia questions and duplicate question identifiers reject the catalogue', () => {
@@ -85,7 +85,7 @@ test('trivia correct answer indices must identify exactly one of the four answer
     const value = sample();
     value.countries[0].trivia = validTrivia();
     value.countries[0].trivia[0].correctAnswerIndex = correctAnswerIndex;
-    assert.equal(parseCatalogue(value).length, 6);
+    assert.equal(parseCatalogue(value).length, 14);
   }
 });
 

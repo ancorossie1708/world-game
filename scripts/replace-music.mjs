@@ -2,11 +2,11 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { extname, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-const supportedCountries = new Set(['japan', 'france', 'italy', 'germany', 'ukraine', 'israel']);
+const supportedCountries = new Set(['japan', 'france', 'italy', 'germany', 'ukraine', 'israel', 'egypt', 'morocco', 'usa', 'canada', 'brazil', 'argentina', 'australia', 'new-zealand']);
 const metadataFields = ['title', 'inspiration', 'creator', 'license'];
 
 export async function replaceMusic({ root, countryId, file, metadata, dryRun = false }) {
-  if (!supportedCountries.has(countryId)) throw new Error('Unknown country. Use japan, france, italy, germany, ukraine, or israel.');
+  if (!supportedCountries.has(countryId)) throw new Error(`Unknown country. Use ${[...supportedCountries].join(', ')}.`);
   const extension = extname(file || '').toLowerCase();
   if (!['.mp3', '.wav'].includes(extension)) throw new Error('The local audio file must be MP3 or WAV.');
   for (const field of metadataFields) {

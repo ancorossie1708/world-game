@@ -45,9 +45,9 @@ interface CachePointer {
   version: string;
 }
 
-const APP_VERSION = '0.1.0';
-const APP_VERSION_CODE = 1;
-const BUNDLED_CONTENT_VERSION = '0.1.0';
+const APP_VERSION = String(import.meta.env?.VITE_APP_VERSION || '0.1.0');
+const APP_VERSION_CODE = Number(import.meta.env?.VITE_APP_VERSION_CODE) || 1;
+const BUNDLED_CONTENT_VERSION = String(import.meta.env?.VITE_CONTENT_VERSION || '0.1.0');
 const PACKAGED_FONT_PATHS = new Set(['content/fonts/Heebo.ttf', 'content/fonts/OFL.txt']);
 let status: UpdateStatus = {
   phase: 'local-only',

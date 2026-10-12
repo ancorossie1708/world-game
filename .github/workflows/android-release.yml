@@ -4,31 +4,30 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: App version name (for example 0.1.0)
+        description: Optional app version (leave empty for automatic numbering)
         required: false
-        default: '0.1.0'
-        type: string
-      version_code:
-        description: Increasing Android version code (empty uses workflow run number)
-        required: false
+        default: ''
         type: string
   push:
     branches: [main]
-    tags: ['v*']
   pull_request:
     branches: [main]
 
 permissions:
   contents: read
 
+concurrency:
+  group: world-game-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   apk:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    env:
-      WORLD_GAME_MANIFEST_URL: ${{ vars.WORLD_GAME_MANIFEST_URL }}
-      VITE_UPDATE_MANIFEST_URL: ${{ vars.WORLD_GAME_MANIFEST_URL }}
-      APP_VERSION_CODE: ${{ inputs.version_code || github.run_number }}
+    outputs:
+      signed: ${{ steps.signing.outputs.ready }}
+      tag: ${{ steps.version.outputs.tag }}
+      version: ${{ steps.version.outputs.version }}
     steps:
       - uses: actions/checkout@v7
         with:
@@ -48,22 +47,18 @@ jobs:
         with:
           gradle-version: '8.11.1'
           cache-provider: basic
-      - name: Select version
+      - name: Prepare automatic versions and update address
+        id: version
         env:
           REQUESTED_VERSION: ${{ inputs.version }}
-          RELEASE_TAG: ${{ github.ref_name }}
-          REF_TYPE: ${{ github.ref_type }}
-        run: |
-          version="${REQUESTED_VERSION:-0.1.0}"
-          if [ "$REF_TYPE" = "tag" ]; then version="${RELEASE_TAG#v}"; fi
-          if [[ ! "$version" =~ ^[A-Za-z0-9._-]+$ ]]; then exit 1; fi
-          if [[ ! "$APP_VERSION_CODE" =~ ^[1-9][0-9]*$ ]]; then exit 1; fi
-          printf 'APP_VERSION=%s\n' "$version" >> "$GITHUB_ENV"
+        run: node scripts/prepare-release.mjs
       - name: Build offline frontend
         run: |
           npm ci
           npm test
           npm run build
+          node scripts/stamp-bundled-content.mjs
+          node scripts/generate-precache.mjs
       - name: Build installable test APK and run Android lint
         run: gradle -p android --no-daemon assembleDebug lintDebug
       - name: Prepare test APK artifact
@@ -78,35 +73,31 @@ jobs:
           path: apk-artifacts/debug/
           if-no-files-found: error
           retention-days: 30
-      - name: Check release signing configuration
+      - name: Load permanent signing identity
         id: signing
         if: github.event_name != 'pull_request'
         env:
-          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
-          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
-        run: |
-          if [ -n "$KEYSTORE_BASE64" ] && [ -n "$KEYSTORE_PASSWORD" ] && [ -n "$KEY_ALIAS" ] && [ -n "$KEY_PASSWORD" ]; then
-            printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/world-game-release.jks"
-            printf 'ready=true\n' >> "$GITHUB_OUTPUT"
-          else
-            printf 'ready=false\n' >> "$GITHUB_OUTPUT"
-            printf 'A test APK was built. Add the four ANDROID signing secrets to build a release APK.\n' >> "$GITHUB_STEP_SUMMARY"
-          fi
-      - name: Build signed release APK
-        if: steps.signing.outputs.ready == 'true'
-        env:
-          ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/world-game-release.jks
+          WORLD_GAME_SIGNING: ${{ secrets.WORLD_GAME_SIGNING }}
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
           ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: node scripts/configure-signing.mjs
+      - name: Build and verify signed release APK
+        if: steps.signing.outputs.ready == 'true'
         run: |
           gradle -p android --no-daemon assembleRelease
           mkdir -p apk-artifacts/release
           cp android/app/build/outputs/apk/release/app-release.apk apk-artifacts/release/world-game.apk
+          keytool -exportcert -rfc -alias "$ANDROID_KEY_ALIAS" -keystore "$ANDROID_KEYSTORE_PATH" -storetype "$ANDROID_KEYSTORE_TYPE" -storepass:env ANDROID_KEYSTORE_PASSWORD -file "$RUNNER_TEMP/world-game-release-cert.pem"
+          node scripts/verify-release-apk.mjs
+          cp "$RUNNER_TEMP/world-game-release-cert.pem" apk-artifacts/release/world-game-certificate.pem
           cd apk-artifacts/release
           sha256sum world-game.apk > world-game.apk.sha256
+      - name: Prepare matching update manifest
+        if: steps.signing.outputs.ready == 'true'
+        run: |
+          node scripts/prepare-updates.mjs --base-url="$CONTENT_BASE_URL" --content-version="$CONTENT_VERSION" --min-app-version-code="$APP_VERSION_CODE" --app-version="$APP_VERSION" --app-version-code="$APP_VERSION_CODE" --apk=apk-artifacts/release/world-game.apk --apk-url="$APK_RELEASE_URL" --output=apk-artifacts/release/release-manifest.json
       - uses: actions/upload-artifact@v7
         if: steps.signing.outputs.ready == 'true'
         with:
@@ -114,6 +105,31 @@ jobs:
           path: apk-artifacts/release/
           if-no-files-found: error
           retention-days: 30
-      - name: Remove ephemeral signing file
+      - name: Remove ephemeral signing files
         if: always()
-        run: rm -f -- "$RUNNER_TEMP/world-game-release.jks"
+        run: rm -f -- "$RUNNER_TEMP/world-game-release.p12" "$RUNNER_TEMP/world-game-release.jks"
+
+  publish:
+    needs: apk
+    if: needs.apk.outputs.signed == 'true' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v7
+        with:
+          name: world-game-signed-release-apk
+          path: release-files
+      - name: Publish verified APK and update manifest together
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ needs.apk.outputs.tag }}
+          APP_VERSION: ${{ needs.apk.outputs.version }}
+          RELEASE_COMMIT: ${{ github.sha }}
+        run: |
+          printf 'מסע בעולם — אפליקציה חתומה עם כל התמונות והמוזיקה המקומיות.\n\nעדכונים מתקינים מעל הגרסה החתומה הקודמת, בכפוף לאישור Android.\n' > release-notes.txt
+          gh release create "$RELEASE_TAG" --target "$RELEASE_COMMIT" --title "מסע בעולם $APP_VERSION" --notes-file release-notes.txt --draft
+          gh release upload "$RELEASE_TAG" release-files/world-game.apk release-files/world-game.apk.sha256 release-files/release-manifest.json release-files/world-game-certificate.pem
+          gh release edit "$RELEASE_TAG" --draft=false --latest
+          printf 'Published signed release.\n\nWhatsApp link: https://github.com/%s/releases/latest/download/world-game.apk\n' "$GH_REPO" >> "$GITHUB_STEP_SUMMARY"

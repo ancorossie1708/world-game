@@ -1,0 +1,4 @@
+.sound-settings{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.sound-settings>div+div{border-right:1px solid #E2E7D9;padding-right:32px}
+.sound-settings input[type=range]{height:42px;touch-action:pan-x;margin:12px 0 4px}
+.sound-settings .text-button{font-size:18px;min-height:48px}

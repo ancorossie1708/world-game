@@ -26,7 +26,7 @@ test('victory uses the bundled MP3 at reduced volume and lets the complete clip 
   const {Player,players}=mock();const restore=install(Player);
   try{
     const {playCompletionSound}=await fresh();playCompletionSound();
-    const player=players[0];assert.equal(player.src,'./content/audio/victory.mp3');assert.equal(player.volume,0.3);
+    const player=players[0];assert.equal(player.src,'./content/audio/victory.mp3');assert.equal(player.volume,0.2);
     player.resolve();await Promise.resolve();assert.equal(player.paused,false);
     player.onended();assert.equal(player.paused,true);assert.equal(player.src,'');
     const bytes=await readFile(new URL('../public/content/audio/victory.mp3',import.meta.url));
@@ -42,6 +42,16 @@ test('repeated wins replace the old clip and a late old promise cannot stop the 
     players[0].resolve();await Promise.resolve();assert.equal(players[1].paused,false);
     players[1].resolve();await Promise.resolve();assert.equal(players[1].paused,false);
   }finally{restore();}
+});
+
+test('victory accepts an independent level and zero silences the current celebration',async()=>{
+ const {Player,players}=mock();const restore=install(Player);
+ try{
+  const {playCompletionSound}=await fresh();playCompletionSound(0.12);
+  assert.equal(players[0].volume,0.12);
+  playCompletionSound(0);assert.equal(players[0].paused,true);assert.equal(players[1].paused,true);
+  assert.equal(players[1].resolve,undefined);
+ }finally{restore();}
 });
 
 test('leaving cancels pending playback and resets the clip',async()=>{

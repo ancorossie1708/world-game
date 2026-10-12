@@ -10,6 +10,8 @@ export interface GameSettings {
   countryGroup: CountryGroup;
   selectedCountryIds: string[];
   musicVolume: number;
+  effectsVolume: number;
+  victoryVolume: number;
   reduceMotion: boolean;
 }
 
@@ -41,6 +43,8 @@ export function createDefaultSavedState(): SavedState {
       countryGroup: 'famous',
       selectedCountryIds: [],
       musicVolume: 0.35,
+      effectsVolume: 0.7,
+      victoryVolume: 0.2,
       reduceMotion: false,
     },
     session: { paintedRegionIds: [] },
@@ -81,6 +85,8 @@ export function normalizeSavedState(value: unknown): SavedState {
     }
     result.settings.selectedCountryIds = identifiers(source.selectedCountryIds);
     result.settings.musicVolume = boundedNumber(source.musicVolume, 0.35, 0, 1);
+    result.settings.effectsVolume = boundedNumber(source.effectsVolume, 0.7, 0, 1);
+    result.settings.victoryVolume = boundedNumber(source.victoryVolume, 0.2, 0, 1);
     result.settings.reduceMotion = source.reduceMotion === true;
   }
 

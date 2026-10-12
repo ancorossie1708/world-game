@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type CSSProperties } from 'react';
+import './components/sound-settings.css';
 import { countries as bundledCountries, continents, type Country } from './data/countries';
 import { flagPalette } from './lib/flag-colors';
 import { FlagBoard } from './components/FlagBoard';
@@ -108,7 +109,7 @@ export default function App() {
   },[screen]);
   useEffect(()=>{
     setIsPlaying(false);setMusicError(false);startMusicOnVisible.current=false;
-    if(!inVisit||!country)return;
+    if(!inVisit||!country||country.music.pending)return;
     const player=new Audio(country.music.src);player.loop=true;player.volume=savedRef.current.settings.musicVolume;audio.current=player;
     const music=createVisitMusic(player,state=>{setIsPlaying(state.playing||state.pending);setMusicError(state.unavailable);});
     visitMusic.current=music;
@@ -142,7 +143,7 @@ export default function App() {
   function showFeedback(kind:Feedback['kind'],target:Feedback['target'],id:string) {
     clearTimeout(feedbackTimer.current);
     const sequence=++feedbackSequence.current;
-    setFeedback({kind,target,id,sequence});playFeedback(kind);
+    setFeedback({kind,target,id,sequence});playFeedback(kind,savedRef.current.settings.effectsVolume);
     feedbackTimer.current=setTimeout(()=>setFeedback(current=>current?.sequence===sequence?null:current),kind==='correct'?1000:450);
   }
 
@@ -154,7 +155,7 @@ export default function App() {
     clearTimeout(feedbackTimer.current);setFeedback(null);stopFeedbackSounds();
     const sequence=++celebrationSequence.current;
     setFlagCelebration(sequence);
-    playCompletionSound();
+    playCompletionSound(savedRef.current.settings.victoryVolume);
     celebrationTimer.current=setTimeout(()=>setFlagCelebration(current=>current===sequence?null:current),FLAG_CELEBRATION_DURATION);
   }
 
@@ -261,7 +262,7 @@ export default function App() {
           <span className="photo-backdrop" style={{backgroundImage:`url(${photo.src})`}}/>
           {!photoError?<img key={photo.src} src={photo.src} alt={photo.caption} onError={()=>setPhotoError(true)}/>:<span className="photo-fallback"><JourneyGlobe small/><strong>התמונה אינה זמינה כרגע</strong></span>}
           <span className="photo-caption"><strong>{photo.caption}</strong><Icon name="arrow" size={26}/></span>
-        </button>}<aside className="visit-sidebar"><div className={`music-card ${isPlaying?'playing':''}`}><span className="music-art"><Icon name="music" size={44}/><i/><i/><i/></span><button className={`music-button ${isPlaying?'playing':''}`} onClick={()=>void toggleMusic()} aria-pressed={isPlaying}><Icon name={isPlaying?'pause':'music'} size={25}/>{isPlaying?'עצירת מוזיקה':'מוזיקה'}</button>{musicError&&<small role="status">המוזיקה אינה זמינה כרגע</small>}</div>
+        </button>}<aside className="visit-sidebar"><div className={`music-card ${isPlaying?'playing':''}`}><span className="music-art"><Icon name="music" size={44}/><i/><i/><i/></span><button className={`music-button ${isPlaying?'playing':''}`} onClick={()=>void toggleMusic()} disabled={country.music.pending} aria-pressed={isPlaying}><Icon name={isPlaying?'pause':'music'} size={25}/>{country.music.pending?'מוזיקה בהמשך':isPlaying?'עצירת מוזיקה':'מוזיקה'}</button>{musicError&&<small role="status">המוזיקה אינה זמינה כרגע</small>}</div>
           {!triviaOpen&&<div className="gallery-controls"><span className="photo-count">תמונה {photoIndex%country.photos.length+1} מתוך {country.photos.length}</span><PhotoProgress index={photoIndex%country.photos.length} total={country.photos.length}/></div>}
           {triviaQuestions.length>0&&<button className="secondary-button visit-trivia" onClick={toggleTrivia} aria-expanded={triviaOpen}><Icon name={triviaOpen?'album':'sparkle'}/>{triviaOpen?'לתמונות':'טריוויה'}</button>}
           {screen==='album-visit'&&<button className="secondary-button" onClick={()=>beginCountry(country)}><Icon name="refresh"/>משחק חוזר</button>}
@@ -280,8 +281,9 @@ export default function App() {
 
       {screen==='settings'&&<>
         <div className="screen-heading compact"><h1>הגדרות</h1></div>
-        <div className="settings-scroll"><section className="settings-section"><h2>אילו מדינות יופיעו?</h2><div className="group-options">{([['famous','מדינות מפורסמות'],['less-known','מדינות פחות מפורסמות'],['all','כל מדינות הבדיקה'],['personal','בחירה אישית']] as const).map(([value,label])=><button key={value} className={`setting-choice ${settings.countryGroup===value?'active':''}`} aria-pressed={settings.countryGroup===value} onClick={()=>updateSettings({countryGroup:value})}>{label}{settings.countryGroup===value&&<Icon name="check" size={20}/>}</button>)}</div>{settings.countryGroup==='personal'&&<div className="personal-countries">{catalog.map(item=><button key={item.id} className={`setting-choice ${settings.selectedCountryIds.includes(item.id)?'active':''}`} aria-pressed={settings.selectedCountryIds.includes(item.id)} onClick={()=>updateSettings({selectedCountryIds:settings.selectedCountryIds.includes(item.id)?settings.selectedCountryIds.filter(id=>id!==item.id):[...settings.selectedCountryIds,item.id]})}>{item.name}{settings.selectedCountryIds.includes(item.id)&&<Icon name="check" size={20}/>}</button>)}</div>}</section>
-          <section className="settings-section settings-two-col"><div><h2>מוזיקה</h2><label className="range-setting">עוצמת המוזיקה <strong>{Math.round(settings.musicVolume*100)}%</strong><input aria-label="עוצמת מוזיקה" type="range" min={0} max={1} step={.05} value={settings.musicVolume} onChange={event=>updateSettings({musicVolume:Number(event.target.value)})}/></label></div><div><h2>תנועה</h2><label className="toggle-setting"><input type="checkbox" checked={settings.reduceMotion} onChange={event=>updateSettings({reduceMotion:event.target.checked})}/><span>תנועה מצומצמת</span></label></div></section>
+        <div className="settings-scroll"><section className="settings-section"><h2>אילו מדינות יופיעו?</h2><div className="group-options">{([['famous','מדינות מפורסמות'],['less-known','מדינות פחות מפורסמות'],['all','כל המדינות'],['personal','בחירה אישית']] as const).map(([value,label])=><button key={value} className={`setting-choice ${settings.countryGroup===value?'active':''}`} aria-pressed={settings.countryGroup===value} onClick={()=>updateSettings({countryGroup:value})}>{label}{settings.countryGroup===value&&<Icon name="check" size={20}/>}</button>)}</div>{settings.countryGroup==='personal'&&<div className="personal-countries">{catalog.map(item=><button key={item.id} className={`setting-choice ${settings.selectedCountryIds.includes(item.id)?'active':''}`} aria-pressed={settings.selectedCountryIds.includes(item.id)} onClick={()=>updateSettings({selectedCountryIds:settings.selectedCountryIds.includes(item.id)?settings.selectedCountryIds.filter(id=>id!==item.id):[...settings.selectedCountryIds,item.id]})}>{item.name}{settings.selectedCountryIds.includes(item.id)&&<Icon name="check" size={20}/>}</button>)}</div>}</section>
+          <section className="settings-section"><h2>עוצמת הצלילים</h2><div className="sound-settings">{([['musicVolume','מוזיקה'],['effectsVolume','צלילי תגובה'],['victoryVolume','תרועת ניצחון']] as const).map(([key,label])=><div key={key}><label className="range-setting">{label}<strong>{Math.round(settings[key]*100)}%</strong><input aria-label={`עוצמת ${label}`} type="range" min={0} max={1} step={.01} value={settings[key]} onChange={event=>updateSettings({[key]:Number(event.target.value)})}/></label>{key!=='musicVolume'&&<button className="text-button" onClick={()=>key==='victoryVolume'?playCompletionSound(settings.victoryVolume):playFeedback('correct',settings.effectsVolume)}><Icon name="music" size={20}/>השמעה לבדיקה</button>}</div>)}</div></section>
+          <section className="settings-section"><h2>תנועה</h2><label className="toggle-setting"><input type="checkbox" checked={settings.reduceMotion} onChange={event=>updateSettings({reduceMotion:event.target.checked})}/><span>תנועה מצומצמת</span></label></section>
           <section className="settings-section update-section"><div><h2>תוכן ועדכונים</h2><p className="update-message" role="status">{phaseNames[updateStatus.phase]}</p><p>אפליקציה {updateStatus.appVersion} · תוכן {updateStatus.contentVersion}<br/>{window.WorldGameNative?'התוכן הבסיסי שמור במכשיר':updateStatus.offlineReady?'מוכן לבדיקה במחשב ללא רשת':'להכנת בדיקה ללא רשת: הריצו את גרסת הבנייה במחשב'}</p>{updateStatus.totalFiles!==undefined&&updateStatus.phase==='downloading'&&<p>{updateStatus.downloadedFiles||0} מתוך {updateStatus.totalFiles} קבצים</p>}</div><div><button className="secondary-button" onClick={()=>void checkForUpdates(true)} disabled={['checking','downloading'].includes(updateStatus.phase)}><Icon name="refresh"/>בדיקת עדכונים</button>{updateStatus.appUpdateAvailable&&<button className="primary-button" onClick={()=>requestAppUpdate()}><Icon name="download"/>עדכון לגרסה {updateStatus.newAppVersion}</button>}<button className="text-button" onClick={()=>void fullScreen()}><Icon name="fullscreen" size={20}/>תצוגה במסך מלא</button></div></section>
           <section className="settings-section"><h2>על התמונות והמוזיקה</h2><p>המוזיקה נוצרה ב־Suno עבור המשחק.</p><details><summary>מקורות התמונות והצלילים</summary><div className="credits-list"><p>צליל הניצחון סופק על ידי בעל הפרויקט.</p>{catalog.map(item=><div key={item.id}><h3>{item.name}</h3>{item.photos.map(p=><p key={p.id}>{p.caption} — {p.creator} · <a href={p.sourceURL} target="_blank" rel="noreferrer">מקור</a> · {p.license}</p>)}</div>)}</div></details></section>
         </div><div className="settings-bottom"><button className="primary-button" onClick={goHome}><Icon name="check"/>חזרה למשחק</button></div>

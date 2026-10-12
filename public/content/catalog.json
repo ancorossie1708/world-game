@@ -2039,6 +2039,2931 @@
           "correctAnswerIndex": 3
         }
       ]
+    },
+    {
+      "id": "egypt",
+      "name": "מצרים",
+      "capital": "קהיר",
+      "continentId": "africa",
+      "familiarity": "familiar",
+      "accent": "#B69357",
+      "emoji": "🐪",
+      "flag": {
+        "viewBox": "0 0 899 600",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 899,
+          "height": 600
+        },
+        "regions": [
+          {
+            "id": "color-1-1",
+            "path": "M0,0L0,199L898,199L898,0Z",
+            "colorId": 1,
+            "labelX": 449,
+            "labelY": 100,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-2",
+            "path": "M0,200L0,399L898,399L898,200Z M435,204L438,204L439,205L443,205L444,204L451,204L458,207L461,210L461,212L462,213L462,217L463,218L463,235L464,236L464,240L467,247L472,247L473,246L479,245L492,238L494,238L498,236L506,236L510,238L514,243L514,247L515,248L515,265L516,266L516,291L517,292L517,313L518,314L518,336L519,337L519,361L520,362L520,365L519,366L517,366L483,334L483,336L485,340L485,343L487,347L487,350L488,351L489,357L490,358L495,357L496,358L500,359L503,362L503,368L504,368L511,374L511,375L509,377L508,381L506,383L505,387L501,390L495,391L494,392L489,392L488,393L481,393L480,394L467,394L466,395L432,395L431,394L418,394L417,393L410,393L409,392L404,392L403,391L400,391L399,390L395,389L393,387L392,383L390,381L389,377L387,375L387,374L394,368L395,368L395,362L398,359L402,358L403,357L405,357L406,358L408,358L409,357L409,354L411,350L411,347L412,346L413,340L414,339L415,335L381,366L379,366L378,365L378,362L379,361L379,337L380,336L380,314L381,313L381,292L382,291L382,266L383,265L383,248L384,247L384,244L386,240L388,238L392,236L400,236L401,237L406,238L419,245L425,246L426,247L431,247L434,241L436,239L436,237L438,234L438,231L439,230L439,226L440,225L440,219L439,218L439,216L435,213L433,214L431,214L430,213L430,208Z",
+            "colorId": 3,
+            "labelX": 615,
+            "labelY": 300,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-5-3",
+            "path": "M435,205L431,208L431,213L435,212L440,216L440,218L441,219L441,225L440,226L440,230L439,231L439,234L437,237L437,239L435,241L434,244L431,248L426,248L425,247L419,246L406,239L404,239L400,237L392,237L388,239L385,244L385,247L384,248L384,265L383,266L383,291L382,292L382,313L381,314L381,336L380,337L380,361L379,362L379,365L381,365L387,359L388,359L415,334L416,336L414,340L414,343L412,347L412,350L410,354L410,357L408,359L403,358L402,359L398,360L396,362L396,368L389,374L388,374L395,388L399,389L400,390L403,390L404,391L409,391L410,392L417,392L418,393L431,393L432,394L466,394L467,393L480,393L481,392L488,392L489,391L494,391L495,390L501,389L504,387L505,383L507,381L508,377L510,375L510,374L509,374L502,368L502,362L500,360L496,359L495,358L490,359L488,357L487,351L486,350L486,347L484,343L484,340L483,339L482,334L483,333L517,365L519,365L519,362L518,361L518,337L517,336L517,314L516,313L516,292L515,291L515,266L514,265L514,248L513,247L513,243L510,239L506,237L498,237L497,238L492,239L479,246L473,247L472,248L467,248L464,243L464,241L463,240L463,236L462,235L462,218L461,217L461,213L460,212L460,210L458,208L451,205L444,205L443,206Z M453,366L456,370L452,373L451,372L451,368Z M445,366L447,368L447,372L446,373L442,370Z M391,375L395,371L397,371L398,368L400,366L405,366L406,367L410,367L411,368L415,368L416,369L418,369L421,375L425,370L429,370L430,371L439,371L441,370L446,375L449,370L452,375L457,370L459,371L468,371L469,370L473,370L477,375L480,369L482,369L483,368L487,368L488,367L492,367L493,366L498,366L500,368L501,371L503,371L507,375L507,376L506,377L506,379L504,381L503,381L503,385L501,387L499,387L498,388L494,388L493,389L489,389L488,390L480,390L479,391L468,391L467,392L431,392L430,391L410,390L409,389L405,389L404,388L400,388L399,387L397,387L395,385L395,381L394,381L392,379Z M476,365L477,365L479,367L479,369L477,372L474,369L474,367Z M422,365L424,367L424,369L421,372L419,369L419,367L421,365Z M454,366L456,364L473,364L474,365L473,367L472,366L467,366L466,367L472,367L473,368L472,369L469,369L468,370L459,370Z M424,365L425,364L442,364L444,366L439,370L430,370L429,369L426,369L425,368L426,367L432,367L431,366L426,366L425,367Z M498,360L501,363L501,365L500,366L497,364L497,361Z M496,361L496,364L495,365L493,365L492,366L488,366L487,367L483,367L482,368L481,368L478,364L481,362L485,362L486,363L485,364L482,364L481,365L484,365L486,364L485,362L486,361L489,361L490,363L494,362L495,360Z M489,361L490,360L492,361L491,362Z M406,361L407,360L409,361L408,362Z M400,360L401,361L401,364L398,366L397,365L397,363Z M492,360L493,359L495,360L494,361Z M469,362L471,359L473,362L472,363L470,363Z M425,362L427,359L429,362L428,363L426,363Z M402,360L403,359L405,359L406,360L404,361L404,362L406,362L407,363L408,363L409,361L412,361L413,362L412,364L414,365L417,365L416,364L413,364L412,363L413,362L417,362L420,364L417,368L415,367L411,367L410,366L406,366L402,364Z M477,361L478,357L479,356L483,360L481,362L478,362Z M419,356L420,357L421,361L420,362L417,362L415,360Z M436,361L437,360L441,361L443,359L443,356L444,355L444,349L445,348L446,349L446,360L449,363L452,360L452,349L453,348L454,349L454,355L455,356L455,359L457,361L461,360L462,362L461,363L456,363L448,368L446,365L442,363L437,363Z M464,347L469,354L470,354L471,350L473,347L476,350L478,355L477,356L477,359L475,362L473,361L471,357L470,357L469,361L467,363L464,363L462,360L462,353L463,352L463,348Z M425,347L427,350L428,354L430,353L430,352L434,347L435,348L435,352L436,353L436,360L434,363L431,363L429,361L428,357L426,358L424,362L422,361L420,354L422,350Z M483,342L484,343L484,346L485,347L486,353L487,354L487,357L488,358L488,359L485,361L482,358L479,353L480,352L481,345Z M415,342L417,345L417,348L418,349L418,352L419,353L416,358L413,361L411,360L410,358L411,357L412,350L413,349L414,343Z M459,339L463,345L463,348L461,352L460,351L459,343L458,342L458,340Z M439,339L440,340L440,342L439,343L439,347L438,348L438,351L437,352L435,348L435,345Z M475,332L482,339L482,341L480,345L480,348L478,352L473,344L469,352L464,345L464,343L465,342L465,338L467,334L472,340L473,339L473,336Z M423,332L424,333L425,339L426,340L431,334L433,338L433,342L434,343L434,345L429,352L425,344L420,352L418,348L418,345L417,344L416,339Z M447,324L448,323L450,323L451,324L449,326Z M450,323L451,322L452,323L451,324Z M446,323L447,322L448,323L447,324Z M458,320L460,322L460,325L459,326L458,332L457,333L455,329L455,325L454,323L457,320Z M440,320L441,320L444,323L443,325L443,329L441,333L440,332L440,329L438,325L438,322Z M477,321L478,322L478,325L479,326L481,334L480,335L475,330L474,330L473,335L471,337L466,331L465,333L464,341L463,342L458,336L458,333L459,332L460,326L462,325L465,328L465,329L466,329L467,319L468,318L474,324L475,324L475,323Z M421,321L423,323L423,324L424,324L430,318L431,319L432,329L433,329L433,328L436,325L438,326L439,332L440,333L440,336L435,342L434,341L434,338L433,337L433,333L432,331L427,337L425,335L424,330L423,330L418,335L417,334L418,332L418,329L420,325L420,322Z M463,314L466,316L466,325L465,326L459,319L459,318Z M459,314L460,316L453,323L452,323L451,322Z M438,315L439,314L447,322L445,323L438,316Z M435,314L439,318L439,319L433,326L432,325L432,317Z M459,314L460,313L461,314L460,315Z M437,314L438,313L439,314L438,315Z M460,313L461,312L462,313L461,314Z M436,313L437,312L438,313L437,314Z M466,309L467,310L467,314L466,315L464,313Z M463,309L464,311L462,313L461,311Z M434,310L435,309L437,311L437,312L436,313L434,311Z M432,309L434,312L434,313L432,315L431,314L431,310Z M463,309L464,308L465,309L464,310Z M433,309L434,308L435,309L434,310Z M464,307L465,306L466,308L465,309Z M432,307L433,306L434,308L433,309Z M465,306L466,305L467,306L466,307Z M431,306L432,305L433,306L432,307Z M466,304L467,303L468,305L467,306Z M430,304L431,303L432,305L431,306Z M471,301L473,304L473,307L474,308L475,314L476,315L476,320L474,322L473,322L468,317L468,306Z M467,302L468,301L469,303L468,304Z M429,302L430,301L431,303L430,304Z M427,301L430,306L430,317L425,322L424,322L422,320L422,315L423,314L423,311L425,307L425,304Z M468,300L469,299L470,301L469,302Z M428,300L429,299L430,301L429,302Z M469,298L470,297L471,299L470,300Z M427,298L428,297L429,299L428,300Z M470,296L471,295L472,297L471,298Z M426,296L427,295L428,297L427,298Z M472,292L473,293L473,295L472,296L471,295L471,293Z M426,292L427,293L427,295L426,296L425,295L425,293Z M472,291L473,290L474,292L473,293Z M424,291L425,290L426,292L425,293Z M474,286L475,287L475,290L474,291L473,290L473,287Z M424,286L425,287L425,290L424,291L423,290L423,287Z M475,283L476,284L476,286L475,287L474,286L474,284Z M423,283L424,284L424,286L423,287L422,286L422,284Z M478,282L479,283L480,321L481,322L481,324L480,325L478,322L478,319L477,318L477,303L476,302L476,287L477,286L477,283Z M420,282L421,283L421,286L422,287L422,301L421,302L421,318L420,319L420,322L418,325L417,324L417,322L418,321L418,301L419,300L419,283Z M476,277L477,278L477,283L476,284L475,283L475,278Z M422,277L423,278L423,283L422,284L421,283L421,278Z M470,265L477,265L478,266L478,277L477,278L476,277L476,267L470,267L469,266Z M428,265L429,266L428,267L422,267L422,277L421,278L420,277L420,266L421,265Z M464,265L465,264L469,264L470,265L469,266L465,266Z M428,265L429,264L432,264L433,265L432,266L429,266Z M460,264L461,263L464,263L465,264L464,265L461,265Z M457,263L458,262L460,262L461,263L460,264L458,264Z M440,263L437,265L433,265L432,264L433,263L436,263L437,262L439,262Z M455,262L456,261L458,262L457,263Z M439,262L440,261L442,261L443,262L442,263L440,263Z M453,261L454,260L456,261L455,262Z M448,260L450,260L456,263L458,265L458,314L449,323L440,314L440,264Z M442,261L443,260L445,261L444,262Z M451,260L452,259L454,260L453,261Z M444,260L445,259L447,260L446,261Z M446,259L447,258L449,259L448,260Z M448,258L450,257L452,259L450,260Z M459,251L460,250L461,251L460,252Z M438,251L439,250L440,251L439,252Z M431,250L432,249L433,250L432,251Z M387,242L392,238L400,238L401,239L406,240L416,246L418,246L422,248L425,248L426,249L429,249L430,250L429,252L436,250L437,251L437,254L438,254L445,249L449,253L453,249L455,251L461,253L463,251L469,251L468,250L469,249L472,249L473,248L476,248L477,247L482,246L486,243L498,238L506,238L508,239L511,242L512,246L513,247L512,249L506,246L506,266L507,267L507,288L508,289L508,314L509,315L510,355L509,356L508,355L508,351L507,350L507,330L506,329L506,306L505,305L505,285L504,284L504,263L503,262L503,248L502,248L496,254L496,265L497,266L497,287L498,288L498,312L499,313L499,334L500,335L500,346L499,347L496,343L496,323L495,322L495,302L494,301L493,257L492,257L487,261L487,266L488,267L488,289L489,290L489,316L490,317L490,336L489,337L487,335L487,326L486,325L486,304L485,303L485,280L484,279L484,263L480,265L479,264L477,264L476,265L475,264L464,263L463,262L458,261L452,258L450,256L440,261L434,262L433,263L430,263L429,264L423,264L422,265L421,264L419,264L418,265L414,263L414,278L413,279L413,303L412,304L412,325L411,326L411,336L409,338L408,337L408,317L409,316L409,290L410,289L410,267L411,266L411,261L406,257L405,257L404,301L403,302L403,321L402,322L402,344L399,347L398,346L398,335L399,334L399,313L400,312L400,288L401,287L401,266L402,265L402,254L396,248L395,248L395,261L394,262L394,284L393,285L393,305L392,306L392,329L391,330L391,350L390,351L390,355L389,356L388,355L388,337L389,336L389,315L390,314L390,289L391,288L392,246L386,249L385,247L386,246Z M447,210L448,209L449,210L448,211Z M434,207L438,207L442,210L446,211L448,213L449,213L450,211L452,211L453,210L457,210L460,213L460,216L461,217L461,235L462,236L463,243L466,249L465,250L463,250L459,246L459,243L458,242L458,239L457,238L457,232L456,231L456,228L455,229L456,231L456,238L457,239L458,246L460,250L459,251L457,251L453,248L453,240L452,239L452,227L451,228L452,248L449,251L448,251L446,249L447,241L448,240L448,234L449,233L449,227L448,227L448,234L447,235L447,241L446,242L446,245L441,251L439,250L439,248L441,246L441,244L444,237L444,234L445,233L445,227L444,228L444,233L443,234L442,241L439,247L434,250L432,249L435,243L437,241L438,237L440,234L440,231L441,230L441,225L442,224L442,219L441,218L442,217L445,217L445,216L439,210L435,209L433,211L432,209Z",
+            "colorId": 5,
+            "labelX": 449,
+            "labelY": 338,
+            "fillRule": "evenodd",
+            "hitPath": "M407,296h84v84h-84Z"
+          },
+          {
+            "id": "color-6-4",
+            "path": "M0,400L0,599L898,599L898,400Z",
+            "colorId": 6,
+            "labelX": 449,
+            "labelY": 500,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "egypt-abu-simbel",
+          "src": "./content/photos/egypt-abu-simbel.jpg",
+          "caption": "אבו סימבל — מקדשי הסלע",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Templo_de_Rams%C3%A9s_II,_Abu_Simbel,_Egipto,_2022-04-02,_DD_26-28_HDR.jpg",
+          "creator": "Diego Delso",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-alexandria",
+          "src": "./content/photos/egypt-alexandria.jpg",
+          "caption": "אלכסנדריה — העיר לחוף הים",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Egypt,_Alexandria,_The_Corniche_of_Alexandria.jpg",
+          "creator": "Vyacheslav Argenberg",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-aswan",
+          "src": "./content/photos/egypt-aswan.jpg",
+          "caption": "אסואן — הסכר הגבוה על הנילוס",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Aswan_High_Dam_panorama_looking_downstream.jpg",
+          "creator": "Visanu Euarchukiati",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-cairo-citadel",
+          "src": "./content/photos/egypt-cairo-citadel.jpg",
+          "caption": "קהיר — המצודה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_@_Cairo_Citadel_(52701121797).jpg",
+          "creator": "Magdi from United Kingdom",
+          "license": "Public domain",
+          "licenseURL": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-cairo-mosque",
+          "src": "./content/photos/egypt-cairo-mosque.jpg",
+          "caption": "קהיר — מסגד מוחמד עלי",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Muhammad_Ali_Mosque_1.jpg",
+          "creator": "kallerna",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-cairo-nile",
+          "src": "./content/photos/egypt-cairo-nile.jpg",
+          "caption": "קהיר — עיר הבירה על הנילוס",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Nile_panorama.jpg",
+          "creator": "Waelfouda",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-cairo-tower",
+          "src": "./content/photos/egypt-cairo-tower.jpg",
+          "caption": "קהיר — המגדל מעל העיר",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Nile_and_Cairo_Tower_2012.jpg",
+          "creator": "Radosław Botev",
+          "license": "CC BY 3.0 pl",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-dahab",
+          "src": "./content/photos/egypt-dahab.jpg",
+          "caption": "דהב — חוף ים סוף",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Dahab,_Sinai,_Egypt_(2056149762).jpg",
+          "creator": "jay8085",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-giza-pyramids",
+          "src": "./content/photos/egypt-giza-pyramids.jpg",
+          "caption": "גיזה — הפירמידות",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:All_pyramids_of_Giza_panorama_2.jpg",
+          "creator": "kallerna",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-giza-sphinx",
+          "src": "./content/photos/egypt-giza-sphinx.jpg",
+          "caption": "גיזה — הספינקס",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Great_Sphinx_(%D8%A3%D8%A8%D9%88_%D8%A7%D9%84%D9%87%D9%88%D9%84).jpg",
+          "creator": "Petar Milošević",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-hurghada",
+          "src": "./content/photos/egypt-hurghada.jpg",
+          "caption": "הורגדה — אורות העיר ליד ים סוף",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hurghada,_Qesm_Hurghada,_Red_Sea_Governorate,_Egypt_-_panoramio_(306).jpg",
+          "creator": "Hassan Gaafar",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-karnak",
+          "src": "./content/photos/egypt-karnak.jpg",
+          "caption": "כרנך — עמודי המקדש",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Columns_in_Karnak_Temple_,_Luxor.JPG",
+          "creator": "Belmahdy",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-luxor",
+          "src": "./content/photos/egypt-luxor.jpg",
+          "caption": "לוקסור — המקדש העתיק",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Pylons_and_obelisk_Luxor_temple.JPG",
+          "creator": "Ad Meskens",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-nile-felucca",
+          "src": "./content/photos/egypt-nile-felucca.jpg",
+          "caption": "סירות מפרש על הנילוס",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Aswan,_Elephantine,_felucca,_Egypt,_Oct_2004.jpg",
+          "creator": "Przemyslaw \"Blueshade\" Idzkiewicz.",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-philae",
+          "src": "./content/photos/egypt-philae.jpg",
+          "caption": "פילה — מקדש על אי",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Philae_Temple_Complex,_Agilkia_Island,_Aswan,_AG,_EGY_(48027052466).jpg",
+          "creator": "Warren LeMay from Cullowhee, NC, United States",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-qaitbay",
+          "src": "./content/photos/egypt-qaitbay.jpg",
+          "caption": "אלכסנדריה — מצודת קאיתבאי",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D9%82%D9%84%D8%B9%D8%A9_%D8%A7%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9.jpg",
+          "creator": "Summering2018",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-saqqara",
+          "src": "./content/photos/egypt-saqqara.jpg",
+          "caption": "סקארה — פירמידת המדרגות",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Pyramid_of_Djoser_2010.jpg",
+          "creator": "Wknight94 talk",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-sinai",
+          "src": "./content/photos/egypt-sinai.jpg",
+          "caption": "הרי סיני",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mount_Sinai_BW_4.jpg",
+          "creator": "Berthold Werner",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-siwa",
+          "src": "./content/photos/egypt-siwa.jpg",
+          "caption": "נווה המדבר סיווה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Siwa_Oasis,_Aftans_Lake.jpg",
+          "creator": "Maaly Saeed",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "egypt-white-desert",
+          "src": "./content/photos/egypt-white-desert.jpg",
+          "caption": "המדבר הלבן",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:White_Desert,_Desert_landscape,_Egypt.jpg",
+          "creator": "Vyacheslav Argenberg",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/egypt.mp3",
+        "title": "מסע במצרים",
+        "inspiration": "קטע שנוצר ב-Suno עבור מצרים",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "egypt-capital",
+          "question": "מהי עיר הבירה של מצרים?",
+          "answers": [
+            "קהיר",
+            "רומא",
+            "פריז",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "egypt-pyramids",
+          "question": "איזה אתר מפורסם נמצא במצרים?",
+          "answers": [
+            "הקולוסיאום",
+            "הפירמידות",
+            "מגדל אייפל",
+            "פסל החירות"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "egypt-river",
+          "question": "איזה נהר גדול זורם במצרים?",
+          "answers": [
+            "הסן",
+            "התמזה",
+            "הנילוס",
+            "הירדן"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "egypt-desert",
+          "question": "איזה נוף נפוץ במצרים?",
+          "answers": [
+            "שדות קרח",
+            "יערות מושלגים",
+            "גבעות מכוסות שלג",
+            "מדבר"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "egypt-sphinx",
+          "question": "איזה פסל מפורסם נמצא ליד הפירמידות?",
+          "answers": [
+            "הספינקס",
+            "פסל החירות",
+            "בת הים הקטנה",
+            "פסל דוד"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "egypt-continent",
+          "question": "באיזו יבשת נמצאת רוב מצרים?",
+          "answers": [
+            "דרום אמריקה",
+            "אפריקה",
+            "אירופה",
+            "אוקיאניה"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "morocco",
+      "name": "מרוקו",
+      "capital": "רבאט",
+      "continentId": "africa",
+      "familiarity": "familiar",
+      "accent": "#BB7862",
+      "emoji": "🫖",
+      "flag": {
+        "viewBox": "0 0 899 600",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 899,
+          "height": 600
+        },
+        "regions": [
+          {
+            "id": "color-1-1",
+            "path": "M0,0L0,599L898,599L898,0Z M449,150L451,153L451,155L452,156L452,158L453,159L453,161L456,168L456,171L457,172L457,174L458,175L458,177L459,178L459,180L460,181L460,183L461,184L461,186L462,187L462,189L463,190L463,192L464,193L464,195L465,196L465,198L468,205L468,208L469,209L469,211L470,212L470,214L471,215L471,217L472,218L472,220L473,221L473,223L474,224L474,226L475,227L475,229L476,230L476,232L477,233L477,235L480,242L480,245L482,248L482,251L484,253L589,253L590,252L591,253L590,255L586,257L579,263L568,270L561,276L557,278L550,284L546,286L539,292L535,294L528,300L524,302L521,305L520,305L517,308L513,310L504,317L505,321L506,322L506,325L507,326L507,328L508,329L508,331L509,332L509,334L510,335L510,337L511,338L511,340L512,341L512,343L513,344L513,346L514,347L514,349L515,350L515,352L518,359L518,362L519,363L519,365L520,366L520,368L521,369L521,371L522,372L522,374L523,375L523,377L524,378L524,380L525,381L525,383L526,384L526,386L527,387L527,389L528,390L528,392L529,393L529,395L532,402L532,405L533,406L533,408L534,409L534,411L537,418L536,420L449,357L440,364L436,366L429,372L425,374L418,380L414,382L407,388L396,395L389,401L385,403L374,412L373,412L362,420L361,418L362,417L362,415L363,414L363,412L366,405L366,402L367,401L367,399L368,398L368,396L369,395L369,393L370,392L370,390L371,389L371,387L372,386L372,384L373,383L373,381L374,380L374,378L375,377L375,375L378,368L378,365L379,364L379,362L380,361L380,359L381,358L381,356L382,355L382,353L383,352L383,350L384,349L384,347L385,346L385,344L386,343L386,341L387,340L387,338L388,337L388,335L389,334L389,332L390,331L394,317L385,310L381,308L374,302L370,300L363,294L359,292L352,286L348,284L341,278L337,276L330,270L326,268L319,262L318,262L307,254L308,252L309,253L414,253L416,251L416,248L418,245L418,242L419,241L419,239L420,238L420,236L421,235L421,233L422,232L422,230L423,229L423,227L424,226L424,224L425,223L425,221L426,220L426,218L427,217L427,215L430,208L430,205L431,204L431,202L432,201L432,199L433,198L433,196L434,195L434,193L435,192L435,190L436,189L436,187L437,186L437,184L438,183L438,181L439,180L439,178L442,171L442,168L443,167L447,153Z",
+            "colorId": 1,
+            "labelX": 711,
+            "labelY": 389,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-4-2",
+            "path": "M590,253L589,254L484,254L481,251L481,248L479,245L479,242L478,241L478,239L477,238L477,236L476,235L476,233L475,232L475,230L474,229L474,227L473,226L473,224L472,223L472,221L471,220L471,218L470,217L470,215L467,208L467,205L466,204L466,202L465,201L465,199L464,198L464,196L463,195L463,193L462,192L462,190L461,189L461,187L460,186L460,184L459,183L459,181L458,180L458,178L455,171L455,168L454,167L454,165L453,164L453,162L452,161L452,159L451,158L449,151L447,158L446,159L446,161L445,162L445,164L444,165L444,167L443,168L443,171L442,172L442,174L441,175L441,177L440,178L440,180L439,181L439,183L438,184L438,186L437,187L437,189L436,190L436,192L435,193L435,195L434,196L434,198L431,205L431,208L430,209L430,211L429,212L429,214L428,215L428,217L427,218L427,220L426,221L426,223L425,224L425,226L424,227L424,229L423,230L423,232L422,233L422,235L419,242L419,245L417,248L417,251L414,254L309,254L308,253L308,254L319,261L326,267L330,269L337,275L341,277L348,283L352,285L359,291L363,293L366,296L374,301L377,304L385,309L395,317L394,321L393,322L393,325L392,326L392,328L391,329L391,331L390,332L390,334L389,335L389,337L388,338L388,340L387,341L387,343L386,344L386,346L385,347L385,349L384,350L384,352L383,353L383,355L382,356L382,358L379,365L379,368L378,369L378,371L377,372L377,374L376,375L376,377L375,378L375,380L374,381L374,383L373,384L373,386L372,387L372,389L371,390L371,392L370,393L370,395L367,402L367,405L366,406L366,408L365,409L365,411L364,412L362,419L367,416L370,413L374,411L385,402L389,400L396,394L407,387L414,381L418,379L425,373L429,371L432,368L433,368L436,365L440,363L449,356L536,419L534,412L533,411L533,409L532,408L532,406L531,405L531,402L530,401L530,399L529,398L529,396L528,395L528,393L527,392L527,390L526,389L526,387L525,386L525,384L524,383L524,381L523,380L523,378L522,377L522,375L521,374L521,372L520,371L520,369L517,362L517,359L516,358L516,356L515,355L515,353L514,352L514,350L513,349L513,347L512,346L512,344L511,343L511,341L510,340L510,338L509,337L509,335L508,334L508,332L505,325L505,322L504,321L503,317L513,309L521,304L524,301L528,299L535,293L539,291L546,285L550,283L557,277L561,275L568,269L572,267L586,256L590,254Z M490,326L491,326L493,328L493,330L495,334L495,337L497,340L497,343L498,344L498,346L499,347L499,349L500,350L500,352L501,353L501,355L502,356L502,358L503,359L503,361L504,362L504,364L505,365L505,367L506,368L506,370L509,377L509,380L510,381L509,383L461,348L465,344L473,339L476,336L477,336Z M408,326L421,336L422,336L425,339L436,346L437,348L389,383L388,382L389,380L389,377L390,376L390,374L391,373L391,371L392,370L392,368L393,367L393,365L394,364L394,362L395,361L395,359L396,358L396,356L397,355L397,353L398,352L398,350L401,343L401,340L403,337L403,334L404,333L405,328L407,326Z M487,269L488,267L546,267L547,268L537,276L533,278L526,284L522,286L519,289L515,291L512,294L511,294L508,297L507,297L504,300L499,303L497,300L497,298L496,297L496,295L493,288L493,285L492,284L492,282L491,281L491,279L490,278L490,276Z M411,310L412,309L412,307L415,300L415,297L416,296L416,294L417,293L417,291L418,290L418,288L419,287L419,285L420,284L424,270L426,267L472,267L474,270L474,272L475,273L475,275L476,276L476,278L477,279L477,281L478,282L478,284L479,285L479,287L480,288L480,290L483,297L483,300L484,301L487,312L482,315L475,321L471,323L464,329L460,331L453,337L452,337L450,339L448,339L438,331L430,326L427,323L423,321L416,315L411,312Z M351,268L352,267L410,267L411,269L410,270L410,272L409,273L409,275L408,276L408,278L405,285L405,288L404,289L401,300L399,303Z M449,196L451,199L451,201L452,202L452,204L453,205L453,207L454,208L454,210L457,217L457,220L458,221L458,223L459,224L459,226L460,227L460,229L461,230L461,232L462,233L462,235L463,236L463,238L464,239L464,241L465,242L465,244L468,252L466,254L432,254L430,252L432,245L433,244L433,242L434,241L434,239L435,238L435,236L436,235L436,233L437,232L437,230L438,229L438,227L439,226L439,224L440,223L440,221L441,220L441,217L442,216L442,214L443,213L447,199Z",
+            "colorId": 4,
+            "labelX": 449,
+            "labelY": 185,
+            "fillRule": "evenodd",
+            "hitPath": "M407,143h84v84h-84Z"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "morocco-agadir",
+          "src": "./content/photos/morocco-agadir.jpg",
+          "caption": "אגאדיר — חוף האוקיינוס",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Agadir_beach_1989.jpg",
+          "creator": "JopkeB",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-ait-benhaddou",
+          "src": "./content/photos/morocco-ait-benhaddou.jpg",
+          "caption": "איית בן חדו — הכפר המבוצר",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Ait_Benhaddou_Pano.jpg",
+          "creator": "User:China_Crisis",
+          "license": "CC BY-SA 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-atlas",
+          "src": "./content/photos/morocco-atlas.jpg",
+          "caption": "הרי האטלס",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Arhbalou_High_Atlas_Al_Haouz_Morocco_Oct25_A7CR_08381.jpg",
+          "creator": "This Photo was taken by Timothy A. Gonsalves.  Feel free to use my photos, but please mention me as the author.  I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information.  Please contact",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-casablanca",
+          "src": "./content/photos/morocco-casablanca.jpg",
+          "caption": "קזבלנקה — העיר הגדולה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Casa_finance_city_6_(cropped).jpg",
+          "creator": "Chah.salah",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-chefchaouen",
+          "src": "./content/photos/morocco-chefchaouen.jpg",
+          "caption": "שפשאוון — העיר הכחולה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:2018_01_(Blue)_-_Chaouen.jpg",
+          "creator": "Fbrandao.1963",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-erg-chebbi",
+          "src": "./content/photos/morocco-erg-chebbi.jpg",
+          "caption": "דיונות ארג שבּי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Erg_Chebbi_sunset.jpg",
+          "creator": "Thomas Fuhrmann",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-essaouira",
+          "src": "./content/photos/morocco-essaouira.jpg",
+          "caption": "אסואירה — העיר והנמל",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Essaouira_Harbor_-_panoramio_(73).jpg",
+          "creator": "Patrick Nouhailler's…",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-fes",
+          "src": "./content/photos/morocco-fes.jpg",
+          "caption": "פס — העיר העתיקה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_Fes_el_Bali_Borj_Sud_Fez_morocco_-_panoramio.jpg",
+          "creator": "Hiroki Ogawa",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-hassan-mosque",
+          "src": "./content/photos/morocco-hassan-mosque.jpg",
+          "caption": "קזבלנקה — מסגד חסאן השני",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:The_Open_Area_of_Hassan_II_Mosque_-_Casablanca_Morocco.jpg",
+          "creator": "Ayman.mesa25",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-hassan-tower",
+          "src": "./content/photos/morocco-hassan-tower.jpg",
+          "caption": "רבאט — מגדל חסאן",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hassan_Tower_01.jpg",
+          "creator": "Bernard Gagnon",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-koutoubia",
+          "src": "./content/photos/morocco-koutoubia.jpg",
+          "caption": "מרקש — מסגד כותוביה",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_de_la_Koutoubia_-_marakesh.jpg",
+          "creator": "Baca12",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-majorelle",
+          "src": "./content/photos/morocco-majorelle.jpg",
+          "caption": "מרקש — גן מז׳ורל",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Le_jardin_des_majorelle_16.JPG",
+          "creator": "Viault",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-marrakech",
+          "src": "./content/photos/morocco-marrakech.jpg",
+          "caption": "מרקש — כיכר ג׳מע אל־פנא",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Jamaa_El_Fna,_Marrakesh,_Morocco,_20250124_1804_7017.jpg",
+          "creator": "Jakub Hałun",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-meknes",
+          "src": "./content/photos/morocco-meknes.jpg",
+          "caption": "מקנס — שער באב מנסור",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Bab_Mansour_gate.jpg",
+          "creator": "Jerzy Strzelecki",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-ouarzazate",
+          "src": "./content/photos/morocco-ouarzazate.jpg",
+          "caption": "וארזאזאת — קסבת תאורירת",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Ksar_of_Taourirt,_Ouarzazate,_Morocco_(%D9%82%D8%B5%D8%A8%D8%A9_%D8%AA%D8%A7%D9%88%D8%B1%D9%8A%D8%B1%D8%AA,_%E2%B5%9C%E2%B4%B0%E2%B5%A1%E2%B5%94%E2%B5%89%E2%B5%94%E2%B5%9C).jpg",
+          "creator": "Petar Milošević",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-oudayas",
+          "src": "./content/photos/morocco-oudayas.jpg",
+          "caption": "רבאט — קסבת האודאיה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Fortifications_of_Rabat,_Kasbah_Udayas_(%D8%A3%D8%B3%D9%88%D8%A7%D8%B1_%D8%A7%D9%84%D8%B1%D8%A8%D8%A7%D8%B7).jpg",
+          "creator": "Petar Milošević",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-ouzoud",
+          "src": "./content/photos/morocco-ouzoud.jpg",
+          "caption": "מפלי אוזוד",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Ouzoud_Falls,_Morocco,_20250126_1357_7470.jpg",
+          "creator": "Jakub Hałun",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-rabat",
+          "src": "./content/photos/morocco-rabat.jpg",
+          "caption": "רבאט — עיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_Bouregreg_Avenue_Al_Marsa_Rabat_Marokko.jpg",
+          "creator": "Herbert wie",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-tangier",
+          "src": "./content/photos/morocco-tangier.jpg",
+          "caption": "טנג׳יר — העיר והנמל",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Night_Panorama_Tangier_Marokko.jpg",
+          "creator": "Herbert wie",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "morocco-todra",
+          "src": "./content/photos/morocco-todra.jpg",
+          "caption": "קניון טודרה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Todra_Gorge.jpg",
+          "creator": "Jon Lean from Bristol, United Kingdom",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/morocco.mp3",
+        "title": "מסע במרוקו",
+        "inspiration": "קטע שנוצר ב-Suno עבור מרוקו",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "morocco-capital",
+          "question": "מהי עיר הבירה של מרוקו?",
+          "answers": [
+            "רבאט",
+            "קהיר",
+            "פריז",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "morocco-flag",
+          "question": "איזה סמל ירוק מופיע בדגל מרוקו?",
+          "answers": [
+            "לב",
+            "כוכב",
+            "עיגול",
+            "עץ"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "morocco-couscous",
+          "question": "איזה מאכל מוכר מזוהה עם מרוקו?",
+          "answers": [
+            "פיצה",
+            "קרואסון",
+            "קוסקוס",
+            "סושי"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "morocco-tea",
+          "question": "איזה תה מזוהה עם מרוקו?",
+          "answers": [
+            "תה עם קמומיל",
+            "תה עם זנגביל",
+            "תה עם פירות יער",
+            "תה עם נענע"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "morocco-blue-city",
+          "question": "איזו עיר במרוקו ידועה בבתיה הכחולים?",
+          "answers": [
+            "שפשאוון",
+            "פריז",
+            "רומא",
+            "ברלין"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "morocco-continent",
+          "question": "באיזו יבשת נמצאת מרוקו?",
+          "answers": [
+            "אוקיאניה",
+            "אפריקה",
+            "אסיה",
+            "אירופה"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "usa",
+      "name": "ארצות הברית",
+      "capital": "וושינגטון",
+      "continentId": "north-america",
+      "familiarity": "familiar",
+      "accent": "#688BA5",
+      "emoji": "🗽",
+      "flag": {
+        "viewBox": "0 0 900 474",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 474
+        },
+        "regions": [
+          {
+            "id": "color-1-1",
+            "path": "M0,437L0,473L899,473L899,437Z",
+            "colorId": 1,
+            "labelX": 747,
+            "labelY": 443,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-1-2",
+            "path": "M0,364L0,400L899,400L899,364Z",
+            "colorId": 1,
+            "labelX": 747,
+            "labelY": 382,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-1-3",
+            "path": "M0,291L0,327L899,327L899,291Z",
+            "colorId": 1,
+            "labelX": 747,
+            "labelY": 309,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-1-4",
+            "path": "M360,219L360,254L899,254L899,219Z",
+            "colorId": 1,
+            "labelX": 747,
+            "labelY": 237,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-1-5",
+            "path": "M360,146L360,181L899,181L899,146Z",
+            "colorId": 1,
+            "labelX": 747,
+            "labelY": 164,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-1-6",
+            "path": "M360,73L360,108L899,108L899,73Z",
+            "colorId": 1,
+            "labelX": 747,
+            "labelY": 91,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-1-7",
+            "path": "M360,0L360,36L899,36L899,0Z",
+            "colorId": 1,
+            "labelX": 747,
+            "labelY": 31,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-2-8",
+            "path": "M0,0L0,254L359,254L359,0Z M329,215L331,216L331,219L332,220L333,224L342,224L343,225L340,228L336,230L336,234L338,238L338,240L337,241L331,236L328,236L322,241L321,240L321,238L323,234L323,230L319,228L316,225L317,224L326,224L327,220L328,219L328,216Z M269,215L271,216L271,219L272,220L273,224L282,224L283,225L280,228L276,230L276,234L278,238L278,240L277,241L271,236L268,236L262,241L261,240L261,238L263,234L263,230L259,228L256,225L257,224L266,224L267,220L268,219L268,216Z M209,215L211,216L211,219L212,220L213,224L222,224L223,225L220,228L216,230L216,234L218,238L218,240L217,241L211,236L208,236L202,241L201,240L201,238L203,234L203,230L199,228L196,225L197,224L206,224L207,220L208,219L208,216Z M149,215L151,216L151,219L152,220L153,224L162,224L163,225L160,228L156,230L156,234L158,238L158,240L157,241L151,236L148,236L142,241L141,240L141,238L143,234L143,230L139,228L136,225L137,224L146,224L147,220L148,219L148,216Z M89,215L91,216L91,219L92,220L93,224L102,224L103,225L100,228L96,230L96,234L98,238L98,240L97,241L91,236L88,236L82,241L81,240L81,238L83,234L83,230L79,228L76,225L77,224L86,224L87,220L88,219L88,216Z M29,215L31,216L31,219L32,220L33,224L42,224L43,225L40,228L36,230L36,234L38,238L38,240L37,241L31,236L28,236L22,241L21,240L21,238L23,234L23,230L19,228L16,225L17,224L26,224L27,220L28,219L28,216Z M299,190L301,191L302,196L304,199L312,199L313,200L306,205L306,208L307,209L307,212L308,213L307,215L300,210L292,215L291,213L292,212L293,205L286,200L287,199L295,199L297,196L297,194Z M239,190L241,191L242,196L244,199L252,199L253,200L246,205L246,208L247,209L247,212L248,213L247,215L240,210L237,211L232,215L231,213L232,212L233,205L226,200L227,199L235,199L237,196L237,194Z M179,190L181,191L182,196L184,199L192,199L193,200L186,205L186,209L188,213L187,215L180,210L172,215L171,213L173,209L173,205L166,200L167,199L175,199L177,196L177,194Z M119,190L121,191L122,196L124,199L132,199L133,200L126,205L126,208L127,209L127,212L128,213L127,215L120,210L112,215L111,213L112,212L113,205L106,200L107,199L115,199L117,196L117,194Z M59,190L61,191L62,196L64,199L72,199L73,200L66,205L66,208L67,209L67,212L68,213L67,215L60,210L57,211L52,215L51,213L52,212L53,205L46,200L47,199L55,199L57,196L57,194Z M329,164L331,165L331,168L332,169L333,173L342,173L343,174L340,177L335,180L338,187L338,189L337,190L330,184L325,187L322,190L321,189L321,187L324,180L319,177L316,174L317,173L326,173L327,171L327,168Z M269,164L271,165L271,168L272,169L273,173L282,173L283,174L280,177L276,179L276,183L278,187L278,189L277,190L271,185L268,185L262,190L261,189L261,187L264,180L259,177L256,174L257,173L266,173L267,169L268,168L268,165Z M209,164L211,165L213,173L222,173L223,174L220,177L215,180L218,187L218,189L217,190L211,185L208,185L202,190L201,189L201,187L204,180L199,177L196,174L197,173L206,173L207,169L208,168L208,165Z M149,164L151,165L151,168L152,169L153,173L162,173L163,174L160,177L155,180L158,187L158,189L157,190L150,184L145,187L142,190L141,189L141,187L144,180L139,177L136,174L137,173L146,173L147,171L147,168Z M89,164L91,165L91,168L92,169L93,173L102,173L103,174L100,177L96,179L96,183L98,187L98,189L97,190L91,185L88,185L82,190L81,189L81,187L84,180L79,177L76,174L77,173L86,173L87,169L88,168L88,165Z M29,164L31,165L33,173L42,173L43,174L40,177L35,180L38,187L38,189L37,190L31,185L28,185L22,190L21,189L21,187L24,180L19,177L16,174L17,173L26,173L27,169L28,168L28,165Z M299,139L301,140L302,145L304,148L312,148L313,149L306,154L306,157L307,158L307,161L308,162L307,164L300,159L292,164L291,162L292,161L292,158L294,155L291,152L286,149L287,148L295,148L297,145L297,143Z M239,139L241,140L242,145L244,148L252,148L253,149L248,152L245,155L248,161L248,163L247,164L240,159L237,160L232,164L231,162L232,161L233,154L226,149L227,148L235,148L237,145L237,143Z M179,139L181,140L182,145L184,148L192,148L193,149L186,154L186,158L188,161L188,163L187,164L180,159L177,160L172,164L171,163L171,161L173,158L173,154L166,149L167,148L175,148L177,145L177,143Z M119,139L121,140L122,145L124,148L132,148L133,149L126,154L126,157L127,158L127,161L128,162L127,164L120,159L112,164L111,162L112,161L112,158L114,155L111,152L106,149L107,148L115,148L117,145L117,143Z M59,139L61,140L62,145L64,148L72,148L73,149L68,152L65,155L68,161L68,163L67,164L60,159L57,160L52,164L51,162L52,161L53,154L46,149L47,148L55,148L57,145L57,143Z M329,113L331,114L331,117L332,118L333,122L342,122L343,123L340,126L335,129L338,136L338,138L337,139L330,133L325,136L322,139L321,138L321,136L323,132L323,128L322,128L316,123L317,122L326,122L327,120L327,117Z M269,113L271,114L271,117L272,118L273,122L282,122L283,123L280,126L276,128L276,132L278,136L278,138L277,139L271,134L268,134L262,139L261,138L261,136L263,132L263,128L262,128L256,123L257,122L266,122L267,118L268,117L268,114Z M209,113L211,114L213,122L222,122L223,123L220,126L216,128L216,132L218,136L218,138L217,139L211,134L208,134L202,139L201,138L201,136L204,129L199,126L196,123L197,122L206,122L207,118L208,117L208,114Z M149,113L151,114L151,117L152,118L153,122L162,122L163,123L160,126L155,129L158,136L158,138L157,139L150,133L145,136L142,139L141,138L141,136L143,132L143,128L142,128L136,123L137,122L146,122L147,120L147,117Z M89,113L91,114L91,117L92,118L93,122L102,122L103,123L100,126L96,128L96,132L98,136L98,138L97,139L91,134L88,134L82,139L81,138L81,136L83,132L83,128L82,128L76,123L77,122L86,122L87,118L88,117L88,114Z M29,113L31,114L33,122L42,122L43,123L40,126L36,128L36,132L38,136L38,138L37,139L31,134L28,134L22,139L21,138L21,136L24,129L19,126L16,123L17,122L26,122L27,118L28,117L28,114Z M299,88L301,89L302,94L304,97L311,97L312,96L313,97L312,99L311,99L306,103L306,106L307,107L307,110L308,111L307,113L300,108L297,109L292,113L291,111L292,110L293,103L286,98L287,97L295,97L297,94L297,92Z M226,97L227,96L228,97L235,97L237,94L238,89L240,88L241,89L242,94L244,97L251,97L252,96L253,98L246,103L246,106L247,107L247,110L248,111L247,113L240,108L237,109L232,113L231,111L232,110L233,103L231,101L227,99Z M179,88L181,89L182,94L184,97L191,97L192,96L193,97L192,99L191,99L186,103L186,106L188,110L188,112L187,113L180,108L177,109L172,113L171,112L171,110L173,106L173,103L166,98L167,97L175,97L177,94L177,92Z M119,88L121,89L122,94L124,97L131,97L132,96L133,97L132,99L131,99L126,103L126,106L127,107L127,110L128,111L127,113L120,108L117,109L112,113L111,111L112,110L113,103L106,98L107,97L115,97L117,94L117,92Z M46,97L47,96L48,97L55,97L57,94L58,89L60,88L61,89L62,94L64,97L71,97L72,96L73,98L66,103L66,106L67,107L67,110L68,111L67,113L60,108L57,109L52,113L51,111L52,110L53,103L51,101L47,99Z M329,62L331,63L331,66L332,67L333,71L342,71L343,72L340,75L335,78L338,85L338,87L337,88L330,82L329,82L322,88L321,87L321,85L324,78L316,72L317,71L326,71L327,69L327,66Z M269,62L271,63L271,66L272,67L273,71L282,71L283,72L275,78L278,85L278,87L277,88L270,82L265,85L262,88L261,87L261,85L264,78L256,72L257,71L266,71L267,67L268,66L268,63Z M209,62L211,63L213,71L222,71L223,72L215,78L218,85L218,87L217,88L210,82L209,82L202,88L201,87L201,85L204,78L196,72L197,71L206,71L207,67L208,66L208,63Z M149,62L151,63L151,66L152,67L153,71L162,71L163,72L160,75L155,78L158,85L158,87L157,88L150,82L149,82L142,88L141,87L141,85L144,78L136,72L137,71L146,71L147,69L147,66Z M89,62L91,63L91,66L92,67L93,71L102,71L103,72L95,78L98,85L98,87L97,88L90,82L85,85L82,88L81,87L81,85L84,78L76,72L77,71L86,71L87,67L88,66L88,63Z M29,62L31,63L33,71L42,71L43,72L35,78L38,85L38,87L37,88L30,82L29,82L22,88L21,87L21,85L24,78L16,72L17,71L26,71L27,67L28,66L28,63Z M286,46L287,45L296,45L298,38L300,37L301,38L303,45L312,45L313,47L306,52L306,55L307,56L307,59L308,60L307,62L300,57L297,58L292,62L291,61L291,59L293,55L293,52L291,50L287,48Z M226,46L227,45L236,45L238,38L240,37L241,38L243,45L252,45L253,47L246,52L246,55L248,59L248,61L247,62L240,57L237,58L232,62L231,60L232,59L233,52L231,50L227,48Z M166,46L167,45L176,45L178,38L180,37L181,38L183,45L192,45L193,47L186,52L186,55L188,59L188,61L187,62L180,57L177,58L172,62L171,61L171,59L173,55L173,52L171,50L167,48Z M106,46L107,45L116,45L118,38L120,37L121,38L123,45L132,45L133,47L126,52L126,55L127,56L127,59L128,60L127,62L120,57L117,58L112,62L111,61L111,59L113,55L113,52L111,50L107,48Z M46,46L47,45L56,45L58,38L60,37L61,38L63,45L72,45L73,47L66,52L66,55L68,59L68,61L67,62L60,57L57,58L52,62L51,60L52,59L53,52L51,50L47,48Z M329,11L331,12L331,15L332,16L333,20L342,20L343,21L340,24L335,27L338,34L338,36L337,37L330,31L329,31L322,37L321,36L321,34L324,27L316,21L317,20L326,20L327,18L327,15Z M269,11L271,12L271,15L272,16L273,20L282,20L283,21L277,26L276,26L276,30L278,34L278,36L277,37L270,31L269,31L262,37L261,36L261,34L263,30L263,26L262,26L256,21L257,20L266,20L267,16L268,15L268,12Z M209,11L211,12L213,20L222,20L223,21L215,27L218,34L218,36L217,37L210,31L209,31L202,37L201,36L201,34L204,27L196,21L197,20L206,20L207,16L208,15L208,12Z M149,11L151,12L151,15L152,16L153,20L162,20L163,21L160,24L155,27L158,34L158,36L157,37L150,31L149,31L142,37L141,36L141,34L144,27L136,21L137,20L146,20L147,18L147,15Z M89,11L91,12L91,15L92,16L93,20L102,20L103,21L97,26L96,26L96,30L98,34L98,36L97,37L90,31L89,31L82,37L81,36L81,34L83,30L83,26L82,26L76,21L77,20L86,20L87,16L88,15L88,12Z M29,11L31,12L33,20L42,20L43,21L35,27L38,34L38,36L37,37L30,31L29,31L22,37L21,36L21,34L24,27L16,21L17,20L26,20L27,16L28,15L28,12Z",
+            "colorId": 2,
+            "labelX": 180,
+            "labelY": 235,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-9",
+            "path": "M0,401L0,436L899,436L899,401Z",
+            "colorId": 3,
+            "labelX": 558,
+            "labelY": 419,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-10",
+            "path": "M0,328L0,363L899,363L899,328Z",
+            "colorId": 3,
+            "labelX": 558,
+            "labelY": 346,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-11",
+            "path": "M0,255L0,290L899,290L899,255Z",
+            "colorId": 3,
+            "labelX": 558,
+            "labelY": 273,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-12",
+            "path": "M360,182L360,218L899,218L899,182Z",
+            "colorId": 3,
+            "labelX": 558,
+            "labelY": 200,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-13",
+            "path": "M360,109L360,145L899,145L899,109Z",
+            "colorId": 3,
+            "labelX": 558,
+            "labelY": 127,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-14",
+            "path": "M360,37L360,72L899,72L899,37Z",
+            "colorId": 3,
+            "labelX": 558,
+            "labelY": 55,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-details",
+            "path": "M329,216L329,219L326,225L317,225L324,230L324,234L323,235L322,240L328,235L331,235L337,240L337,238L335,234L335,230L342,225L333,225L331,222L330,216Z M269,216L269,219L266,225L257,225L264,230L264,234L263,235L262,240L268,235L271,235L277,240L277,238L275,234L275,230L282,225L273,225L271,222L270,216Z M209,216L209,219L206,225L197,225L204,230L204,234L203,235L202,240L208,235L211,235L217,240L217,238L215,234L215,230L222,225L213,225L211,222L210,216Z M149,216L149,219L146,225L137,225L144,230L144,234L143,235L142,240L148,235L151,235L157,240L157,238L155,234L155,230L162,225L153,225L151,222L150,216Z M89,216L89,219L86,225L77,225L84,230L84,234L83,235L82,240L88,235L91,235L97,240L97,238L95,234L95,230L102,225L93,225L91,222L90,216Z M29,216L29,219L26,225L17,225L24,230L24,234L23,235L22,240L28,235L31,235L37,240L37,238L35,234L35,230L42,225L33,225L31,222L30,216Z M287,200L291,202L294,205L294,208L293,209L293,212L292,214L299,209L302,210L307,214L306,212L306,209L305,208L305,205L311,200L312,200L304,200L301,196L300,191L299,191L298,196L295,200Z M227,200L231,202L234,205L234,208L233,209L233,212L232,214L239,209L242,210L247,214L246,212L246,209L245,208L245,205L251,200L252,200L244,200L241,196L240,191L239,191L238,196L235,200Z M167,200L168,200L174,205L174,209L173,210L172,214L179,209L182,210L187,214L186,210L185,209L185,205L191,200L192,200L184,200L181,196L180,191L179,191L178,196L175,200Z M107,200L111,202L114,205L114,208L113,209L113,212L112,214L119,209L122,210L127,214L126,212L126,209L125,208L125,205L131,200L132,200L124,200L121,196L120,191L119,191L118,196L115,200Z M47,200L51,202L54,205L54,208L53,209L53,212L52,214L59,209L62,210L67,214L66,212L66,209L65,208L65,205L71,200L72,200L64,200L61,196L60,191L59,191L58,196L55,200Z M329,165L328,171L326,174L317,174L325,180L324,181L322,189L325,186L330,183L337,189L337,187L334,180L342,174L333,174L331,171L330,165Z M269,165L269,168L266,174L257,174L265,180L264,181L262,189L268,184L271,184L277,189L277,187L275,183L275,179L282,174L273,174L271,171L270,165Z M209,165L209,168L206,174L197,174L205,180L204,181L202,189L208,184L211,184L217,189L217,187L214,180L222,174L213,174L211,171L210,165Z M149,165L148,171L146,174L137,174L145,180L144,181L142,189L145,186L150,183L157,189L157,187L154,180L162,174L153,174L151,171L150,165Z M89,165L89,168L86,174L77,174L85,180L84,181L82,189L88,184L91,184L97,189L97,187L95,183L95,179L102,174L93,174L91,171L90,165Z M29,165L29,168L26,174L17,174L25,180L24,181L22,189L28,184L31,184L37,189L37,187L34,180L42,174L33,174L31,171L30,165Z M287,149L291,151L295,155L293,158L293,161L292,163L299,158L302,159L307,163L306,161L306,158L305,157L305,154L308,151L312,149L304,149L301,145L300,140L299,140L298,145L295,149Z M227,149L231,151L234,154L234,157L233,158L233,161L232,163L239,158L242,159L247,163L246,158L244,155L248,151L252,149L244,149L241,145L240,140L239,140L238,145L235,149Z M167,149L171,151L174,154L174,158L172,161L172,163L179,158L182,159L187,163L187,161L185,158L185,154L188,151L192,149L184,149L181,145L180,140L179,140L178,145L175,149Z M107,149L111,151L115,155L113,158L113,161L112,163L119,158L122,159L127,163L126,161L126,158L125,157L125,154L128,151L132,149L124,149L121,145L120,140L119,140L118,145L115,149Z M47,149L51,151L54,154L54,157L53,158L53,161L52,163L59,158L62,159L67,163L66,158L64,155L68,151L72,149L64,149L61,145L60,140L59,140L58,145L55,149Z M329,114L328,120L326,123L317,123L324,128L324,132L323,133L322,138L325,135L330,132L337,138L337,136L334,129L342,123L333,123L331,120L330,114Z M269,114L269,117L266,123L257,123L264,128L264,132L263,133L262,138L268,133L271,133L277,138L277,136L275,132L275,128L282,123L273,123L271,120L270,114Z M209,114L209,117L206,123L197,123L205,129L204,130L202,138L208,133L211,133L217,138L217,136L215,132L215,128L222,123L213,123L211,120L210,114Z M149,114L148,120L146,123L137,123L144,128L144,132L143,133L142,138L145,135L150,132L157,138L157,136L154,129L162,123L153,123L151,120L150,114Z M89,114L89,117L86,123L77,123L84,128L84,132L83,133L82,138L88,133L91,133L97,138L97,136L95,132L95,128L102,123L93,123L91,120L90,114Z M29,114L29,117L26,123L17,123L25,129L24,130L22,138L28,133L31,133L37,138L37,136L35,132L35,128L42,123L33,123L31,120L30,114Z M287,98L291,100L294,103L294,106L293,107L293,110L292,112L299,107L302,108L307,112L306,110L306,107L305,106L305,103L308,100L312,98L312,97L311,98L304,98L301,94L300,89L299,89L298,94L295,98Z M227,97L227,98L231,100L234,103L234,106L233,107L233,110L232,112L239,107L242,108L247,112L246,110L246,107L245,106L245,103L248,100L252,98L252,97L251,98L244,98L241,94L240,89L239,89L238,94L235,98L228,98Z M167,98L171,100L174,103L174,106L173,107L172,112L179,107L182,108L187,112L187,110L185,106L185,103L188,100L192,98L192,97L191,98L184,98L181,94L180,89L179,89L178,94L175,98Z M107,98L111,100L114,103L114,106L113,107L113,110L112,112L119,107L122,108L127,112L126,110L126,107L125,106L125,103L128,100L132,98L132,97L131,98L124,98L121,94L120,89L119,89L118,94L115,98Z M47,97L47,98L51,100L54,103L54,106L53,107L53,110L52,112L59,107L62,108L67,112L66,110L66,107L65,106L65,103L68,100L72,98L72,97L71,98L64,98L61,94L60,89L59,89L58,94L55,98L48,98Z M329,63L328,69L326,72L317,72L325,78L324,79L322,87L329,81L330,81L337,87L337,85L334,78L342,72L333,72L331,69L330,63Z M269,63L269,66L266,72L257,72L265,78L264,79L262,87L265,84L270,81L277,87L277,85L274,78L282,72L273,72L271,69L270,63Z M209,63L209,66L206,72L197,72L205,78L204,79L202,87L209,81L210,81L217,87L217,85L214,78L222,72L213,72L211,69L210,63Z M149,63L148,69L146,72L137,72L145,78L144,79L142,87L149,81L150,81L157,87L157,85L154,78L162,72L153,72L151,69L150,63Z M89,63L89,66L86,72L77,72L85,78L84,79L82,87L85,84L90,81L97,87L97,85L94,78L102,72L93,72L91,69L90,63Z M29,63L29,66L26,72L17,72L25,78L24,79L22,87L29,81L30,81L37,87L37,85L34,78L42,72L33,72L31,69L30,63Z M287,46L287,47L291,49L294,52L294,55L293,56L292,61L299,56L302,57L307,61L306,59L306,56L305,55L305,52L308,49L312,47L312,46L303,46L301,43L300,38L299,38L298,43L296,46Z M227,46L227,47L231,49L234,52L234,55L233,56L233,59L232,61L239,56L242,57L247,61L247,59L245,55L245,52L248,49L252,47L252,46L243,46L241,43L240,38L239,38L238,43L236,46Z M167,46L167,47L171,49L174,52L174,55L173,56L172,61L179,56L182,57L187,61L187,59L185,55L185,52L188,49L192,47L192,46L183,46L181,43L180,38L179,38L178,43L176,46Z M107,46L107,47L111,49L114,52L114,55L113,56L112,61L119,56L122,57L127,61L126,59L126,56L125,55L125,52L128,49L132,47L132,46L123,46L121,43L120,38L119,38L118,43L116,46Z M47,46L47,47L51,49L54,52L54,55L53,56L53,59L52,61L59,56L62,57L67,61L67,59L65,55L65,52L68,49L72,47L72,46L63,46L61,43L60,38L59,38L58,43L56,46Z M329,12L328,18L326,21L317,21L325,27L324,28L322,36L329,30L330,30L337,36L337,34L334,27L342,21L333,21L331,18L330,12Z M269,12L269,15L266,21L257,21L264,26L264,30L263,31L262,36L269,30L270,30L277,36L277,34L275,30L275,26L282,21L273,21L271,18L270,12Z M209,12L209,15L206,21L197,21L205,27L204,28L202,36L209,30L210,30L217,36L217,34L214,27L222,21L213,21L211,18L210,12Z M149,12L148,18L146,21L137,21L145,27L144,28L142,36L149,30L150,30L157,36L157,34L154,27L162,21L153,21L151,18L150,12Z M89,12L89,15L86,21L77,21L84,26L84,30L83,31L82,36L89,30L90,30L97,36L97,34L95,30L95,26L102,21L93,21L91,18L90,12Z M29,12L29,15L26,21L17,21L25,27L24,28L22,36L29,30L30,30L37,36L37,34L34,27L42,21L33,21L31,18L30,12Z",
+            "colorId": 3,
+            "labelX": 179,
+            "labelY": 126,
+            "fillRule": "evenodd",
+            "hitPath": "M137,84h84v84h-84Z"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "usa-alaska",
+          "src": "./content/photos/usa-alaska.jpg",
+          "caption": "אלסקה — הר דנאלי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Parque_nacional_y_reserva_Denali,_Alaska,_Estados_Unidos,_2017-08-30,_DD_72.jpg",
+          "creator": "Diego Delso",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-boston",
+          "src": "./content/photos/usa-boston.jpg",
+          "caption": "בוסטון — העיר והנמל",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:2017_Boston_skyline_from_Boston_Harbor_5_.jpg",
+          "creator": "Beyond My Ken",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-brooklyn",
+          "src": "./content/photos/usa-brooklyn.jpg",
+          "caption": "ניו יורק — גשר ברוקלין",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Brooklyn_Bridge_and_the_Lower_Manhattan_skyline_from_Pebble_Beach,_New_York.jpg",
+          "creator": "Christian David",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-chicago",
+          "src": "./content/photos/usa-chicago.jpg",
+          "caption": "שיקגו — העיר על שפת האגם",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Chicago_Skyline_Sunrise_March_15_2026_-_02.jpg",
+          "creator": "NorbertNagel",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-grand-canyon",
+          "src": "./content/photos/usa-grand-canyon.jpg",
+          "caption": "הגרנד קניון",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Hopi_Point_with_rainbow_2013.jpg",
+          "creator": "Tuxyso",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-hawaii",
+          "src": "./content/photos/usa-hawaii.jpg",
+          "caption": "הוואי — חוף נא פאלי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Coast_of_Kauai,_Hawaii.jpg",
+          "creator": "Paul Bica",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-liberty",
+          "src": "./content/photos/usa-liberty.jpg",
+          "caption": "ניו יורק — פסל החירות",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Statue_of_Liberty,_NY.jpg",
+          "creator": "William Warby",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-lincoln",
+          "src": "./content/photos/usa-lincoln.jpg",
+          "caption": "וושינגטון — אנדרטת לינקולן",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lincoln_Memorial_Reflecting_Pool_20240601.jpg",
+          "creator": "颐园居",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-los-angeles",
+          "src": "./content/photos/usa-los-angeles.jpg",
+          "caption": "לוס אנג׳לס — נוף העיר",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Los_Angeles,_Winter_2016.jpg",
+          "creator": "salewskia",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-miami",
+          "src": "./content/photos/usa-miami.jpg",
+          "caption": "מיאמי — העיר והמפרץ",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Miami_-_City_Skyline_from_Biscayne_Bay_3.jpg",
+          "creator": "P. Hughes",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-monument-valley",
+          "src": "./content/photos/usa-monument-valley.jpg",
+          "caption": "עמק המונומנטים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Forrest_Gump_Point_Monument_Valley_November_2018_001.jpg",
+          "creator": "King of Hearts",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-new-york",
+          "src": "./content/photos/usa-new-york.jpg",
+          "caption": "ניו יורק — העיר הגדולה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_from_Jersey_City_September_2020_panorama.jpg",
+          "creator": "King of Hearts",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-niagara",
+          "src": "./content/photos/usa-niagara.jpg",
+          "caption": "מפלי הניאגרה — הצד האמריקאי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:American_and_Bridal_Veil_Falls_winter.jpg",
+          "creator": "The Cosmonaut, editing by Wilfredor",
+          "license": "CC BY-SA 2.5 ca",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-rushmore",
+          "src": "./content/photos/usa-rushmore.jpg",
+          "caption": "הר ראשמור",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Dean_Franklin_-_06.04.03_Mount_Rushmore_Monument_(by-sa).jpg",
+          "creator": "Dean Franklin",
+          "license": "Public domain",
+          "licenseURL": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-san-francisco",
+          "src": "./content/photos/usa-san-francisco.jpg",
+          "caption": "סן פרנסיסקו — גשר שער הזהב",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Golden_Gate_Bridge_and_San_Francisco_skyline_from_Hawk_Hill_at_Blue_Hour_dllu.jpg",
+          "creator": "Daniel L. Lu (user:dllu)\n\n\nCamera location37° 49′ 39.52″ N, 122° 29′ 56.17″ W View this and other nearby images on: OpenStreetMap 37.827644; -122.498935",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-seattle",
+          "src": "./content/photos/usa-seattle.jpg",
+          "caption": "סיאטל — נוף העיר",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Seattle_from_Space_Needle_June_2018_003.jpg",
+          "creator": "King of Hearts",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-washington-capitol",
+          "src": "./content/photos/usa-washington-capitol.jpg",
+          "caption": "וושינגטון — הקפיטול בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:US_Capitol_west_side.JPG",
+          "creator": "Martin Falbisoner",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-white-house",
+          "src": "./content/photos/usa-white-house.jpg",
+          "caption": "וושינגטון — הבית הלבן",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:White_House_lawn.jpg",
+          "creator": "Daniel Schwen",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-yellowstone",
+          "src": "./content/photos/usa-yellowstone.jpg",
+          "caption": "ילוסטון — המעיין הצבעוני",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Yellowstone_National_Park_(WY,_USA),_Grand_Prismatic_Spring_--_2022_--_2514.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "usa-yosemite",
+          "src": "./content/photos/usa-yosemite.jpg",
+          "caption": "עמק יוסמיטי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Valley_View_Yosemite_August_2013_002.jpg",
+          "creator": "King of Hearts",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/usa.mp3",
+        "title": "מסע בארצות הברית",
+        "inspiration": "קטע שנוצר ב-Suno עבור ארצות הברית",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "usa-capital",
+          "question": "מהי עיר הבירה של ארצות הברית?",
+          "answers": [
+            "וושינגטון",
+            "פריז",
+            "רומא",
+            "לונדון"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "usa-flag",
+          "question": "אילו צורות מופיעות בדגל ארצות הברית?",
+          "answers": [
+            "עצים והרים",
+            "כוכבים ופסים",
+            "עלים ופרחים",
+            "עיגולים וריבועים"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "usa-liberty",
+          "question": "באיזו עיר נמצא פסל החירות?",
+          "answers": [
+            "רומא",
+            "קהיר",
+            "ניו יורק",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "usa-white-house",
+          "question": "מהו הבית הלבן בארצות הברית?",
+          "answers": [
+            "תחנת רכבת",
+            "מוזיאון לצעצועים",
+            "בית אופרה",
+            "ביתו הרשמי של הנשיא"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "usa-canyon",
+          "question": "איזה קניון מפורסם נמצא בארצות הברית?",
+          "answers": [
+            "הגרנד קניון",
+            "קניון ורדון",
+            "קניון טודרה",
+            "קניון עין עבדת"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "usa-continent",
+          "question": "באיזו יבשת נמצאת ארצות הברית?",
+          "answers": [
+            "אירופה",
+            "צפון אמריקה",
+            "דרום אמריקה",
+            "אפריקה"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "canada",
+      "name": "קנדה",
+      "capital": "אוטווה",
+      "continentId": "north-america",
+      "familiarity": "familiar",
+      "accent": "#AE7771",
+      "emoji": "🍁",
+      "flag": {
+        "viewBox": "0 0 900 450",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 450
+        },
+        "regions": [
+          {
+            "id": "color-1-1",
+            "path": "M449,38L419,98L416,101L412,102L406,99L404,97L399,95L392,90L387,88L385,86L380,84L380,88L381,89L381,93L382,94L382,99L383,100L383,104L384,105L384,109L385,110L385,114L386,115L386,119L387,120L387,124L388,125L388,129L389,130L389,135L390,136L390,140L391,141L391,145L392,146L392,150L393,151L393,155L394,156L394,161L395,162L395,165L396,166L396,171L397,172L397,176L398,177L398,181L399,182L398,186L394,189L391,189L389,188L349,145L348,145L346,149L346,151L343,156L343,158L341,161L341,163L338,169L335,171L328,171L327,170L319,169L318,168L314,168L313,167L305,166L304,165L301,165L300,164L295,164L294,163L291,163L290,162L281,161L282,162L282,165L283,166L283,168L284,169L284,171L285,172L285,174L286,175L286,177L287,178L287,180L288,181L288,183L289,184L289,186L290,187L290,189L291,190L291,192L294,199L294,202L295,203L299,217L296,221L282,228L280,228L276,230L276,231L289,242L290,242L295,247L296,247L300,251L301,251L305,255L306,255L310,259L311,259L316,264L317,264L321,268L322,268L326,272L327,272L332,277L333,277L337,281L338,281L342,285L343,285L347,289L348,289L353,294L354,294L358,298L359,298L365,304L366,308L365,309L364,314L362,317L360,325L358,328L355,339L356,338L367,337L368,336L372,336L373,335L378,335L379,334L383,334L384,333L395,332L396,331L400,331L401,330L407,330L408,329L418,328L419,327L429,326L430,325L435,325L436,324L440,325L443,327L443,328L445,330L445,333L446,334L445,335L445,352L444,353L443,391L442,392L442,408L441,409L441,414L442,415L457,415L458,414L458,410L457,409L456,372L455,371L455,353L454,352L454,335L453,334L454,330L456,328L456,327L459,325L463,324L464,325L475,326L476,327L480,327L481,328L486,328L487,329L498,330L499,331L503,331L504,332L515,333L516,334L520,334L521,335L526,335L527,336L538,337L539,338L543,338L544,339L541,328L539,325L537,317L535,314L535,312L533,308L534,304L540,298L541,298L556,285L557,285L561,281L562,281L566,277L567,277L572,272L573,272L577,268L578,268L582,264L583,264L587,260L588,260L593,255L594,255L598,251L599,251L603,247L604,247L608,243L609,243L614,238L615,238L619,234L620,234L623,231L623,230L619,228L617,228L603,221L600,217L600,215L601,214L601,212L602,211L602,209L605,202L605,199L606,198L606,196L607,195L607,193L608,192L608,190L609,189L609,187L610,186L610,184L611,183L611,181L612,180L612,178L613,177L613,175L614,174L614,172L617,165L617,162L618,161L614,161L613,162L609,162L608,163L605,163L604,164L600,164L599,165L590,166L589,167L581,168L580,169L576,169L575,170L572,170L571,171L564,171L561,169L558,163L558,161L556,158L556,156L553,151L553,149L551,145L550,145L510,188L508,189L505,189L501,186L500,182L501,181L501,177L502,176L502,172L503,171L503,166L504,165L504,162L505,161L505,156L506,155L506,151L507,150L507,146L508,145L508,141L509,140L509,136L510,135L510,130L511,129L511,125L512,124L512,120L513,119L513,115L514,114L514,110L515,109L515,105L516,104L516,100L517,99L517,94L518,93L519,84L514,86L507,91L502,93L500,95L495,97L493,99L487,102L483,101L480,98L460,57L458,55L450,38Z",
+            "colorId": 1,
+            "labelX": 450,
+            "labelY": 245,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-1-2",
+            "path": "M675,0L675,449L899,449L899,0Z",
+            "colorId": 1,
+            "labelX": 787,
+            "labelY": 225,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-1-3",
+            "path": "M0,0L0,449L224,449L224,0Z",
+            "colorId": 1,
+            "labelX": 112,
+            "labelY": 225,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-4",
+            "path": "M225,0L225,449L674,449L674,0Z M449,37L451,38L481,98L483,100L487,101L493,98L495,96L500,94L502,92L507,90L514,85L518,83L520,84L520,88L519,89L519,93L518,94L518,99L517,100L517,104L516,105L516,109L515,110L515,114L514,115L514,119L513,120L513,124L512,125L512,129L511,130L511,135L510,136L510,140L509,141L509,145L508,146L508,150L507,151L507,155L506,156L506,161L505,162L505,165L504,166L504,171L503,172L503,176L502,177L502,181L501,182L502,186L505,188L508,188L510,187L550,144L552,145L554,149L554,151L557,156L557,158L559,161L559,163L562,169L564,170L571,170L572,169L580,168L581,167L585,167L586,166L589,166L590,165L594,165L595,164L604,163L605,162L608,162L609,161L618,160L619,161L618,162L618,165L617,166L617,168L616,169L616,171L615,172L615,174L614,175L614,177L613,178L613,180L612,181L612,183L611,184L611,186L610,187L610,189L609,190L609,192L606,199L606,202L605,203L601,217L603,220L617,227L619,227L624,230L624,231L620,235L619,235L609,244L608,244L604,248L603,248L599,252L598,252L594,256L593,256L588,261L587,261L583,265L582,265L578,269L577,269L573,273L572,273L567,278L566,278L562,282L561,282L557,286L556,286L535,304L534,308L535,309L536,314L538,317L540,325L542,328L542,330L545,337L545,339L544,340L543,339L539,339L538,338L533,338L532,337L521,336L520,335L516,335L515,334L504,333L503,332L499,332L498,331L493,331L492,330L481,329L480,328L470,327L469,326L464,326L463,325L457,327L454,333L455,335L455,352L456,353L456,371L457,372L458,409L459,410L459,414L457,416L442,416L440,414L440,409L441,408L441,392L442,391L443,353L444,352L444,335L445,334L444,333L444,330L442,328L442,327L436,325L435,326L424,327L423,328L413,329L412,330L408,330L407,331L401,331L400,332L396,332L395,333L384,334L383,335L373,336L372,337L362,338L361,339L356,339L355,340L354,339L354,337L355,336L357,328L359,325L361,317L363,314L363,312L365,308L364,304L359,299L358,299L354,295L353,295L348,290L347,290L343,286L342,286L338,282L337,282L333,278L332,278L327,273L326,273L322,269L321,269L317,265L316,265L311,260L310,260L306,256L305,256L301,252L300,252L296,248L295,248L290,243L289,243L275,231L276,229L280,227L282,227L296,220L298,217L298,215L297,214L297,212L296,211L296,209L293,202L293,199L292,198L292,196L291,195L291,193L290,192L290,190L289,189L289,187L288,186L288,184L287,183L287,181L286,180L286,178L285,177L285,175L284,174L284,172L281,165L281,162L280,161L281,160L290,161L291,162L294,162L295,163L300,163L301,164L309,165L310,166L318,167L319,168L323,168L324,169L327,169L328,170L335,170L337,169L340,163L340,161L342,158L342,156L345,151L345,149L347,145L349,144L389,187L391,188L394,188L397,186L398,182L397,181L397,177L396,176L396,172L395,171L395,166L394,165L394,162L393,161L393,156L392,155L392,151L391,150L391,146L390,145L390,141L389,140L389,136L388,135L388,130L387,129L387,125L386,124L386,120L385,119L385,115L384,114L384,110L383,109L383,105L382,104L382,100L381,99L381,94L380,93L379,84L381,83L385,85L387,87L392,89L394,91L397,92L399,94L404,96L406,98L412,101L416,100L418,98L438,57L440,55Z",
+            "colorId": 3,
+            "labelX": 596,
+            "labelY": 81,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "canada-banff",
+          "src": "./content/photos/canada-banff.jpg",
+          "caption": "באנף — העיירה וההרים",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Banff_at_Night_from_Sulphur_Mountain_(15952057279).jpg",
+          "creator": "Wilson Hui from Calgary, Canada",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-calgary",
+          "src": "./content/photos/canada-calgary.jpg",
+          "caption": "קלגרי — העיר והנהר",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:A_berm_is_built_along_the_Bow_river_near_downtown_Calgary,_Alberta,_Canada_in_2022.jpg",
+          "creator": "Dwayne Reilander",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-churchill",
+          "src": "./content/photos/canada-churchill.jpg",
+          "caption": "צ׳רצ׳יל — מפרץ הדסון",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mouth_of_the_Churchill_River_at_Hudson_Bay_(7461042054).jpg",
+          "creator": "US Mission Canada",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-cn-tower",
+          "src": "./content/photos/canada-cn-tower.jpg",
+          "caption": "טורונטו — מגדל סי־אן",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Toronto_Waterfront,_CN_Tower_6277.jpg",
+          "creator": "ImagePerson",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-fundy",
+          "src": "./content/photos/canada-fundy.jpg",
+          "caption": "מפרץ פאנדי — סלעי הופוול",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hopewell_Rocks_New_Brunswick_Canada_Bay_of_Fundy_(38346951175).jpg",
+          "creator": "Jared Rover from Toronto, Canada",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-halifax",
+          "src": "./content/photos/canada-halifax.jpg",
+          "caption": "הליפקס — טיילת הנמל",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:2022-08-15_01_Wide_angle_view_of_Halifax_skyline,_Nova_Scotia,_Canada.jpg",
+          "creator": "Gordon Leggett",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-jasper",
+          "src": "./content/photos/canada-jasper.jpg",
+          "caption": "ג׳ספר — אגם מאלין",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Spirit_Island_...Maligne_lake.jpg",
+          "creator": "Serge Cousineau",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-lake-louise",
+          "src": "./content/photos/canada-lake-louise.jpg",
+          "caption": "אגם לואיז בהרי הרוקי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:1_lake_louise_pano_2019.jpg",
+          "creator": "Chensiyuan",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-montreal",
+          "src": "./content/photos/canada-montreal.jpg",
+          "caption": "מונטריאול — נוף העיר",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Skyline_of_Montreal,_view_from_Mont_Royal_(24244189891).jpg",
+          "creator": "www.Pixel.la Free Stock Photos",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-moraine",
+          "src": "./content/photos/canada-moraine.jpg",
+          "caption": "אגם מוריין",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:The_Moraine_Lake_landscape_(Unsplash).jpg",
+          "creator": "Ezra Jeffrey emcomeau",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-niagara",
+          "src": "./content/photos/canada-niagara.jpg",
+          "caption": "מפלי הניאגרה — הצד הקנדי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Maid_of_the_Mist_VII_approaching_the_Horseshoe_Falls,_West_view_20170418_1.jpg",
+          "creator": "DXR",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-ottawa-museum",
+          "src": "./content/photos/canada-ottawa-museum.jpg",
+          "caption": "אזור אוטווה — מוזיאון ההיסטוריה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Canadian_Museum_of_Civilization_panorama.jpg",
+          "creator": "Óðinn",
+          "license": "CC BY-SA 2.5 ca",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-ottawa",
+          "src": "./content/photos/canada-ottawa.jpg",
+          "caption": "אוטווה — הפרלמנט בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Parliament_Hill_from_the_Ottawa_River.JPG",
+          "creator": "Óðinn",
+          "license": "CC BY-SA 2.5 ca",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-peggy",
+          "src": "./content/photos/canada-peggy.jpg",
+          "caption": "פגי׳ס קוב — המגדלור",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Peggys_Cove_-_NS_-_Leuchtturm.jpg",
+          "creator": "Taxiarchos228",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-quebec",
+          "src": "./content/photos/canada-quebec.jpg",
+          "caption": "קוויבק — טירת פרונטנאק",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Chateau_Frontenac_at_dusk_in_Quebec_City.jpg",
+          "creator": "Wilfredor",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-rideau",
+          "src": "./content/photos/canada-rideau.jpg",
+          "caption": "אוטווה — תעלת רידו",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Rideau_Canal,_Canada_Day,_2011,_Ottawa,_Ontario_Canada.jpg",
+          "creator": "tsaiproject",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-toronto",
+          "src": "./content/photos/canada-toronto.jpg",
+          "caption": "טורונטו — העיר הגדולה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sunset_Toronto_Skyline_Panorama_Crop_from_Snake_Island.jpg",
+          "creator": "Jchmrt",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-vancouver",
+          "src": "./content/photos/canada-vancouver.jpg",
+          "caption": "ונקובר — העיר והנמל",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Vancouver_skyline_and_harbour_daytime_by_500px_(56742618).jpg",
+          "creator": "Ian Spence",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-victoria",
+          "src": "./content/photos/canada-victoria.jpg",
+          "caption": "ויקטוריה — הנמל והפרלמנט",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:2009-0605-Victoria-Harbor-PAN.JPG",
+          "creator": "Bobak Ha'Eri",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "canada-whistler",
+          "src": "./content/photos/canada-whistler.jpg",
+          "caption": "ויסלר — נוף ההרים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Whistler_and_the_Coastal_Mountains.jpg",
+          "creator": "Saif Alnuweiri",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/canada.mp3",
+        "title": "מסע בקנדה",
+        "inspiration": "קטע שנוצר ב-Suno עבור קנדה",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "canada-capital",
+          "question": "מהי עיר הבירה של קנדה?",
+          "answers": [
+            "אוטווה",
+            "קהיר",
+            "רומא",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "canada-maple",
+          "question": "איזה עלה מופיע בדגל קנדה?",
+          "answers": [
+            "עלה גפן",
+            "עלה אדר",
+            "עלה זית",
+            "עלה דקל"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "canada-flag-color",
+          "question": "איזה צבע מופיע משני צדי דגל קנדה?",
+          "answers": [
+            "כחול",
+            "שחור",
+            "אדום",
+            "ירוק"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "canada-falls",
+          "question": "אילו מפלים נמצאים בגבול קנדה וארצות הברית?",
+          "answers": [
+            "מפלי איגואסו",
+            "מפלי אוזוד",
+            "מפלי נאצ׳י",
+            "מפלי הניאגרה"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "canada-tower",
+          "question": "באיזו עיר קנדית נמצא מגדל סי־אן?",
+          "answers": [
+            "טורונטו",
+            "פריז",
+            "רומא",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "canada-continent",
+          "question": "באיזו יבשת נמצאת קנדה?",
+          "answers": [
+            "אוקיאניה",
+            "צפון אמריקה",
+            "אירופה",
+            "אפריקה"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "brazil",
+      "name": "ברזיל",
+      "capital": "ברזיליה",
+      "continentId": "south-america",
+      "familiarity": "familiar",
+      "accent": "#699B72",
+      "emoji": "🌴",
+      "flag": {
+        "viewBox": "0 0 857 600",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 857,
+          "height": 600
+        },
+        "regions": [
+          {
+            "id": "color-2-1",
+            "path": "M283,262L283,266L282,267L282,270L281,271L281,276L280,277L280,284L279,285L279,314L280,315L280,322L281,323L281,328L282,329L282,332L283,333L284,341L287,347L287,350L289,353L289,355L292,360L292,362L297,372L299,374L300,377L302,379L308,389L317,399L317,400L334,416L335,416L342,422L343,422L348,426L351,427L353,429L369,437L371,437L374,439L376,439L382,442L385,442L386,443L392,444L393,445L396,445L397,446L408,447L409,448L419,448L420,449L436,449L437,448L447,448L448,447L459,446L460,445L467,444L471,442L474,442L480,439L482,439L485,437L487,437L503,429L505,427L508,426L510,424L514,422L517,419L522,416L528,410L529,410L539,400L539,399L548,389L548,388L556,377L564,362L564,360L569,350L570,344L566,340L565,340L554,330L553,330L542,321L541,321L524,309L521,308L514,303L509,301L507,299L483,287L481,287L476,284L474,284L469,281L464,280L461,278L459,278L458,277L456,277L455,276L453,276L452,275L450,275L449,274L447,274L440,271L437,271L433,269L430,269L429,268L426,268L425,267L422,267L421,266L418,266L417,265L413,265L412,264L408,264L407,263L402,263L401,262L397,262L396,261L389,261L388,260L382,260L381,259L371,259L370,258L354,258L353,257L331,257L330,258L314,258L313,259L304,259L303,260L296,260L295,261Z M426,416L427,415L429,415L430,416L430,418L429,419L427,419L426,418Z M503,408L504,410L506,410L507,411L505,413L506,414L505,416L504,415L502,415L501,416L500,415L500,412L499,411Z M473,395L474,396L474,398L477,398L478,399L476,401L476,404L475,405L473,403L471,405L470,405L469,404L470,403L470,401L468,399L469,398L471,398Z M503,392L505,394L505,395L507,395L508,396L506,397L506,399L507,400L506,401L504,400L502,400L501,401L500,400L500,397L498,396L499,395L501,395Z M486,383L487,385L489,385L490,386L488,388L489,390L488,391L486,390L484,391L482,386Z M518,381L519,383L521,383L522,384L520,386L521,387L520,389L519,388L517,388L516,389L515,388L516,386L514,384Z M461,379L462,381L465,383L463,387L461,386L459,387L458,386L459,384L457,383L459,382Z M502,378L503,378L504,380L506,380L507,381L505,383L505,385L504,386L503,385L501,386L500,385L500,383L498,381L499,380L501,380Z M362,377L363,376L366,376L366,375L368,373L370,376L373,376L374,378L371,380L372,382L371,384L370,384L368,382L366,384L365,384L364,383L364,381L365,380L363,379Z M530,372L532,375L534,375L535,376L533,378L533,380L534,381L533,382L532,382L530,380L528,382L526,381L527,380L527,378L525,376L526,375L528,375Z M541,369L542,368L543,369L542,370Z M345,361L347,363L349,363L350,364L348,366L348,368L347,369L346,368L344,369L342,364L344,363Z M539,360L541,363L543,363L544,364L542,366L542,368L541,369L539,368L537,370L536,369L536,366L534,364L535,363L538,363L538,361Z M428,360L430,364L433,364L434,365L431,368L432,370L431,372L428,370L425,372L424,371L425,368L422,365L423,364L426,364Z M554,349L555,351L558,353L556,355L557,356L556,357L554,356L552,357L550,353L552,352Z M533,346L536,350L538,349L539,351L536,353L537,355L536,357L532,356L530,358L529,357L530,353L528,352L527,350L528,349L529,350L531,350Z M420,345L421,345L423,347L423,349L422,350L419,350L418,349L418,347Z M350,345L352,348L354,348L355,349L353,351L353,353L354,354L353,355L352,355L350,353L348,355L346,354L347,353L347,351L345,349L346,348L348,348Z M300,344L302,345L302,347L304,347L305,348L303,350L304,352L303,354L301,352L300,352L298,354L297,353L297,351L298,350L295,348L296,347L299,347L299,345Z M413,333L414,335L416,335L417,336L415,338L416,339L415,341L414,340L412,340L411,341L410,340L411,338L409,336Z M445,332L447,333L447,335L449,335L450,336L448,338L449,340L448,342L446,340L445,340L443,342L442,341L442,339L443,338L440,336L441,335L443,335Z M319,329L321,333L324,333L325,334L323,336L322,336L322,338L323,339L322,341L319,339L318,339L316,341L315,340L315,338L316,337L313,334L314,333L317,333Z M333,324L334,324L336,326L336,328L335,329L332,329L331,328L332,327L331,326Z M428,318L430,321L432,321L433,322L431,324L431,326L432,327L431,328L430,328L428,326L426,328L424,327L425,326L425,324L423,322L424,321L426,321Z M371,300L372,301L372,303L375,303L376,304L374,306L374,309L373,310L372,309L368,310L367,309L368,308L368,306L367,306L366,304L367,303L369,303Z M469,288L470,290L472,290L473,291L471,293L472,294L471,296L469,294L467,296L466,295L466,292L465,291Z M306,266L308,270L311,270L312,271L310,273L309,273L309,276L310,277L309,278L308,278L306,276L302,278L301,277L302,276L302,273L299,271L300,270L304,270L304,268Z",
+            "colorId": 2,
+            "labelX": 489,
+            "labelY": 341,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-2-2",
+            "path": "M292,237L292,238L295,238L296,237L315,236L316,235L368,235L369,236L379,236L380,237L388,237L389,238L395,238L396,239L408,240L409,241L413,241L414,242L418,242L419,243L422,243L423,244L427,244L428,245L435,246L439,248L442,248L446,250L449,250L450,251L452,251L453,252L467,256L470,258L475,259L478,261L480,261L485,264L487,264L494,268L496,268L514,277L516,279L523,282L525,284L528,285L530,287L533,288L538,292L541,293L543,295L547,297L550,300L554,302L557,305L558,305L561,308L566,311L575,319L576,319L576,316L577,315L577,284L576,283L576,276L575,275L575,271L574,270L574,267L573,266L573,262L571,258L571,255L569,252L569,249L564,239L564,237L556,222L554,220L548,210L539,200L539,199L522,183L521,183L518,180L517,180L514,177L513,177L505,171L487,162L485,162L482,160L480,160L477,158L475,158L471,156L468,156L467,155L465,155L464,154L460,154L459,153L448,152L447,151L437,151L436,150L420,150L419,151L409,151L408,152L397,153L396,154L389,155L385,157L382,157L376,160L374,160L371,162L369,162L366,164L364,164L362,166L353,170L351,172L348,173L346,175L342,177L339,180L334,183L328,189L327,189L316,200L316,201L311,206L306,214L303,217L302,220L297,227Z M468,251L469,250L473,250L473,248L474,247L476,248L476,250L480,250L481,251L478,254L478,256L479,257L478,258L477,258L475,256L471,258L470,257L471,256L471,254Z",
+            "colorId": 2,
+            "labelX": 443,
+            "labelY": 200,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-3",
+            "path": "M285,255L284,261L295,260L296,259L303,259L304,258L313,258L314,257L330,257L331,256L353,256L354,257L370,257L371,258L381,258L382,259L396,260L397,261L401,261L402,262L407,262L408,263L417,264L418,265L421,265L422,266L433,268L437,270L440,270L441,271L443,271L444,272L446,272L447,273L461,277L464,279L469,280L474,283L476,283L481,286L483,286L507,298L509,300L514,302L516,304L524,308L526,310L542,320L545,323L546,323L549,326L554,329L571,344L571,341L572,340L573,334L574,333L574,329L575,328L575,323L576,322L576,320L575,320L566,312L565,312L562,309L561,309L558,306L557,306L554,303L550,301L541,294L538,293L536,291L530,288L528,286L525,285L523,283L516,280L514,278L496,269L494,269L487,265L485,265L480,262L478,262L475,260L470,259L467,257L465,257L464,256L462,256L461,255L459,255L458,254L456,254L449,251L446,251L442,249L439,249L435,247L432,247L431,246L428,246L427,245L423,245L422,244L419,244L418,243L414,243L413,242L409,242L408,241L403,241L402,240L396,240L395,239L389,239L388,238L369,237L368,236L316,236L315,237L305,237L304,238L296,238L295,239L291,239L291,241L289,244L289,246L287,249L287,251Z M562,315L566,316L569,319L570,323L569,324L569,326L566,329L564,330L559,330L555,325L555,321L558,317Z M547,303L552,305L555,308L555,312L553,313L551,311L551,309L549,307L548,307L548,309L552,314L552,317L549,320L547,320L543,318L540,315L540,311L542,310L544,312L544,314L546,316L548,316L546,312L543,309L543,306Z M530,293L533,293L537,295L540,299L540,301L539,302L537,302L536,301L536,299L534,297L532,297L532,298L537,304L537,307L535,309L530,309L528,308L524,303L524,301L525,300L527,300L528,301L528,303L530,305L532,306L533,305L527,297Z M514,282L519,284L521,286L525,288L525,290L523,291L515,287L515,288L517,290L521,292L521,294L520,295L515,293L513,291L512,292L512,294L518,297L520,299L519,301L517,301L507,295L510,288L512,286Z M497,274L500,274L504,276L508,280L508,283L504,287L504,289L502,292L500,291L500,286L497,284L496,284L493,288L491,287L491,285Z M481,268L486,268L488,269L490,272L490,275L489,276L486,273L486,272L482,272L480,274L480,277L482,279L484,279L483,277L485,275L490,278L488,281L488,283L486,285L484,283L481,283L479,282L476,278L476,274Z M464,261L469,261L473,265L473,271L467,276L464,276L462,275L459,271L459,267Z M445,253L452,255L456,258L456,262L453,265L453,270L452,271L450,271L449,270L450,266L447,264L445,264L443,268L441,268L440,267L443,256Z M435,250L438,253L438,257L435,260L427,259L426,263L425,264L422,262L423,261L423,258L424,257L426,249L428,248L429,249Z M398,244L401,244L402,245L407,245L409,247L407,249L400,248L400,249L403,249L407,251L407,252L405,254L404,253L399,253L399,255L404,255L407,257L406,259L400,259L399,258L396,258L395,257L395,255L396,254L396,249L397,248L397,245Z M297,241L301,241L303,242L306,246L306,252L302,256L297,256L292,250L292,247L294,243Z M368,239L370,239L372,241L372,245L373,246L373,248L375,244L375,242L377,240L380,240L381,241L381,243L380,244L380,254L379,255L377,255L376,254L376,249L375,253L373,255L372,255L370,253L370,248L369,250L369,254L368,255L366,254L366,243Z M312,239L321,239L324,242L324,246L323,247L324,249L324,253L323,254L321,253L319,249L315,249L315,254L314,255L312,255L311,254L311,244L310,243L310,241Z M349,238L357,238L361,240L360,242L352,242L351,243L352,244L358,244L359,245L359,247L358,248L353,248L352,247L351,248L351,250L360,250L362,252L360,254L349,254L347,252L347,249L348,248L348,239Z M330,238L338,238L342,241L343,243L343,249L340,253L338,253L337,254L330,254L329,253L329,239Z",
+            "colorId": 3,
+            "labelX": 416,
+            "labelY": 252,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-details",
+            "path": "M427,416L427,418L429,418L429,416Z M506,411L504,411L503,409L501,411L500,411L501,412L501,415L502,414L504,414L505,415L504,413Z M477,399L474,399L473,398L473,396L473,397L471,399L469,399L471,401L471,403L470,404L471,404L473,402L475,404L475,401Z M499,396L501,397L501,400L502,399L506,400L505,399L505,397L507,396L505,396L503,393L503,394L501,396Z M489,386L487,386L486,384L484,386L483,386L484,390L485,389L488,390L487,388Z M521,384L519,384L518,382L516,384L515,384L517,386L516,388L517,387L519,387L520,388L519,386Z M461,380L461,381L459,383L458,383L460,384L459,386L461,385L463,386L463,384L464,383L463,383L461,381Z M499,381L501,383L501,385L502,384L504,385L504,383L506,381L504,381L503,379L502,379L501,381Z M373,377L370,377L368,375L368,374L366,377L363,377L363,378L364,378L366,380L365,381L365,383L366,383L368,381L370,383L371,383L370,380L372,378L373,378Z M534,376L532,376L530,374L530,373L530,374L528,376L526,376L528,378L528,380L527,381L528,381L530,379L532,381L533,381L532,380L532,378Z M345,362L345,363L343,364L343,365L344,366L344,368L345,367L347,368L347,366L349,364L347,364Z M535,364L537,366L537,369L539,367L542,369L541,368L541,366L543,364L541,364L539,362L539,361L539,363L538,364Z M428,361L428,363L426,365L423,365L426,368L425,371L428,369L431,371L430,368L433,365L430,365L428,363Z M554,350L554,351L552,353L551,353L552,354L552,356L554,355L556,356L555,355L557,353L556,353L554,351Z M538,350L536,351L533,348L533,347L531,351L529,351L528,350L528,351L529,351L531,353L530,357L532,355L536,356L535,353L537,351L538,351Z M420,346L419,347L419,349L422,349L422,347Z M354,349L352,349L350,347L350,346L350,347L348,349L346,349L348,351L348,353L347,354L348,354L350,352L352,354L353,354L352,353L352,351Z M296,348L297,348L299,350L298,351L298,353L300,351L301,351L303,353L302,350L304,348L302,348L301,347L301,345L300,345L300,347L299,348Z M416,336L414,336L413,334L411,336L410,336L412,338L411,340L412,339L414,339L415,340L414,338Z M441,336L442,336L444,338L443,339L443,341L445,339L446,339L448,341L447,338L449,336L447,336L446,335L446,333L445,333L445,334L443,336Z M319,330L317,334L314,334L317,337L316,338L316,340L318,338L322,340L321,336L324,334L321,334L319,332Z M333,325L332,326L333,327L332,328L335,328L335,326Z M432,322L430,322L428,320L428,319L428,320L426,322L424,322L426,324L426,326L425,327L426,327L428,325L430,327L431,327L430,326L430,324Z M375,304L372,304L371,303L371,301L371,302L369,304L367,304L367,305L369,306L369,308L368,309L370,308L372,308L373,309L373,306Z M472,291L470,291L469,289L467,291L466,291L467,292L467,295L469,293L471,295L470,293Z M311,271L308,271L306,269L306,267L304,271L300,271L301,271L303,273L303,276L302,277L303,277L305,275L309,277L308,276L308,273Z M469,251L472,254L472,256L471,257L472,257L474,255L478,257L477,256L477,254L480,251L476,251L475,250L475,248L474,248L474,250L473,251Z",
+            "colorId": 3,
+            "labelX": 426,
+            "labelY": 333,
+            "fillRule": "evenodd",
+            "hitPath": "M384,291h84v84h-84Z"
+          },
+          {
+            "id": "color-4-5",
+            "path": "M0,0L0,599L856,599L856,0Z M428,72L432,75L435,76L443,82L446,83L454,89L457,90L468,98L471,99L479,105L482,106L493,114L496,115L504,121L507,122L515,128L518,129L526,135L529,136L551,151L554,152L562,158L565,159L587,174L590,175L598,181L601,182L612,190L615,191L623,197L626,198L634,204L637,205L645,211L648,212L659,220L662,221L670,227L673,228L681,234L684,235L695,243L698,244L706,250L709,251L717,257L720,258L731,266L734,267L742,273L745,274L753,280L756,281L758,283L759,283L767,289L770,290L778,296L781,297L783,299L783,300L781,302L778,303L770,309L767,310L756,318L753,319L745,325L742,326L734,332L731,333L720,341L717,342L709,348L706,349L698,355L695,356L684,364L681,365L673,371L670,372L662,378L659,379L648,387L645,388L637,394L634,395L626,401L623,402L601,417L598,418L590,424L587,425L565,440L562,441L554,447L551,448L529,463L526,464L518,470L515,471L507,477L504,478L496,484L493,485L482,493L479,494L471,500L468,501L457,509L454,510L446,516L443,517L441,519L428,527L424,524L421,523L410,515L407,514L399,508L396,507L388,501L385,500L374,492L371,491L363,485L360,484L352,478L349,477L341,471L338,470L316,455L313,454L305,448L302,447L280,432L277,431L269,425L266,424L255,416L252,415L244,409L241,408L233,402L230,401L219,393L216,392L208,386L205,385L197,379L194,378L186,372L183,371L172,363L169,362L161,356L158,355L150,349L147,348L136,340L133,339L125,333L122,332L114,326L111,325L103,319L100,318L98,316L97,316L89,310L86,309L78,303L75,302L73,300L73,299L75,297L78,296L86,290L89,289L100,281L103,280L111,274L114,273L122,267L125,266L133,260L136,259L147,251L150,250L158,244L161,243L169,237L172,236L183,228L186,227L194,221L197,220L205,214L208,213L216,207L219,206L230,198L233,197L241,191L244,190L266,175L269,174L277,168L280,167L302,152L305,151L313,145L316,144L324,138L327,137L338,129L341,128L349,122L352,121L360,115L363,114L371,108L374,107L385,99L388,98L396,92L399,91L407,85L410,84L412,82Z",
+            "colorId": 4,
+            "labelX": 727,
+            "labelY": 480,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-5-6",
+            "path": "M428,73L74,299L75,301L78,302L86,308L89,309L97,315L100,316L108,322L111,323L122,331L125,332L133,338L136,339L144,345L147,346L158,354L161,355L169,361L172,362L180,368L183,369L191,375L194,376L205,384L208,385L216,391L219,392L227,398L230,399L241,407L244,408L252,414L255,415L277,430L280,431L288,437L291,438L313,453L316,454L324,460L327,461L335,467L338,468L346,474L349,475L360,483L363,484L371,490L374,491L382,497L385,498L396,506L399,507L407,513L410,514L412,516L428,526L782,300L781,298L778,297L770,291L767,290L756,282L753,281L745,275L742,274L734,268L731,267L723,261L720,260L709,252L706,251L698,245L695,244L687,238L684,237L673,229L670,228L662,222L659,221L651,215L648,214L637,206L634,205L626,199L623,198L615,192L612,191L590,176L587,175L579,169L576,168L554,153L551,152L543,146L540,145L532,139L529,138L518,130L515,129L507,123L504,122L496,116L493,115L485,109L482,108L471,100L468,99L460,93L457,92L449,86L446,85L444,83Z M418,149L438,149L439,150L448,150L449,151L454,151L455,152L464,153L465,154L468,154L469,155L480,158L483,160L490,162L500,167L502,169L510,173L513,176L521,181L526,186L527,186L546,206L546,207L552,214L552,215L556,220L557,223L559,225L567,241L567,243L569,246L569,248L570,249L570,251L573,258L573,261L574,262L574,265L575,266L575,270L576,271L576,275L577,276L577,283L578,284L578,315L577,316L577,323L576,324L576,329L575,330L573,341L572,342L569,353L567,356L567,358L559,374L557,376L556,379L554,381L552,385L549,388L546,393L541,398L541,399L521,418L520,418L517,421L516,421L505,429L500,431L498,433L492,436L490,436L480,441L478,441L471,444L468,444L464,446L460,446L459,447L455,447L454,448L449,448L448,449L439,449L438,450L418,450L417,449L408,449L407,448L402,448L401,447L392,446L388,444L385,444L384,443L376,441L373,439L371,439L366,436L364,436L356,432L354,430L351,429L349,427L339,421L330,413L329,413L310,393L310,392L304,385L304,384L300,379L299,376L297,374L289,358L289,356L287,353L287,351L286,350L286,348L283,341L283,338L282,337L282,334L281,333L281,329L280,328L280,324L279,323L279,316L278,315L278,284L279,283L279,276L280,275L280,271L281,270L281,266L282,265L283,258L284,257L287,246L289,243L289,241L297,225L299,223L300,220L302,218L304,214L307,211L310,206L315,201L315,200L335,181L336,181L339,178L340,178L351,170L364,163L366,163L376,158L378,158L385,155L388,155L392,153L396,153L397,152L401,152L402,151L407,151L408,150L417,150Z",
+            "colorId": 5,
+            "labelX": 648,
+            "labelY": 300,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "brazil-amazon",
+          "src": "./content/photos/brazil-amazon.jpg",
+          "caption": "יער האמזונס והנהר",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Amazon_Rainforest.jpg",
+          "creator": "lubasi",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-brasilia",
+          "src": "./content/photos/brazil-brasilia.jpg",
+          "caption": "ברזיליה — מבט אל עיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_Museu_%26_Explanada_Ministerios_BSB_10_2015_4333.jpg",
+          "creator": "Mariordo (Mario Roberto Durán Ortiz)",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-cathedral",
+          "src": "./content/photos/brazil-cathedral.jpg",
+          "caption": "ברזיליה — הקתדרלה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Brasilia,_Cathedral_of_Brasilia_(15309099334).jpg",
+          "creator": "Arian Zwegers from Brussels, Belgium",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-christ",
+          "src": "./content/photos/brazil-christ.jpg",
+          "caption": "ריו — פסל ישו הגואל",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Unique_Moment_with_the_Moon_and_Christ_the_Redeemer_3.jpg",
+          "creator": "Donatas Dabravolskas",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-copacabana",
+          "src": "./content/photos/brazil-copacabana.jpg",
+          "caption": "ריו — חוף קופקבנה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Forte_de_Copacabana_panorama.jpg",
+          "creator": "Gabriel Heusi/Brasil2016.gov.br",
+          "license": "CC BY 3.0 br",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-florianopolis",
+          "src": "./content/photos/brazil-florianopolis.jpg",
+          "caption": "פלוריאנופוליס — גשר הרסיליו לוס",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Ponte_Hercilio_Luz_-_Florianopolis_-_Santa_Catarina.jpg",
+          "creator": "Beto Quissak",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-iguazu",
+          "src": "./content/photos/brazil-iguazu.jpg",
+          "caption": "מפלי איגואסו — הצד הברזילאי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Foz_do_Iguacu_-_falls_-_UNESCO_(34150186441).jpg",
+          "creator": "FLASHPACKER TRAVELGUIDE",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-itamaraty",
+          "src": "./content/photos/brazil-itamaraty.jpg",
+          "caption": "ברזיליה — ארמון איטמרטי",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Pal%C3%A1cio_do_Itamaraty_6.jpg",
+          "creator": "Fwsbsb",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-lencois",
+          "src": "./content/photos/brazil-lencois.jpg",
+          "caption": "לנסויס מרניינסס — דיונות ולגונות",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_dos_Len%C3%A7%C3%B3is_Maranhenses_Paulo_Cattelan_(03).jpg",
+          "creator": "Paulo Cattelan",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-manaus",
+          "src": "./content/photos/brazil-manaus.jpg",
+          "caption": "מנאוס — תיאטרון האמזונס",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Noite_no_Teatro_Amazonas_(cropped).jpg",
+          "creator": "Susan Valentim",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-noronha",
+          "src": "./content/photos/brazil-noronha.jpg",
+          "caption": "פרננדו דה נורוניה — מפרץ כחול",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Marinho_de_Fernando_de_Noronha_-_Jo%C3%A3o_Paulo_Marques_DAndretta_1-edited.jpg",
+          "creator": "João D'Andretta",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-olinda",
+          "src": "./content/photos/brazil-olinda.jpg",
+          "caption": "אולינדה — מנזר סן פרנסיסקו",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Convento_de_S%C3%A3o_Francisco_-_Olinda_-_Pernambuco_-_Brasil.jpg",
+          "creator": "Valdiney Pimenta",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-ouro-preto",
+          "src": "./content/photos/brazil-ouro-preto.jpg",
+          "caption": "אורו פרטו — העיר ההיסטורית",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Ouro_Preto_November_2009-10a.jpg",
+          "creator": "Alvesgaspar",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-pantanal",
+          "src": "./content/photos/brazil-pantanal.jpg",
+          "caption": "הפנטנל — אזור הביצות",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Cambara_(Vochysia_divergens_Pohl)_tree_with_Tuiuiu_(Jabiru_mycteria)_nest_in_RPPN_Sesc_Pantanal.jpg",
+          "creator": "Gabyschuck",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-paulista",
+          "src": "./content/photos/brazil-paulista.jpg",
+          "caption": "סאו פאולו — שדרות פאוליסטה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Building_on_Avenida_Paulista.jpg",
+          "creator": "Wilfredor",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-recife",
+          "src": "./content/photos/brazil-recife.jpg",
+          "caption": "רסיפה — כיכר מרקו זרו",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Pra%C3%A7a_do_Marco_Zero,_Recife,_Pernambuco,_Brasil.jpg",
+          "creator": "Wilfredor",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-rio",
+          "src": "./content/photos/brazil-rio.jpg",
+          "caption": "ריו דה ז׳ניירו — העיר והמפרץ",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Ipanema_and_Leblon_as_seen_from_Morro_Dois_Irm%C3%A3os,_with_Lagoa_and_Cantagalo_in_the_background,_Rio_de_Janeiro,_Brazil.jpg",
+          "creator": "Wilfredor",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-salvador",
+          "src": "./content/photos/brazil-salvador.jpg",
+          "caption": "סלבדור — המרכז ההיסטורי",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Largo_do_Pelourinho_Salvador_2019-9754_(cropped).jpg",
+          "creator": "Paul R. Burley",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-sao-paulo",
+          "src": "./content/photos/brazil-sao-paulo.jpg",
+          "caption": "סאו פאולו — העיר הגדולה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_of_Sao_Paulo_from_Avenida_Santa_Catarina.jpg",
+          "creator": "Wilfredor",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "brazil-sugarloaf",
+          "src": "./content/photos/brazil-sugarloaf.jpg",
+          "caption": "ריו — הר הסוכר",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sugarloaf_Cable_Car_viewed_from_Rio_de_Janeiro,_Brazil.jpg",
+          "creator": "Wilfredor",
+          "license": "CC0",
+          "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/brazil.mp3",
+        "title": "מסע בברזיל",
+        "inspiration": "קטע שנוצר ב-Suno עבור ברזיל",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "brazil-capital",
+          "question": "מהי עיר הבירה של ברזיל?",
+          "answers": [
+            "ברזיליה",
+            "בואנוס איירס",
+            "רומא",
+            "פריז"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "brazil-flag",
+          "question": "איזה צבע מקיף את המעוין בדגל ברזיל?",
+          "answers": [
+            "שחור",
+            "ירוק",
+            "אדום",
+            "לבן"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "brazil-dance",
+          "question": "איזה ריקוד מזוהה עם ברזיל?",
+          "answers": [
+            "טנגו",
+            "הורה",
+            "סמבה",
+            "ואלס"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "brazil-forest",
+          "question": "איזה יער גדול נמצא בברזיל?",
+          "answers": [
+            "היער השחור",
+            "יער בן שמן",
+            "יער שרווד",
+            "יער האמזונס"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "brazil-rio",
+          "question": "באיזו עיר נמצא פסל ישו הגואל?",
+          "answers": [
+            "ריו דה ז׳ניירו",
+            "קהיר",
+            "רומא",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "brazil-continent",
+          "question": "באיזו יבשת נמצאת ברזיל?",
+          "answers": [
+            "אפריקה",
+            "דרום אמריקה",
+            "אירופה",
+            "אסיה"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "argentina",
+      "name": "ארגנטינה",
+      "capital": "בואנוס איירס",
+      "continentId": "south-america",
+      "familiarity": "familiar",
+      "accent": "#769FAF",
+      "emoji": "💃",
+      "flag": {
+        "viewBox": "0 0 900 563",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 563
+        },
+        "regions": [
+          {
+            "id": "color-2-1",
+            "path": "M0,375L0,562L899,562L899,375Z",
+            "colorId": 2,
+            "labelX": 450,
+            "labelY": 469,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-2-2",
+            "path": "M0,0L0,187L899,187L899,0Z",
+            "colorId": 2,
+            "labelX": 450,
+            "labelY": 94,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-3",
+            "path": "M0,188L0,374L899,374L899,188Z M449,202L450,202L452,204L452,228L453,229L453,245L453,239L454,238L455,232L459,224L459,221L460,220L460,210L462,206L464,204L466,204L467,205L467,207L465,209L465,226L461,234L460,246L462,243L462,241L467,232L467,230L473,219L473,217L478,208L480,208L481,209L481,211L478,217L477,222L475,225L473,233L471,236L470,241L468,244L468,246L466,250L470,242L480,232L480,231L482,229L485,221L489,217L491,216L494,216L495,218L491,221L489,225L489,228L486,234L484,236L484,237L479,241L479,242L475,247L475,249L473,253L485,241L486,241L500,227L501,227L504,224L506,226L506,227L489,245L489,246L477,258L478,258L486,251L493,249L499,246L506,239L510,237L514,237L516,239L515,241L512,241L510,242L502,251L495,255L491,256L483,263L482,263L482,264L488,261L496,259L499,257L504,256L507,254L512,253L515,251L517,251L521,249L523,251L523,252L521,254L517,255L506,261L504,261L495,266L493,266L485,270L487,269L490,269L491,268L506,268L507,267L513,266L516,264L524,264L527,266L527,268L526,269L520,268L508,274L495,274L494,275L486,277L488,277L489,278L515,278L516,279L527,279L529,281L527,283L516,283L515,284L488,284L487,285L494,285L508,291L519,291L520,292L522,292L524,294L525,294L527,297L525,299L520,296L517,296L516,297L507,297L506,296L503,296L498,293L495,293L494,292L485,292L493,296L495,296L506,302L508,302L517,307L521,308L523,310L523,311L521,313L520,312L515,311L512,309L504,307L496,303L494,303L493,302L491,302L490,301L488,301L485,299L481,298L489,302L499,312L500,312L502,314L510,317L513,320L515,325L513,327L509,322L507,321L504,321L497,318L486,308L477,304L489,316L489,317L506,335L506,336L504,338L501,335L500,335L486,321L485,321L473,309L473,310L479,317L483,328L493,340L493,343L494,344L491,348L489,345L489,342L479,333L476,328L476,326L473,320L467,314L467,313L468,318L470,321L470,323L473,329L475,337L477,340L478,345L481,351L481,353L480,354L478,354L473,345L473,343L467,332L467,330L462,321L462,319L460,315L460,317L463,324L463,341L467,349L467,354L466,355L466,357L463,359L462,358L462,351L457,341L457,338L456,337L456,332L457,331L456,330L456,325L455,324L453,317L453,333L452,334L452,358L450,360L449,360L447,358L447,334L446,333L446,317L446,323L445,324L444,330L440,338L440,341L439,342L439,352L437,356L434,358L432,357L432,355L434,353L434,336L438,328L438,321L439,320L439,316L437,319L437,321L432,330L432,332L426,343L426,345L421,354L419,354L418,353L418,351L421,345L422,340L424,337L426,329L428,326L429,321L431,318L431,316L433,312L429,320L418,331L415,337L415,339L413,341L413,342L410,345L408,346L405,346L404,344L408,341L410,337L410,334L413,328L415,326L415,325L420,321L420,320L424,315L424,313L426,309L414,321L413,321L399,335L398,335L395,338L393,336L393,335L410,317L410,316L422,304L421,304L413,311L406,313L400,316L393,323L389,325L385,325L383,323L384,321L387,321L389,320L397,311L404,307L408,306L417,298L411,301L406,302L403,304L398,305L395,307L387,309L384,311L382,311L378,313L376,311L376,310L378,308L380,308L391,302L393,302L404,296L406,296L414,292L412,292L408,294L393,294L392,295L386,296L383,298L375,298L372,296L372,294L373,293L379,294L391,288L404,288L405,287L413,285L411,285L410,284L384,284L383,283L372,283L370,281L372,279L383,279L384,278L411,278L412,277L405,277L391,271L380,271L379,270L377,270L375,268L374,268L372,265L374,263L379,266L382,266L383,265L392,265L393,266L396,266L401,269L404,269L405,270L414,270L406,266L404,266L393,260L391,260L382,255L378,254L376,252L376,251L378,249L379,250L384,251L387,253L395,255L398,257L403,258L406,260L408,260L409,261L411,261L414,263L418,264L410,260L400,250L399,250L397,248L389,245L386,242L384,237L386,235L390,240L392,241L395,241L402,244L413,254L421,258L421,257L393,227L393,226L395,224L398,227L399,227L413,241L414,241L426,253L426,252L420,245L416,234L406,222L406,219L405,218L408,214L410,217L410,220L420,229L423,234L423,236L426,242L432,248L432,249L431,244L429,241L429,239L426,233L424,225L422,222L421,217L418,211L418,209L419,208L421,208L426,217L426,219L432,230L432,232L437,241L437,243L439,247L439,245L436,238L436,221L432,213L432,208L433,207L433,205L436,203L437,204L437,211L442,221L442,225L443,226L443,230L442,232L443,233L443,237L444,238L446,245L446,229L447,228L447,204Z",
+            "colorId": 3,
+            "labelX": 621,
+            "labelY": 282,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-5-4",
+            "path": "M449,203L448,204L448,228L447,229L447,245L446,246L445,245L443,238L442,237L442,233L441,232L442,230L442,226L441,225L441,221L440,220L440,218L436,211L436,204L433,208L433,213L437,221L437,238L440,245L440,247L439,248L436,243L436,241L431,232L431,230L425,219L425,217L421,209L419,209L420,214L422,217L423,222L425,225L425,227L426,228L427,233L429,236L430,241L432,244L433,249L432,250L431,248L425,242L422,236L421,232L419,230L419,229L409,220L409,217L408,215L406,218L407,219L407,222L417,234L421,245L427,252L427,253L426,254L414,242L413,242L399,228L398,228L395,225L394,227L398,231L398,232L411,245L411,246L422,257L422,258L421,259L413,255L402,245L398,243L390,241L386,236L385,238L387,242L389,244L393,246L395,246L400,249L410,259L417,263L416,264L414,264L411,262L406,261L403,259L398,258L395,256L387,254L384,252L382,252L378,250L377,252L391,259L393,259L404,265L406,265L415,270L414,271L405,271L404,270L401,270L396,267L393,267L392,266L383,266L382,267L379,267L375,264L373,265L374,267L380,270L391,270L405,276L412,276L413,277L411,279L384,279L383,280L372,280L371,281L372,282L383,282L384,283L410,283L414,285L413,286L411,286L404,289L391,289L379,295L373,294L373,296L375,297L383,297L386,295L392,294L393,293L408,293L412,291L414,291L415,292L406,297L404,297L393,303L391,303L377,310L378,312L379,311L384,310L387,308L395,306L398,304L403,303L406,301L411,300L414,298L416,298L417,299L408,307L404,308L397,312L389,321L387,322L384,322L385,324L389,324L393,322L400,315L406,312L413,310L421,303L423,304L398,330L398,331L394,335L395,337L398,334L399,334L413,320L414,320L426,308L427,309L425,313L425,315L423,317L421,321L416,325L411,334L411,337L409,341L407,343L406,343L405,345L408,345L412,342L412,341L414,339L414,337L417,331L428,320L431,313L432,312L433,313L432,318L430,321L429,326L427,329L427,331L426,332L425,337L423,340L422,345L420,348L419,353L421,353L425,345L425,343L431,332L431,330L436,321L436,319L439,315L440,316L440,320L439,321L439,328L435,336L435,353L433,355L433,357L436,356L438,352L438,342L439,341L439,338L441,335L441,333L444,327L444,324L445,323L445,317L446,316L447,317L447,333L448,334L448,358L450,359L451,358L451,334L452,333L452,317L453,316L454,317L456,324L457,325L457,330L458,331L457,332L457,337L458,338L459,344L463,351L463,358L465,357L465,355L466,354L466,349L462,341L462,324L459,317L459,315L460,314L463,319L463,321L468,330L468,332L474,343L474,345L478,353L480,353L479,348L477,345L476,340L474,337L474,335L473,334L472,329L470,326L469,321L467,318L466,313L467,312L468,314L474,320L477,326L478,330L480,332L480,333L490,342L490,345L491,347L493,344L492,343L492,340L482,328L478,317L472,310L472,309L473,308L485,320L486,320L500,334L501,334L504,337L505,335L501,331L501,330L476,304L478,303L486,307L489,310L490,310L494,315L501,319L509,321L513,326L514,324L512,320L510,318L506,316L504,316L499,313L489,303L482,299L483,298L485,298L488,300L496,302L499,304L501,304L504,306L512,308L515,310L517,310L521,312L522,310L508,303L506,303L495,297L493,297L484,292L485,291L494,291L495,292L498,292L503,295L506,295L507,296L516,296L517,295L520,295L524,298L526,297L525,295L519,292L508,292L494,286L487,286L486,285L488,283L515,283L516,282L527,282L528,281L527,280L516,280L515,279L489,279L485,277L486,276L488,276L495,273L508,273L520,267L526,268L526,266L524,265L516,265L513,267L507,268L506,269L491,269L490,270L487,270L486,269L504,260L506,260L517,254L521,253L522,252L521,250L520,251L515,252L512,254L507,255L504,257L499,258L496,260L488,262L485,264L483,264L482,265L481,264L481,263L488,257L502,250L510,241L512,240L515,240L514,238L510,238L506,240L499,247L493,250L486,252L478,259L476,258L501,232L501,231L505,227L504,225L501,228L500,228L486,242L485,242L473,254L472,253L474,249L474,247L476,245L478,241L483,237L488,228L488,225L490,221L492,219L493,219L494,217L491,217L486,221L485,225L481,232L471,242L468,249L467,250L466,249L467,244L469,241L470,236L472,233L472,231L473,230L474,225L476,222L477,217L479,214L480,209L478,209L474,217L474,219L468,230L468,232L463,241L463,243L460,247L459,246L459,241L460,240L460,234L464,226L464,209L466,207L466,205L464,205L461,210L461,220L460,221L460,224L458,227L458,229L455,235L455,238L454,239L454,245L453,246L452,245L452,229L451,228L451,204Z M432,312L433,311L434,312L433,313Z M480,298L481,297L483,298L482,299Z M416,298L417,297L418,298L417,299Z M484,270L485,269L487,270L486,271Z M416,264L417,263L419,264L418,265Z M465,250L466,249L467,250L466,251Z",
+            "colorId": 5,
+            "labelX": 450,
+            "labelY": 281,
+            "fillRule": "evenodd"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "argentina-aconcagua",
+          "src": "./content/photos/argentina-aconcagua.jpg",
+          "caption": "הר אקונקגואה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Aconcagua_Mountain_from_the_south.jpg",
+          "creator": "Dropus",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-bariloche",
+          "src": "./content/photos/argentina-bariloche.jpg",
+          "caption": "ברילוצ׳ה — העיר והאגם",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Llao_Llao_Peninsula.jpg",
+          "creator": "Fernando",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-buenos-aires",
+          "src": "./content/photos/argentina-buenos-aires.jpg",
+          "caption": "בואנוס איירס — עיר הבירה והעיר הגדולה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Buenos_Aires_Puerto_Madero_29.jpg",
+          "creator": "Andrzej Otrębski",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-casa-rosada",
+          "src": "./content/photos/argentina-casa-rosada.jpg",
+          "caption": "בואנוס איירס — הבית הוורוד",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:La_Casa_Rosada,_Buenos_Aires,_Argentina.jpg",
+          "creator": "UrbanShift",
+          "license": "Public domain",
+          "licenseURL": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-colon",
+          "src": "./content/photos/argentina-colon.jpg",
+          "caption": "בואנוס איירס — תיאטרון קולון",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Teatro_Col%C3%B3n_de_Buenos_Aires,_vista_exterior_03.JPG",
+          "creator": "Pablomolo",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-cordoba",
+          "src": "./content/photos/argentina-cordoba.jpg",
+          "caption": "קורדובה — הכיכר והקתדרלה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_urbano_centro_de_C%C3%B3rdoba_(Argentina)_2011-12-29_02.jpg",
+          "creator": "Alakasam",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-fitz-roy",
+          "src": "./content/photos/argentina-fitz-roy.jpg",
+          "caption": "הר פיץ רוי בפטגוניה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Fitz_Roy_2.jpg",
+          "creator": "Prissantenbär",
+          "license": "Public domain",
+          "licenseURL": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-iguazu",
+          "src": "./content/photos/argentina-iguazu.jpg",
+          "caption": "מפלי איגואסו בגבול ארגנטינה וברזיל",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Iguazu_D%C3%A9cembre_2007_-_Panorama_8.jpg",
+          "creator": "Martin St-Amant (S23678)",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-la-boca",
+          "src": "./content/photos/argentina-la-boca.jpg",
+          "caption": "בואנוס איירס — בתי לה בוקה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:El_caminito2_-_Buenos_Aires_-_Argentina.jpg",
+          "creator": "Diego Delso",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-mar-del-plata",
+          "src": "./content/photos/argentina-mar-del-plata.jpg",
+          "caption": "מאר דל פלאטה — העיר והחוף",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Mar-del-plata.JPG",
+          "creator": "Leandro Kibisz (Loco085)",
+          "license": "CC BY-SA 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-mendoza",
+          "src": "./content/photos/argentina-mendoza.jpg",
+          "caption": "מנדוסה — כיכר העצמאות",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_de_la_Plaza_Independencia_(Mendoza)_2015.jpg",
+          "creator": "Ciudad de Mendoza",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-obelisco",
+          "src": "./content/photos/argentina-obelisco.jpg",
+          "caption": "בואנוס איירס — האובליסק",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Buenos_Aires-Av._9_de_julio.jpg",
+          "creator": "jennifrog",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-perito-moreno",
+          "src": "./content/photos/argentina-perito-moreno.jpg",
+          "caption": "קרחון פריטו מורנו",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG",
+          "creator": "Luca Galuzzi (Lucag)",
+          "license": "CC BY-SA 2.5",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-quebrada",
+          "src": "./content/photos/argentina-quebrada.jpg",
+          "caption": "קברדה דה אומוואקה — הרים צבעוניים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Quebrada_de_Humahuaca_01.jpg",
+          "creator": "Bernard Gagnon",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-rosario",
+          "src": "./content/photos/argentina-rosario.jpg",
+          "caption": "רוסאריו — אנדרטת הדגל",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Rosario_National_Flag_Memorial_View-20110510-RM-144139.jpg",
+          "creator": "Ermell",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-salinas",
+          "src": "./content/photos/argentina-salinas.jpg",
+          "caption": "סלינאס גראנדס — מישור המלח",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Salinas_Grandes_Jujuy.JPG",
+          "creator": "CarlosA.Barrio",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-salta",
+          "src": "./content/photos/argentina-salta.jpg",
+          "caption": "סלטה — הכיכר והקתדרלה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Catedral_de_Salta_(552008).jpg",
+          "creator": "No gravity / David",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-tierra-fuego",
+          "src": "./content/photos/argentina-tierra-fuego.jpg",
+          "caption": "טיירה דל פואגו — אגמים ויערות",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lago_Acigami,_Tierra_del_Fuego_National_Park,_Argentina.jpg",
+          "creator": "Bob Ramsak",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-ushuaia",
+          "src": "./content/photos/argentina-ushuaia.jpg",
+          "caption": "אושואיה — העיר בקצה הדרום",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Ushuaia_panorama_feb_2015.JPG",
+          "creator": "Gastón Cuello",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "argentina-valdes",
+          "src": "./content/photos/argentina-valdes.jpg",
+          "caption": "חצי האי ואלדס — חוף האוקיינוס",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Pen%C3%ADnsula_Vald%C3%A9s,_panor%C3%A1micas_(1994)_01.jpg",
+          "creator": "LBM1948",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/argentina.mp3",
+        "title": "מסע בארגנטינה",
+        "inspiration": "קטע שנוצר ב-Suno עבור ארגנטינה",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "argentina-capital",
+          "question": "מהי עיר הבירה של ארגנטינה?",
+          "answers": [
+            "בואנוס איירס",
+            "ברזיליה",
+            "רבאט",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "argentina-flag",
+          "question": "איזה סמל מופיע במרכז דגל ארגנטינה?",
+          "answers": [
+            "כוכב ירוק",
+            "שמש",
+            "עלה",
+            "עיגול אדום"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "argentina-dance",
+          "question": "איזה ריקוד מזוהה עם ארגנטינה?",
+          "answers": [
+            "ואלס",
+            "סמבה",
+            "טנגו",
+            "הורה"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "argentina-patagonia",
+          "question": "איזה אזור טבע מפורסם נמצא בדרום ארגנטינה?",
+          "answers": [
+            "הסהרה",
+            "הגליל",
+            "היער השחור",
+            "פטגוניה"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "argentina-mate",
+          "question": "איך נקרא משקה צמחים מוכר בארגנטינה?",
+          "answers": [
+            "מאטה",
+            "אספרסו",
+            "לימונדה",
+            "שוקו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "argentina-continent",
+          "question": "באיזו יבשת נמצאת ארגנטינה?",
+          "answers": [
+            "אוקיאניה",
+            "דרום אמריקה",
+            "אסיה",
+            "אירופה"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "australia",
+      "name": "אוסטרליה",
+      "capital": "קנברה",
+      "continentId": "oceania",
+      "familiarity": "familiar",
+      "accent": "#B28B65",
+      "emoji": "🦘",
+      "flag": {
+        "viewBox": "0 0 900 450",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 450
+        },
+        "regions": [
+          {
+            "id": "color-2-8",
+            "path": "M899,0L450,0L450,24L448,26L351,74L449,74L450,75L450,149L449,150L351,150L448,198L450,200L450,224L449,225L399,225L264,157L262,157L262,224L261,225L188,225L187,224L187,157L185,157L50,225L0,225L0,449L899,449Z M674,344L676,345L676,347L677,348L677,350L678,351L678,353L679,354L681,361L685,360L688,358L693,357L696,355L698,355L699,356L689,371L705,381L704,382L701,382L700,383L690,383L689,384L686,384L686,386L687,387L687,393L688,394L688,400L689,401L688,403L675,390L674,390L661,403L660,401L661,400L661,394L662,393L662,387L663,386L663,384L660,384L659,383L649,383L648,382L645,382L644,381L660,371L650,356L651,355L653,355L656,357L658,357L659,358L661,358L664,360L668,361L670,354L671,353L671,351L672,350L672,348L673,347L673,345Z M173,295L177,296L180,298L185,299L193,303L198,304L201,306L206,307L209,309L211,309L212,308L212,306L213,305L213,303L214,302L214,300L215,299L215,297L218,290L218,287L219,286L219,284L220,283L220,281L221,280L221,278L224,271L226,272L226,274L227,275L227,277L228,278L228,280L231,287L231,290L232,291L232,293L233,294L233,296L234,297L234,299L235,300L235,302L238,309L243,308L251,304L256,303L259,301L264,300L267,298L269,298L276,295L277,296L254,330L258,332L260,334L263,335L265,337L268,338L270,340L273,341L275,343L285,348L290,352L289,353L279,353L278,354L267,354L266,355L256,355L255,356L249,356L250,371L251,372L251,378L252,379L252,385L253,386L253,392L254,393L254,396L253,397L225,368L224,368L196,397L195,396L195,393L196,392L196,386L197,385L197,379L198,378L198,372L199,371L200,356L194,356L193,355L184,355L183,354L171,354L170,353L160,353L159,352L164,348L169,346L171,344L174,343L176,341L179,340L181,338L184,337L186,335L189,334L191,332L195,330L172,296Z M719,225L721,226L721,228L725,236L736,237L737,238L728,246L729,252L730,253L730,256L731,257L730,258L727,257L720,252L710,258L708,257L709,256L709,253L710,252L711,246L702,238L703,237L714,236L716,233L716,231Z M585,177L586,176L587,177L586,178Z M537,177L538,176L539,177L538,178Z M562,165L564,168L564,170L567,177L567,180L569,183L570,182L575,181L578,179L580,179L584,177L586,178L586,179L578,190L577,193L579,195L582,196L584,198L587,199L589,201L593,203L592,204L588,204L587,205L576,205L574,206L574,212L575,213L575,219L576,220L576,224L575,225L562,211L549,225L548,224L548,220L549,219L550,206L548,205L537,205L536,204L532,204L531,203L535,201L537,199L540,198L542,196L545,195L547,193L546,190L544,188L538,178L540,177L541,178L549,180L555,183L557,180L557,177L558,176L560,168Z M774,135L776,136L776,139L777,140L777,142L778,143L778,145L779,146L781,153L785,152L788,150L790,150L796,147L798,147L799,148L789,163L793,165L795,167L798,168L800,170L803,171L805,173L804,174L800,174L799,175L789,175L788,176L786,176L786,178L787,179L787,185L788,186L788,192L789,193L788,195L775,182L774,182L761,195L760,193L761,192L761,186L762,185L762,179L763,178L763,176L761,175L751,175L750,174L745,174L744,173L746,171L749,170L751,168L756,166L760,163L750,148L751,147L753,147L754,148L756,148L759,150L761,150L768,153L770,146L771,145L771,143L772,142L772,140L773,139L773,136Z M674,44L676,45L676,47L677,48L677,50L678,51L678,53L679,54L681,61L685,60L688,58L693,57L696,55L698,55L699,56L689,71L705,81L701,83L690,83L689,84L686,84L686,86L687,87L687,93L688,94L688,100L689,101L688,103L675,90L674,90L661,103L660,101L661,100L661,94L662,93L662,87L663,86L663,84L660,84L659,83L649,83L648,82L645,82L644,81L660,71L650,56L651,55L653,55L656,57L658,57L659,58L661,58L664,60L668,61L670,54L671,53L671,51L672,50L672,48L673,47L673,45Z",
+            "colorId": 2,
+            "labelX": 474,
+            "labelY": 334,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-11",
+            "path": "M173,296L196,330L194,332L191,333L189,335L186,336L184,338L181,339L179,341L176,342L174,344L171,345L169,347L164,349L160,352L183,353L184,354L193,354L194,355L200,355L201,356L201,363L200,364L200,371L199,372L199,378L198,379L198,385L197,386L197,392L196,393L196,396L224,367L225,367L253,396L253,393L252,392L252,386L251,385L251,379L250,378L250,372L249,371L248,356L249,355L255,355L256,354L266,354L267,353L289,352L285,349L282,348L280,346L275,344L273,342L265,338L263,336L260,335L258,333L255,332L253,330L276,296L272,298L267,299L264,301L259,302L256,304L251,305L243,309L238,310L236,308L236,306L235,305L235,303L234,302L234,300L233,299L233,297L230,290L230,287L229,286L225,272L224,272L224,274L223,275L223,277L222,278L222,280L219,287L219,290L218,291L218,293L217,294L213,308L211,310L209,310L206,308L201,307L198,305L193,304L190,302L188,302L185,300L183,300L182,299L180,299L177,297Z",
+            "colorId": 3,
+            "labelX": 225,
+            "labelY": 337,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-details",
+            "path": "M651,356L661,371L656,375L653,376L651,378L645,381L648,381L649,382L659,382L660,383L663,383L664,384L664,386L663,387L663,393L662,394L662,400L661,402L674,389L675,389L688,402L687,400L687,394L686,393L686,387L685,386L685,384L686,383L689,383L690,382L700,382L701,381L704,381L698,378L696,376L693,375L688,371L698,356L696,356L693,358L691,358L690,359L688,359L685,361L681,362L679,359L675,345L674,345L670,359L668,362L664,361L661,359L656,358L653,356Z M703,238L712,246L711,252L710,253L710,256L709,257L712,256L719,251L725,254L727,256L730,257L729,256L729,253L728,252L727,246L736,238L725,237L722,233L720,226L719,226L717,233L714,237Z M586,177L583,179L578,180L575,182L573,182L569,184L566,180L566,177L565,176L565,174L564,173L562,166L560,173L559,174L559,176L558,177L558,180L555,184L549,181L541,179L538,177L547,190L548,193L545,196L532,203L536,203L537,204L548,204L551,206L551,212L550,213L549,224L562,210L575,224L574,213L573,212L573,206L576,204L587,204L588,203L592,203L579,196L576,193L577,190Z M774,136L774,139L773,140L770,151L768,154L764,152L759,151L756,149L751,148L761,163L756,167L751,169L749,171L745,173L750,173L751,174L761,174L764,176L764,178L763,179L763,185L762,186L762,192L761,194L774,181L775,181L788,194L787,192L787,186L786,185L786,179L785,178L785,176L789,174L799,174L800,173L804,173L800,171L798,169L795,168L793,166L790,165L788,163L798,148L793,149L790,151L788,151L785,153L781,154L779,151L779,149L778,148L778,146L775,139L775,136Z M651,56L661,71L656,75L653,76L651,78L645,81L648,81L649,82L659,82L660,83L663,83L664,84L664,86L663,87L663,93L662,94L662,100L661,102L674,89L675,89L688,102L687,100L687,94L686,93L686,87L685,86L685,84L686,83L689,83L690,82L701,82L702,81L704,81L698,78L696,76L693,75L688,71L698,56L696,56L693,58L691,58L690,59L688,59L685,61L681,62L679,59L675,45L674,45L670,59L668,62L664,61L661,59L656,58L653,56Z",
+            "colorId": 3,
+            "labelX": 668,
+            "labelY": 223,
+            "fillRule": "evenodd",
+            "hitPath": "M626,181h84v84h-84Z"
+          },
+          {
+            "id": "canton-1",
+            "path": "M301,150L449,224L449,208L448,207L334,150Z M182,150L148,150L0,224L34,224Z M449,0L415,0L267,74L301,74Z M0,90L0,134L201,134L202,135L202,224L247,224L247,135L248,134L449,134L449,90L248,90L247,89L247,0L202,0L202,89L201,90Z M0,0L0,16L1,17L115,74L149,74Z",
+            "colorId": 1,
+            "labelX": 225,
+            "labelY": 112,
+            "fillRule": "evenodd",
+            "hitPath": "M195,82h60v60h-60Z"
+          },
+          {
+            "id": "canton-2",
+            "path": "M0,199L98,150L0,150Z M0,25L0,74L98,74Z M262,67L264,67L398,0L262,0Z M51,0L185,67L187,67L187,0Z",
+            "colorId": 2,
+            "labelX": 342,
+            "labelY": 33,
+            "fillRule": "evenodd",
+            "hitPath": "M312,3h60v60h-60Z"
+          },
+          {
+            "id": "canton-3",
+            "path": "M248,135L248,224L261,224L261,157L262,156L264,156L399,224L447,224L302,152L300,150L301,149L334,149L449,207L449,200L448,199L350,150L351,149L449,149L449,135Z M0,135L0,149L98,149L99,150L1,199L0,200L0,223L148,149L182,149L183,150L182,151L35,224L50,224L185,156L187,156L188,157L188,224L201,224L201,135Z M248,0L248,89L449,89L449,75L351,75L350,74L448,25L449,24L449,1L301,75L267,75L266,74L267,73L414,0L399,0L264,68L262,68L261,67L261,0Z M2,0L150,74L149,75L115,75L0,17L0,24L1,25L99,74L98,75L0,75L0,89L201,89L201,0L188,0L188,67L187,68L185,68L50,0Z",
+            "colorId": 3,
+            "labelX": 351,
+            "labelY": 94,
+            "fillRule": "evenodd",
+            "hitPath": "M321,64h60v60h-60Z"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "australia-adelaide",
+          "src": "./content/photos/australia-adelaide.jpg",
+          "caption": "אדלייד — נוף העיר",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Adelaide_2022_Skyline.jpg",
+          "creator": "Outoftheblue9",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-blue-mountains",
+          "src": "./content/photos/australia-blue-mountains.jpg",
+          "caption": "ההרים הכחולים — שלוש האחיות",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Blue_Mountains_National_Park_(AU),_Three_Sisters_--_2019_--_1987-9.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-bondi",
+          "src": "./content/photos/australia-bondi.jpg",
+          "caption": "סידני — חוף בונדי",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Bondi_Beach_(4492989539).jpg",
+          "creator": "Nigel Howe from Sydney, Australia",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-brisbane",
+          "src": "./content/photos/australia-brisbane.jpg",
+          "caption": "בריזבן — העיר והנהר",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Panorama_Story_Bridge_and_Brisbane_CBD.jpg",
+          "creator": "Troy Keith",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-burley-griffin",
+          "src": "./content/photos/australia-burley-griffin.jpg",
+          "caption": "קנברה — אגם ברלי גריפין",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:ACT011_Lake_Burley_Griffin_1985_(33315177892).jpg",
+          "creator": "Brian ireland",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-canberra",
+          "src": "./content/photos/australia-canberra.jpg",
+          "caption": "קנברה — הפרלמנט בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Exterior_of_Parliament_House,_Canberra,_2022,_03.jpg",
+          "creator": "Kgbo",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-cradle",
+          "src": "./content/photos/australia-cradle.jpg",
+          "caption": "טסמניה — הר קריידל ואגם דאב",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Boat_shed_and_Cradle_Mountain_at_Dove_Lake,_Tas.jpg",
+          "creator": "Thennicke",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-flinders",
+          "src": "./content/photos/australia-flinders.jpg",
+          "caption": "מלבורן — תחנת פלינדרס",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Melbourne_(AU),_Flinders_Street_Railway_Station_--_2019_--_202623.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-gold-coast",
+          "src": "./content/photos/australia-gold-coast.jpg",
+          "caption": "גולד קוסט — העיר והחוף",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Surfers_Paradise_Beach,_Gold_Coast,_Queensland,_Australia.jpg",
+          "creator": "Jack Bain",
+          "license": "CC BY 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-harbour-bridge",
+          "src": "./content/photos/australia-harbour-bridge.jpg",
+          "caption": "סידני — גשר הנמל",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sydney_Harbour_Bridge_and_Sydney_Opera_House_panorama.jpg",
+          "creator": "Kgbo",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-hobart",
+          "src": "./content/photos/australia-hobart.jpg",
+          "caption": "הובארט — העיר והנמל",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hobart_Tasmania_waterfront_TMAG_2008.jpg",
+          "creator": "eGuide Travel",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-kakadu",
+          "src": "./content/photos/australia-kakadu.jpg",
+          "caption": "קקדו — טבע בצפון אוסטרליה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Kakadu_(AU),_Kakadu_National_Park,_Nadap_Lookout_--_2019_--_4182.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-melbourne",
+          "src": "./content/photos/australia-melbourne.jpg",
+          "caption": "מלבורן — העיר ונהר יארה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Melbourne_Skyline_from_Rialto_Crop_-_Nov_2008.jpg",
+          "creator": "Diliff",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-opera",
+          "src": "./content/photos/australia-opera.jpg",
+          "caption": "סידני — בית האופרה",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Opera_House_--_2019_--_3061-4.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-perth",
+          "src": "./content/photos/australia-perth.jpg",
+          "caption": "פרת׳ — העיר ונהר סוואן",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Perth_(AU),_Elizabeth_Quay_Bridge_--_2019_--_0375-9.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-reef",
+          "src": "./content/photos/australia-reef.jpg",
+          "caption": "שונית המחסום הגדולה",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Aerial_View_of_Great_Barrier_Reef_(Ank_Kumar)_09.jpg",
+          "creator": "Ank Kumar",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-sydney",
+          "src": "./content/photos/australia-sydney.jpg",
+          "caption": "סידני — העיר והמפרץ",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Skyline_--_2019_--_2287.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-twelve-apostles",
+          "src": "./content/photos/australia-twelve-apostles.jpg",
+          "caption": "שנים עשר השליחים — סלעים בים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Princetown_(AU),_Port_Campbell_National_Park,_Twelve_Apostles_--_2019_--_0969.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-uluru",
+          "src": "./content/photos/australia-uluru.jpg",
+          "caption": "אולורו — הסלע האדום",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru_--_2019_--_3688.jpg",
+          "creator": "Dietmar Rabich",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "australia-war-memorial",
+          "src": "./content/photos/australia-war-memorial.jpg",
+          "caption": "קנברה — אנדרטת הזיכרון",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:ANZAC_Parade_from_the_Australian_War_Memorial,_Canberra_ACT.jpg",
+          "creator": "Thennicke",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/australia.mp3",
+        "title": "מסע באוסטרליה",
+        "inspiration": "קטע שנוצר ב-Suno עבור אוסטרליה",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "australia-capital",
+          "question": "מהי עיר הבירה של אוסטרליה?",
+          "answers": [
+            "קנברה",
+            "סידני",
+            "פריז",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "australia-kangaroo",
+          "question": "איזו חיה מזוהה עם אוסטרליה?",
+          "answers": [
+            "פיל",
+            "קנגורו",
+            "דוב קוטב",
+            "גמל"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "australia-opera",
+          "question": "באיזו עיר נמצא בית האופרה האוסטרלי המפורסם?",
+          "answers": [
+            "קהיר",
+            "ברלין",
+            "סידני",
+            "רומא"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "australia-koala",
+          "question": "איזו חיה אוסטרלית חיה על עצים ואוכלת עלי אקליפטוס?",
+          "answers": [
+            "זברה",
+            "כלב",
+            "סוס",
+            "קואלה"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "australia-reef",
+          "question": "איזה אתר טבע נמצא מול חופי אוסטרליה?",
+          "answers": [
+            "שונית המחסום הגדולה",
+            "ים המלח",
+            "הגרנד קניון",
+            "מפל הבניאס"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "australia-continent",
+          "question": "לאיזה אזור בעולם שייכת אוסטרליה?",
+          "answers": [
+            "דרום אמריקה",
+            "אוקיאניה",
+            "אירופה",
+            "אפריקה"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "new-zealand",
+      "name": "ניו זילנד",
+      "capital": "ולינגטון",
+      "continentId": "oceania",
+      "familiarity": "familiar",
+      "accent": "#65958B",
+      "emoji": "🥝",
+      "flag": {
+        "viewBox": "0 0 900 450",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 900,
+          "height": 450
+        },
+        "regions": [
+          {
+            "id": "color-1-details",
+            "path": "M649,351L665,363L664,364L664,366L663,367L659,381L674,370L681,374L690,381L690,379L689,378L689,376L688,375L688,373L687,372L687,370L684,363L700,351L681,351L679,348L678,342L676,339L675,333L674,333L674,335L671,342L671,345L668,351Z M549,187L562,197L562,199L561,200L561,202L560,203L560,205L557,212L560,211L567,205L571,203L584,213L582,206L581,205L581,202L579,199L579,197L592,187L576,187L575,186L571,172L570,172L570,174L569,175L569,177L568,178L568,180L565,187Z M746,161L746,162L750,164L757,170L756,171L753,182L762,175L765,175L771,180L775,182L774,181L774,179L771,172L771,169L780,162L781,162L781,161L769,161L766,157L766,154L765,153L764,149L763,149L763,151L762,152L762,154L759,161Z M653,82L653,83L654,83L657,86L658,86L666,92L666,94L665,95L665,97L664,98L664,100L663,101L661,108L666,104L670,102L673,99L676,99L679,102L680,102L688,108L686,101L685,100L685,98L684,97L684,95L683,94L683,92L688,88L692,86L695,83L696,83L696,82L680,82L678,79L678,76L677,75L675,67L674,67L674,69L671,76L671,79L669,82Z",
+            "colorId": 1,
+            "labelX": 665,
+            "labelY": 224,
+            "fillRule": "evenodd",
+            "hitPath": "M623,182h84v84h-84Z"
+          },
+          {
+            "id": "color-2-9",
+            "path": "M899,0L450,0L450,24L448,26L352,74L449,74L450,75L450,149L449,150L352,150L448,198L450,200L450,224L449,225L399,225L264,157L263,157L263,224L262,225L187,225L186,224L186,157L50,225L0,225L0,449L899,449Z M674,320L676,321L676,324L677,325L677,327L678,328L678,330L679,331L679,333L680,334L680,336L681,337L681,339L682,340L684,347L711,347L712,348L690,364L690,367L691,368L691,370L692,371L692,373L693,374L693,376L694,377L694,379L695,380L695,382L698,389L698,391L697,392L694,389L686,384L676,376L673,376L670,379L659,386L652,392L651,391L651,389L652,388L652,386L653,385L653,383L654,382L654,380L655,379L655,377L656,376L656,374L659,367L659,364L637,348L638,347L665,347L667,340L668,339L668,337L669,336L669,334L670,333L670,331L671,330L671,328L672,327L672,325L673,324L673,321Z M781,192L782,191L783,192L782,193Z M570,159L572,160L572,162L573,163L573,165L574,166L574,168L577,175L578,181L580,183L601,183L602,182L604,183L603,185L602,185L595,191L591,193L584,199L585,200L585,202L586,203L586,205L589,212L589,215L592,222L591,223L590,223L579,214L575,212L572,209L569,209L551,223L549,222L550,221L550,219L551,218L551,216L554,209L554,206L557,199L546,190L538,185L537,183L538,182L540,183L561,183L563,181L563,179L566,172L566,169L567,168L567,166Z M764,136L765,137L765,139L766,140L770,154L772,157L792,157L793,158L790,161L786,163L776,171L776,173L777,174L777,176L778,177L778,179L779,180L779,182L782,189L782,191L781,192L780,192L773,186L769,184L766,181L763,180L757,185L749,190L746,193L745,192L745,190L748,183L748,180L749,179L751,171L744,165L736,160L734,158L734,157L735,156L736,157L756,157L758,150L759,149L759,147L760,146L760,144L761,143L762,137Z M675,54L676,55L676,58L677,59L677,61L678,62L678,64L679,65L679,67L680,68L680,70L681,71L683,78L707,78L708,79L705,82L701,84L688,94L690,101L691,102L691,104L692,105L692,107L693,108L693,110L694,111L694,113L695,114L695,116L696,117L694,118L681,108L674,104L661,114L657,116L654,119L653,117L654,116L654,114L655,113L655,111L656,110L656,108L657,107L657,105L658,104L658,102L659,101L661,94L648,84L644,82L641,79L642,78L666,78L668,71L669,70L669,68L670,67L670,65L671,64L671,62L672,61L672,59L673,58L673,55Z",
+            "colorId": 2,
+            "labelX": 339,
+            "labelY": 330,
+            "fillRule": "evenodd"
+          },
+          {
+            "id": "color-3-details",
+            "path": "M674,321L674,324L673,325L673,327L672,328L672,330L671,331L667,345L665,348L638,348L639,348L642,351L650,356L660,364L660,367L659,368L659,370L658,371L658,373L657,374L657,376L656,377L652,391L655,388L656,388L659,385L670,378L673,375L676,375L686,383L694,388L697,391L697,389L696,388L696,386L695,385L695,383L694,382L694,380L693,379L693,377L692,376L692,374L689,367L689,364L699,356L700,356L710,348L711,348L684,348L682,345L682,343L681,342L681,340L680,339L680,337L679,336L679,334L678,333L678,331L675,324L675,321Z M674,332L676,333L677,339L679,342L679,345L680,346L681,350L700,350L701,351L698,354L697,354L694,357L693,357L690,360L685,363L686,364L686,366L687,367L687,369L688,370L688,372L691,379L691,381L690,382L675,371L668,375L659,382L658,381L658,379L659,378L659,376L660,375L660,373L661,372L661,370L664,363L659,360L648,351L649,350L668,350L669,346L670,345L670,342L671,341L671,339Z M538,183L538,184L546,189L558,199L557,200L557,202L555,206L555,209L554,210L554,212L553,213L553,215L550,222L551,222L558,216L562,214L569,208L572,208L575,211L579,213L582,216L583,216L586,219L591,222L590,221L590,219L588,215L588,212L587,211L587,209L586,208L586,206L583,199L587,195L588,195L591,192L592,192L602,184L603,184L603,183L601,184L580,184L577,181L576,175L575,174L571,160L570,160L564,181L561,184L540,184Z M570,171L572,172L576,186L592,186L593,187L580,197L580,199L582,202L582,205L585,212L584,214L571,204L567,206L560,212L558,213L556,212L557,211L561,197L548,187L549,186L565,186L565,184L566,183L566,181L567,180L567,178Z M735,157L736,159L744,164L752,171L746,192L749,189L750,189L763,179L766,180L769,183L773,185L782,192L781,191L781,189L780,188L780,186L779,185L775,171L778,168L779,168L792,158L772,158L769,154L769,152L768,151L764,137L763,137L762,143L761,144L758,155L756,158L736,158Z M745,161L746,160L759,160L762,149L764,148L766,151L767,157L769,160L781,160L782,161L781,163L780,163L777,166L772,169L772,172L773,173L773,175L776,182L774,183L765,176L762,176L753,183L752,182L752,180L753,179L753,177L756,170L750,165L746,163Z M675,55L674,55L674,58L673,59L673,61L672,62L668,76L666,79L642,79L655,89L659,91L662,94L654,118L657,115L661,113L674,103L675,103L684,110L688,112L691,115L695,117L694,116L694,114L693,113L693,111L692,110L692,108L691,107L691,105L690,104L690,102L689,101L687,94L690,91L694,89L707,79L683,79L681,76L681,74L680,73L680,71L679,70L679,68L678,67L678,65L675,58Z M674,66L676,67L680,81L696,81L697,82L696,84L695,84L692,87L684,92L684,94L685,95L685,97L686,98L686,100L689,107L688,109L683,105L679,103L676,100L673,100L663,108L661,109L660,108L662,101L663,100L663,98L664,97L664,95L665,94L665,92L664,92L661,89L653,84L652,82L653,81L669,81L670,79L670,76L671,75L671,73Z",
+            "colorId": 3,
+            "labelX": 792,
+            "labelY": 360,
+            "fillRule": "evenodd",
+            "hitPath": "M757,325h70v70h-70Z"
+          },
+          {
+            "id": "canton-1",
+            "path": "M301,150L449,224L449,208L448,207L334,150Z M182,150L149,150L1,224L34,224Z M448,0L415,0L267,74L300,74Z M0,90L0,134L201,134L202,135L202,224L247,224L247,135L248,134L449,134L449,90L248,90L247,89L247,0L202,0L202,89L201,90Z M0,0L0,16L1,17L115,74L148,74Z",
+            "colorId": 1,
+            "labelX": 225,
+            "labelY": 112,
+            "fillRule": "evenodd",
+            "hitPath": "M195,82h60v60h-60Z"
+          },
+          {
+            "id": "canton-2",
+            "path": "M0,199L97,150L0,150Z M0,25L0,74L97,74Z M263,67L398,0L263,0Z M51,0L186,67L186,0Z",
+            "colorId": 2,
+            "labelX": 342,
+            "labelY": 33,
+            "fillRule": "evenodd",
+            "hitPath": "M312,3h60v60h-60Z"
+          },
+          {
+            "id": "canton-3",
+            "path": "M248,135L248,224L262,224L262,157L263,156L399,224L448,224L300,150L301,149L334,149L449,207L449,200L448,199L353,152L351,150L352,149L449,149L449,135Z M0,135L0,149L97,149L98,150L96,152L1,199L0,200L0,224L149,149L182,149L183,150L35,224L50,224L185,156L187,157L187,224L201,224L201,135Z M248,0L248,89L449,89L449,75L352,75L351,74L353,72L448,25L449,24L449,0L447,2L445,2L300,75L267,75L266,74L414,0L399,0L264,68L262,67L262,0Z M2,0L149,74L148,75L115,75L0,17L0,24L1,25L96,72L98,74L97,75L0,75L0,89L201,89L201,0L187,0L187,67L186,68L50,0Z",
+            "colorId": 3,
+            "labelX": 351,
+            "labelY": 94,
+            "fillRule": "evenodd",
+            "hitPath": "M321,64h60v60h-60Z"
+          }
+        ]
+      },
+      "photos": [
+        {
+          "id": "new-zealand-abel-tasman",
+          "src": "./content/photos/new-zealand-abel-tasman.jpg",
+          "caption": "אבל טסמן — חוף זהוב",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Abel_Tasman_National_Park_beach_plant.jpg",
+          "creator": "Hector Garcia from Barcelona, Catalonia, Spain",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-auckland",
+          "src": "./content/photos/new-zealand-auckland.jpg",
+          "caption": "אוקלנד — העיר הגדולה",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Auckland_skyline_from_harbour.png",
+          "creator": "WBPchur",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-bay-islands",
+          "src": "./content/photos/new-zealand-bay-islands.jpg",
+          "caption": "דולפינים במפרץ האיים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:00_4801_Dolphins_-_Bay_of_Islands.jpg",
+          "creator": "W. Bulach",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-beehive",
+          "src": "./content/photos/new-zealand-beehive.jpg",
+          "caption": "ולינגטון — בניין הפרלמנט",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Wellington,_Beehive,_May_2015.jpg",
+          "creator": "Michal Klajban",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-cable-car",
+          "src": "./content/photos/new-zealand-cable-car.jpg",
+          "caption": "ולינגטון — רכבל מעל העיר",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Wellington_-_Cable_Car_-_panoramio.jpg",
+          "creator": "Pavel Špindler",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-christchurch",
+          "src": "./content/photos/new-zealand-christchurch.jpg",
+          "caption": "קרייסטצ׳רץ׳ — העיר ונהר אייבון",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Avon_River,_Christchurch,_New_Zealand_01.jpg",
+          "creator": "Michal Klajban",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-dunedin",
+          "src": "./content/photos/new-zealand-dunedin.jpg",
+          "caption": "דנידין — תחנת הרכבת",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Dunedin_Railway_Station_Full_Exterior_Rectilinear.jpg",
+          "creator": "Antilived",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-franz-josef",
+          "src": "./content/photos/new-zealand-franz-josef.jpg",
+          "caption": "קרחון פרנץ יוזף",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Tin_Bird_View_Of_Franz_Josef_Glacier_(61903143).jpg",
+          "creator": "Diego Angel",
+          "license": "CC BY 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-hobbiton",
+          "src": "./content/photos/new-zealand-hobbiton.jpg",
+          "caption": "הוביטון — כפר הסרטים",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Hobbit_holes_reflected_in_water.jpg",
+          "creator": "Jackie.lck (photos · photo sets)",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-milford",
+          "src": "./content/photos/new-zealand-milford.jpg",
+          "caption": "מילפורד סאונד — הרים ומים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Milford_Sound_in_Fiordland_National_Park_08.jpg",
+          "creator": "Krzysztof Golik",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-mount-cook",
+          "src": "./content/photos/new-zealand-mount-cook.jpg",
+          "caption": "אאורקי — הר קוק",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Aoraki_-_Mt_Cook,_Aoraki_-_Mount_Cook_National_Park,_New_Zealand.jpg",
+          "creator": "Michal Klajban",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-napier",
+          "src": "./content/photos/new-zealand-napier.jpg",
+          "caption": "נייפיר — בנייני אר דקו",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Art_Deco_Centre_Napier_1_(31711006941).jpg",
+          "creator": "Tony Hisgett from Birmingham, UK",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-pancake",
+          "src": "./content/photos/new-zealand-pancake.jpg",
+          "caption": "פונקייקי — סלעי הפנקייק",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:PancakeRocks_MC.jpg",
+          "creator": "Christian Mehlführer",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-queenstown",
+          "src": "./content/photos/new-zealand-queenstown.jpg",
+          "caption": "קווינסטאון — העיר ואגם וקאטיפו",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Wakatipu_from_Queenstown_gondola.jpg",
+          "creator": "Avenue",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-rotorua",
+          "src": "./content/photos/new-zealand-rotorua.jpg",
+          "caption": "רוטורואה — העיר והאגם",
+          "category": "city",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Rotorua_in_Rotorua_03.jpg",
+          "creator": "Krzysztof Golik",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-sky-tower",
+          "src": "./content/photos/new-zealand-sky-tower.jpg",
+          "caption": "אוקלנד — מגדל השמיים",
+          "category": "landmark",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Auckland_Sky_Tower_in_Christmas_colours.jpg",
+          "creator": "Marco Klapper",
+          "license": "CC BY 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-tekapo",
+          "src": "./content/photos/new-zealand-tekapo.jpg",
+          "caption": "אגם טקאפו",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Lake_Tekapo_01.jpg",
+          "creator": "Krzysztof Golik",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-tongariro",
+          "src": "./content/photos/new-zealand-tongariro.jpg",
+          "caption": "טונגרירו — אגמי האזמרגד",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:New_Zealand-Tongariro_Crossing-Emerald_Lakes-Panorama.png",
+          "creator": "Manfred Gruber",
+          "license": "CC BY-SA 3.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-wanaka",
+          "src": "./content/photos/new-zealand-wanaka.jpg",
+          "caption": "אגם ואנקה והעץ במים",
+          "category": "landscape",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Sunrise_over_Lake_Wanaka_from_Boundary_Creek,_New_Zealand.jpg",
+          "creator": "Michal Klajban",
+          "license": "CC BY-SA 4.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        },
+        {
+          "id": "new-zealand-wellington",
+          "src": "./content/photos/new-zealand-wellington.jpg",
+          "caption": "ולינגטון — גני הפרלמנט בעיר הבירה",
+          "category": "capital",
+          "sourceURL": "https://commons.wikimedia.org/wiki/File:Seddon_Statue_in_Parliament_Grounds.jpg",
+          "creator": "russellstreet",
+          "license": "CC BY-SA 2.0",
+          "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+          "changes": "Resized to a maximum of 1280 pixels; JPEG compressed; original framing retained."
+        }
+      ],
+      "music": {
+        "src": "./content/audio/new-zealand.mp3",
+        "title": "מסע בניו זילנד",
+        "inspiration": "קטע שנוצר ב-Suno עבור ניו זילנד",
+        "creator": "נוצר ב-Suno וסופק על ידי בעל הפרויקט",
+        "license": "פרטי רישיון והפצה טרם נמסרו"
+      },
+      "trivia": [
+        {
+          "id": "new-zealand-capital",
+          "question": "מהי עיר הבירה של ניו זילנד?",
+          "answers": [
+            "ולינגטון",
+            "אוקלנד",
+            "קנברה",
+            "טוקיו"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "new-zealand-kiwi",
+          "question": "איזו ציפור מזוהה עם ניו זילנד?",
+          "answers": [
+            "טווס",
+            "קיווי",
+            "יען",
+            "פלמינגו"
+          ],
+          "correctAnswerIndex": 1
+        },
+        {
+          "id": "new-zealand-flag",
+          "question": "איזה צבע יש לכוכבים בדגל ניו זילנד?",
+          "answers": [
+            "צהוב",
+            "שחור",
+            "אדום",
+            "ירוק"
+          ],
+          "correctAnswerIndex": 2
+        },
+        {
+          "id": "new-zealand-islands",
+          "question": "מהם שני האיים העיקריים של ניו זילנד?",
+          "answers": [
+            "כרתים וקפריסין",
+            "סיציליה וסרדיניה",
+            "הונשו והוקאידו",
+            "האי הצפוני והאי הדרומי"
+          ],
+          "correctAnswerIndex": 3
+        },
+        {
+          "id": "new-zealand-hobbiton",
+          "question": "איזה כפר סרטים מפורסם נמצא בניו זילנד?",
+          "answers": [
+            "הוביטון",
+            "דיסנילנד",
+            "ונציה",
+            "הוליווד"
+          ],
+          "correctAnswerIndex": 0
+        },
+        {
+          "id": "new-zealand-continent",
+          "question": "לאיזה אזור בעולם שייכת ניו זילנד?",
+          "answers": [
+            "דרום אמריקה",
+            "אוקיאניה",
+            "אפריקה",
+            "אירופה"
+          ],
+          "correctAnswerIndex": 1
+        }
+      ]
     }
   ]
 }

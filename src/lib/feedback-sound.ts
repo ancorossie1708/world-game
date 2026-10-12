@@ -45,7 +45,7 @@ export function stopFeedbackSounds(): void {
   silenceVoices();
 }
 
-function playNotes(kind: FeedbackKind, audio: AudioContext, id: number) {
+function playNotes(kind: FeedbackKind, audio: AudioContext, id: number, volume: number) {
   if (id !== requestId || audio.state !== 'running') return;
   silenceVoices();
   // A quiet rising major chord rewards a correct touch; two soft falling notes invite another try.
@@ -65,8 +65,8 @@ function playNotes(kind: FeedbackKind, audio: AudioContext, id: number) {
       gain.connect(audio.destination);
       const begins = start + index * spacing;
       gain.gain.setValueAtTime(0, begins);
-      gain.gain.linearRampToValueAtTime(kind === 'correct' ? 0.095 : 0.075, begins + 0.015);
-      gain.gain.exponentialRampToValueAtTime(0.001, begins + 0.225);
+      gain.gain.linearRampToValueAtTime((kind === 'correct' ? 0.095 : 0.075) * volume, begins + 0.015);
+      gain.gain.exponentialRampToValueAtTime(Math.min(0.001, 0.001 * volume), begins + 0.225);
       gain.gain.linearRampToValueAtTime(0, begins + 0.25);
       oscillator.onended = () => release(voice!);
       oscillator.start(begins);
@@ -78,17 +78,19 @@ function playNotes(kind: FeedbackKind, audio: AudioContext, id: number) {
 }
 
 /** Call from a touch/click handler. All sound is generated locally, including offline. */
-export function playFeedback(kind: FeedbackKind): void {
+export function playFeedback(kind: FeedbackKind, volume = 1): void {
   const id = ++requestId;
+  const level = Number.isFinite(volume) ? Math.max(0, Math.min(1, volume)) : 1;
+  if (level === 0) { silenceVoices(); return; }
   try {
     const audio = audioContext();
     if (!audio) return;
     if (audio.state === 'running') {
-      playNotes(kind, audio, id);
+      playNotes(kind, audio, id, level);
       return;
     }
     // The resume call occurs synchronously within the user's gesture on Android and browsers.
-    void audio.resume().then(() => playNotes(kind, audio, id)).catch(() => {});
+    void audio.resume().then(() => playNotes(kind, audio, id, level)).catch(() => {});
   } catch {
     // Devices that reject or do not support audio can continue playing normally.
   }

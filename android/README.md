@@ -30,7 +30,7 @@ and signing files are ignored by Git. The test APK is
 
 Alternatively, run **Android APK** in the repository's GitHub Actions tab after
 uploading the source. It builds an installable debug APK and runs Android lint.
-It also produces a signed release APK when all four repository secrets are present:
+It produces a permanent signed release APK after the one-time `WORLD_GAME_SIGNING` repository secret is configured. Run `SETUP_SIGNING.cmd` on the owner's PC, paste the copied configuration into that secret, and keep `.release-private/` backed up privately. The older four-secret configuration remains supported for existing setups:
 
 * `ANDROID_KEYSTORE_BASE64` — the release keystore encoded as base64.
 * `ANDROID_KEYSTORE_PASSWORD`
@@ -44,16 +44,12 @@ may use different temporary debug keys across runs and are intended for testing.
 An APK signed with a production key cannot update an installation signed with a
 different debug key. Start a lasting installation with the signed release APK.
 
-The workflow only prepares downloadable build artifacts. It does **not** publish
-or upload a GitHub Release automatically. After confirming the APK, attach the
-signed `world-game.apk` to a public GitHub Release and send its direct download
-link through WhatsApp. The first installation may require the caregiver to permit
+A signed build on `main` automatically creates a draft Release, uploads the verified APK and matching update manifest, then publishes the completed Release as latest. Other branches and pull requests only build artifacts. Every signed APK must match `android/signing-certificate.sha256`; a different key is rejected before publication. The WhatsApp link stays `https://github.com/ancorossie1708/world-game/releases/latest/download/world-game.apk`. The first installation may require the caregiver to permit
 installation from the browser. Android also asks for confirmation for app updates.
 
 ## Update configuration
 
-Configure repository variable `WORLD_GAME_MANIFEST_URL` with the public HTTPS URL
-of your versioned update manifest. CI embeds it into Android and the frontend.
+GitHub Actions automatically embeds `https://github.com/<owner>/<repo>/releases/latest/download/release-manifest.json` into Android and the frontend; no repository variable is required for automatic releases. The APK contains the same content version as its release manifest, preventing a redundant media download on first launch. Content file URLs use the immutable source commit SHA and their real SHA-256 checksums. For a manual local build, configure `WORLD_GAME_MANIFEST_URL` with the public manifest address.
 For a local build pass `-ManifestUrl`, set `WORLD_GAME_MANIFEST_URL`, or use Gradle
 `-PworldGameManifestUrl=...`. An empty value is supported: the packaged game works
 offline, and update checks report `not-configured` until a repository is connected.
@@ -195,81 +191,32 @@ Implementation references:
 [FileProvider](https://developer.android.com/reference/androidx/core/content/FileProvider),
 [Gradle setup](https://github.com/gradle/actions/blob/main/docs/setup-gradle.md).
 
-## הוראות פרסום והתקנה בעברית
 
-הדוגמאות משתמשות בשם המאגר `world-game`. החליפו `YOUR_USER` בשם המשתמש שלכם ב־GitHub. תהליך הבנייה קיים, אך APK חתום עדיין צריך להיבנות ולהיבדק על מכשיר.
+## התקנה ועדכונים פשוטים
 
-### 1. העלאת הפרויקט
+### הגדרה חד־פעמית
 
-ב־GitHub Desktop בחרו File → Add local repository ואת התיקייה `E:\Apps\World Game`. אם אין בה מאגר Git, בחרו יצירת מאגר בתיקייה הזו. לאחר מכן בחרו Publish repository, שם `world-game` וענף `main`. מאגר Public מאפשר להוריד את קובץ ההתקנה ללא חשבון GitHub ומפרסם גם את קוד המקור והמשאבים. קובץ `.gitignore` שבפרויקט מוציא מההעלאה את `node_modules`, תוצרי הבנייה, קובצי חתימה וקובצי עבודה זמניים.
+1. במחשב בעל הפרויקט, פתחו את `SETUP_SIGNING.cmd`. הוא מעתיק את הגדרת החתימה ומציג את דף הסודות של המאגר.
+2. בשדה Name כתבו `WORLD_GAME_SIGNING`; בשדה Secret הדביקו בעזרת Ctrl+V ולחצו Add secret. אין להדביק את הערך בצ׳אט, בקוד או בקובץ המצורף לגרסה.
+3. העלו את שינויי הפרויקט ב־GitHub Desktop באמצעות Commit ו־Push origin.
+4. ב־Actions תופיע בניית Android APK. אחרי הצלחה בשני השלבים apk ו־publish, קובץ ההתקנה החתום והעדכון פורסמו.
 
-### 2. חתימה קבועה, פעם אחת
+מפתח החתימה נמצא ב־`.release-private` בתיקיית World Game המקורית, והוא מוחרג מ־Git. שמרו גיבוי פרטי של כל התיקייה, למשל בכונן חיצוני. אין ליצור מפתח חדש כשמעדכנים את המשחק.
 
-התקינו [Temurin JDK 17](https://adoptium.net/temurin/releases/?version=17). פתחו PowerShell בתיקיית הפרויקט והפעילו:
+### הקישור הקבוע לוואטסאפ
 
-```powershell
-keytool -genkeypair -keystore world-game-release.jks -storetype JKS -alias world-game -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=World Game"
-```
+https://github.com/ancorossie1708/world-game/releases/latest/download/world-game.apk
 
-בחרו סיסמת מאגר; כשנשאלים על סיסמת המפתח אפשר ללחוץ Enter כדי להשתמש באותה סיסמה. שמרו גיבוי של קובץ החתימה ושל הסיסמה. קובץ החתימה נשאר מחוץ לקוד המפורסם. אותו מפתח ישמש לכל העדכונים.
+הקישור יפעל לאחר הפרסום החתום הראשון. בהתקנה הראשונה Android עשוי לבקש אישור להתקנה מהדפדפן. האייקון של מסע בעולם יופיע לאחר ההתקנה, וכל התמונות והמוזיקה שכבר נוספו זמינות ללא רשת.
 
-במאגר ב־GitHub, תחת Settings → Secrets and variables → Actions → Secrets, הוסיפו:
+המעבר מה־APK הניסיוני הקיים אל החתימה הקבועה מצריך הסרת גרסת הבדיקה פעם אחת; הסרה מוחקת את האלבום וההגדרות שלה. לאחר התקנת הגרסה החתומה, גרסאות חתומות חדשות מתקינות מעליה ושומרות את הנתונים.
 
-| שם | ערך |
-| --- | --- |
-| `ANDROID_KEYSTORE_BASE64` | הקובץ מקודד ל־Base64, באמצעות הפקודה הבאה |
-| `ANDROID_KEYSTORE_PASSWORD` | הסיסמה שבחרתם |
-| `ANDROID_KEY_ALIAS` | `world-game` |
-| `ANDROID_KEY_PASSWORD` | אותה סיסמה, אם בחרתם כך |
+### עדכון רגיל
 
-העתקה ללוח כדי להדביק ישירות בשדה הסוד הראשון:
+שומרים את השינויים, מבצעים Commit ו־Push origin. GitHub בונה, חותם, בודק ומפרסם אוטומטית. אין להוריד ZIP, להחליף APK ידנית או ליצור רשימת עדכונים ידנית. המספר הפנימי גדל אוטומטית גם בהרצה חוזרת.
 
-```powershell
-[Convert]::ToBase64String([IO.File]::ReadAllBytes((Resolve-Path -LiteralPath '.\world-game-release.jks').Path)) | Set-Clipboard
-```
+האפליקציה בודקת עדכונים בפתיחה ובחזרה מהרקע. אם יש עדכון ורשת, היא שואלת ״הורדת העדכון״ / ״לא עכשיו״. לאחר אישור היא מורידה קובץ מאומת; Android מבקש אישור התקנה. ללא רשת המשחק ממשיך עם התוכן השמור.
 
-### 3. כתובת העדכונים
+מוזיקה נשמרת ב־`public/content/audio`, תמונות ב־`public/content/photos`, וקטלוג המדינות ושאלות הטריוויה ב־`public/content/catalog.json`. יש לסנכרן גם את נתוני המדינה המובנים בקוד, כפי שעושה `scripts/replace-music.mjs`. בתהליך הפשוט כל Push מפיץ APK מלא הכולל את התוכן העדכני. הכלי `scripts/prepare-updates.mjs` נשאר זמין להפצות תוכן נפרדות בעת הצורך.
 
-באותו מסך עברו ללשונית Variables. הוסיפו משתנה `WORLD_GAME_MANIFEST_URL` בערך:
-
-```text
-https://raw.githubusercontent.com/YOUR_USER/world-game/main/release-manifest.json
-```
-
-הכתובת תיכלל בקובץ ההתקנה. קובץ העדכונים יפורסם בשלב 6; עד שהוא זמין המשחק ממשיך לעבוד עם התוכן הארוז.
-
-### 4. הפקת קובץ התקנה
-
-ב־GitHub בחרו Actions → Android APK → Run workflow. בחרו `main`, גרסה `0.1.0` ומספר גרסה `1`. לאחר הצלחת הבנייה, הורידו את התוצר `world-game-signed-release-apk`. חלצו ממנו את `world-game.apk` ושמרו עותק מקומי, למשל בתיקיית `.work/release` שבפרויקט. אם הופק רק תוצר debug, ארבע הגדרות החתימה עדיין לא הוגדרו במלואן.
-
-### 5. פרסום ושליחה בוואטסאפ
-
-לאחר התקנה ובדיקה ראשונה בטאבלט, פתחו Releases → Draft a new release. צרו תג `v0.1.0`, צרפו את `world-game.apk` ופרסמו. אפשר לשלוח קישור קבוע לגרסה האחרונה:
-
-```text
-https://github.com/YOUR_USER/world-game/releases/latest/download/world-game.apk
-```
-
-בטאבלט פותחים את הקישור, מורידים את ה־APK ופותחים אותו. Android עשוי לבקש לאפשר התקנה מהדפדפן ואז לאשר התקנה. לאחר מכן מופיע אייקון „מסע בעולם”. התמונות, המוזיקה וצליל הניצחון כלולים בהתקנה.
-
-### 6. פרסום קובץ העדכונים
-
-לאחר פרסום התג וה־APK, הפיקו מתיקיית הפרויקט את רשימת העדכונים. הדוגמה מניחה שה־APK נמצא ב־`.work/release/world-game.apk`:
-
-```powershell
-node scripts/prepare-updates.mjs --base-url=https://raw.githubusercontent.com/YOUR_USER/world-game/v0.1.0/public/content/ --content-version=0.1.0 --app-version=0.1.0 --app-version-code=1 --apk=.work/release/world-game.apk --apk-url=https://github.com/YOUR_USER/world-game/releases/download/v0.1.0/world-game.apk --output=release-manifest.json
-```
-
-העלו את `release-manifest.json` לענף `main` באמצעות Commit ו־Push ב־GitHub Desktop. הפרסום של הקובץ הזה נעשה בסוף, לאחר שקובץ ההתקנה וכל משאבי התוכן זמינים. הכלי מחשב את בדיקות השלמות מתוך הקבצים עצמם.
-
-### 7. עדכונים ותוכן חדש
-
-שינוי בעיצוב או בהתנהגות המשחק מצריך APK חדש: שומרים את אותו מפתח חתימה, מגדילים את מספר הגרסה ל־`2`, `3` וכן הלאה, ובונים ומפרסמים גרסה חדשה. המשתמש מאשר את עדכון האפליקציה ב־Android. התקנת עדכון על גבי האפליקציה הקיימת שומרת את נתוני האלבום; אין צורך להסיר אותה.
-
-תמונות חדשות נשמרות ב־`public/content/photos`, מוזיקה ב־`public/content/audio`, ומדינות, דגלים ושאלות מתעדכנים ב־`public/content/catalog.json`. מדינה חדשה כוללת שיוך ליבשת, נתוני דגל, מוזיקה, עשרים תמונות ושש שאלות עם ארבע תשובות לכל שאלה. עדכון תוכן במסגרת המבנה הנתמך אינו דורש התקנת APK חדש.
-
-העלו את התוכן, צרו עבורו תג קבוע כגון `content-0.1.1`, והפיקו מחדש את קובץ העדכונים עם כתובת הבסיס `https://raw.githubusercontent.com/YOUR_USER/world-game/content-0.1.1/public/content/` ו־`--content-version=0.1.1`. כללו שוב גם את פרטי ה־APK האחרון באפשרויות `--app-*`, כדי שהודעת עדכון האפליקציה תישאר זמינה למי שטרם התקין אותו. עדכנו את קובץ הרשימה ב־`main` רק לאחר שהקבצים זמינים.
-
-הרשימה כוללת את חבילת התוכן המלאה. במשחק מופעלת בדיקה ברקע בכל פתיחה עם רשת; תוכן חדש מופעל בין סבבים. הורדה שנקטעה משאירה את התוכן הקודם זמין. בדיקת תוכן, התקנת APK ובדיקה ללא רשת על KTC נדרשות לפני הפצה רחבה.
-
-מקורות: [GitHub Desktop](https://docs.github.com/en/desktop/adding-and-cloning-repositories/adding-a-repository-from-your-local-computer-to-github-desktop), [קישורי הורדה לגרסאות](https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases), [חתימת Android](https://developer.android.com/studio/publish/app-signing), [התקנה מקישור](https://developer.android.com/distribute/marketing-tools/alternative-distribution).
+מקורות: [חתימת Android](https://developer.android.com/studio/publish/app-signing), [סודות GitHub Actions](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets), [פרסום גרסה](https://cli.github.com/manual/gh_release_create).

@@ -3,19 +3,19 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { countryTrivia } from '../src/data/trivia.ts';
 
-const expectedCountries = ['japan', 'france', 'italy', 'germany', 'ukraine', 'israel'];
+const expectedCountries = ['japan', 'france', 'italy', 'germany', 'ukraine', 'israel', 'egypt', 'morocco', 'usa', 'canada', 'brazil', 'argentina', 'australia', 'new-zealand'];
 
 test('offline catalogue and bundled game carry the same questions and correct answers', async () => {
   const catalog = JSON.parse(await readFile(new URL('../public/content/catalog.json', import.meta.url), 'utf8'));
   for (const country of catalog.countries) assert.deepEqual(country.trivia, countryTrivia[country.id], country.id);
 });
 
-test('every initial country has exactly six trivia questions', () => {
+test('every playable country has exactly six trivia questions', () => {
   assert.deepEqual(Object.keys(countryTrivia).sort(), expectedCountries.toSorted());
   for (const countryId of expectedCountries) {
     assert.equal(countryTrivia[countryId].length, 6, countryId);
   }
-  assert.equal(Object.values(countryTrivia).flat().length, 36);
+  assert.equal(Object.values(countryTrivia).flat().length, 84);
 });
 
 test('every trivia question has four distinct answers and a valid correct answer', () => {

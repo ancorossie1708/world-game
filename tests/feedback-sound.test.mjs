@@ -117,3 +117,15 @@ test('stopping feedback cancels pending unlock and fades active notes when leavi
     assert.ok(audio.gains.every(gain => gain.disconnected));
   } finally { restore(); }
 });
+
+test('feedback scales both correct and retry notes and mute never creates a note',async()=>{
+ const {Context,instances}=mockedAudio();const restore=installContext(Context);
+ try{
+  const {playFeedback}=await freshFeedback();playFeedback('correct',0);
+  assert.equal(instances.length,0);
+  playFeedback('correct',0.25);instances[0].unlock();await Promise.resolve();
+  assert.equal(instances[0].gains[0].peaks[0],0.095*0.25);
+  playFeedback('incorrect',0.1);
+  assert.equal(instances[0].gains.at(-1).peaks[0],0.075*0.1);
+ }finally{restore();}
+});

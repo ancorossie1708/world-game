@@ -21,14 +21,15 @@ export function stopCompletionSound(): void {
 }
 
 /** Play the supplied local MP3 in full, directly within the winning touch. */
-export function playCompletionSound(): void {
+export function playCompletionSound(volume = 0.2): void {
   const id = ++requestId;
   if (active) release(active);
   let player: HTMLAudioElement | undefined;
   try {
     player = new Audio(VICTORY_SOUND);
     player.preload = 'auto';
-    player.volume = 0.3;
+    player.volume = Number.isFinite(volume) ? Math.max(0, Math.min(1, volume)) : 0.2;
+    if (player.volume === 0) { release(player); return; }
     active = player;
     const current = player;
     current.onended = () => release(current);

@@ -53,6 +53,19 @@ test('trivia progress is restored with bounded indices and safe answer identifie
   assert.deepEqual(state.session.triviaProgress,{questionIndex:5,correctAnswerId:null,complete:false});
 });
 
+test('sound levels migrate separately and retain mute across save and restore', () => {
+  const older = normalizeSavedState({schemaVersion:1,settings:{musicVolume:0.4}});
+  assert.equal(older.settings.musicVolume,0.4);
+  assert.equal(older.settings.victoryVolume,0.2);
+  assert.equal(older.settings.effectsVolume,0.7);
+  const next = normalizeSavedState({...older,settings:{...older.settings,victoryVolume:0,effectsVolume:0.1}});
+  assert.equal(next.settings.musicVolume,0.4);
+  assert.equal(next.settings.victoryVolume,0);
+  assert.equal(next.settings.effectsVolume,0.1);
+  assert.equal(normalizeSavedState({...next,settings:{victoryVolume:99,effectsVolume:-2}}).settings.victoryVolume,1);
+  assert.equal(normalizeSavedState({...next,settings:{victoryVolume:NaN,effectsVolume:-2}}).settings.effectsVolume,0);
+});
+
 test('old hint settings are ignored while the album and current round survive migration', () => {
   const old = markCountryVisited(createDefaultSavedState(), 'israel', new Date('2026-10-11T10:00:00Z'));
   old.settings = { ...old.settings, autoHintSeconds: 15, guidedColor: true, musicVolume: 0.2 };
