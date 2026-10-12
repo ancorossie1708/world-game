@@ -219,6 +219,9 @@ public final class MainActivity extends Activity {
         if (webView != null) {
             webView.onResume();
             webView.resumeTimers();
+            if (!awaitingInstallPermission) {
+                webView.evaluateJavascript("window.dispatchEvent(new Event('journey:resume'));", null);
+            }
         }
         if (awaitingInstallPermission) {
             awaitingInstallPermission = false;

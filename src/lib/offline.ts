@@ -9,7 +9,7 @@ import {
 } from './update-manifest.ts';
 import type { UpdateManifest } from './update-manifest.ts';
 
-export type UpdatePhase = 'local-only' | 'idle' | 'checking' | 'downloading' | 'ready' | 'updated' | 'up-to-date' | 'offline' | 'error' | 'requires-app-update';
+export type UpdatePhase = 'local-only' | 'idle' | 'checking' | 'available' | 'downloading' | 'ready' | 'updated' | 'up-to-date' | 'offline' | 'error' | 'requires-app-update';
 
 export interface UpdateStatus {
   phase: UpdatePhase;
@@ -160,12 +160,8 @@ function nativeEvent(event: Event): void {
         publish({ phase: 'requires-app-update', message: 'התוכן החדש דורש גרסה חדשה של האפליקציה.' });
         finishNativeCheck();
       } else if (detail.contentUpdateAvailable === true && bridge()?.downloadContent) {
-        publish({ phase: 'downloading', pendingContentVersion: manifest.content.version });
-        const started = parseNativeJson(bridge()?.downloadContent?.(configuredManifestUrl()));
-        if (started.status === 'error' || started.status === 'not-configured') {
-          publish({ phase: 'error', message: 'לא ניתן להוריד את העדכון כרגע. התוכן הקיים נשמר.' });
-          finishNativeCheck();
-        }
+        publish({ phase: 'available', pendingContentVersion: manifest.content.version });
+        finishNativeCheck();
       } else if (detail.readyContentVersion === manifest.content.version && detail.readyContentVersion !== status.contentVersion) {
         publish({ phase: 'ready', pendingContentVersion: manifest.content.version });
         if (!roundActive) void applyPendingContentUpdate();
@@ -327,9 +323,27 @@ async function checkBrowserUpdates(url: string): Promise<UpdateStatus> {
     return publish({ phase: 'requires-app-update', message: 'התוכן החדש דורש גרסה חדשה של האפליקציה.' });
   }
   if (manifest.content.version === status.contentVersion) return publish({ phase: 'up-to-date' });
-  await stageBrowserContent(manifest);
-  if (!roundActive) await applyPendingContentUpdate();
-  return getUpdateStatus();
+  return publish({ phase: 'available', pendingContentVersion: manifest.content.version });
+}
+
+/** Download media only after the player explicitly accepts the update. */
+export async function requestContentUpdate(): Promise<boolean> {
+  if (!manifest || status.phase !== 'available') return false;
+  const candidate = manifest;
+  publish({ phase: 'downloading', downloadedFiles: 0, totalFiles: candidate.content.files.length });
+  try {
+    if (bridge()) {
+      const started = parseNativeJson(bridge()?.downloadContent?.(configuredManifestUrl()));
+      if (started.status !== 'started' && started.status !== 'busy') throw new Error('Download not started');
+    } else {
+      await stageBrowserContent(candidate);
+      if (!roundActive) await applyPendingContentUpdate();
+    }
+    return true;
+  } catch {
+    publish({ phase: navigator.onLine ? 'error' : 'offline', message: 'לא ניתן להוריד את העדכון כרגע. התוכן הקיים נשמר.' });
+    return false;
+  }
 }
 
 /** The default call is once per launch; caregiver retry can pass true. */

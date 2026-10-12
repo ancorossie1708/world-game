@@ -17,11 +17,12 @@ import { playCompletionSound, stopCompletionSound } from './lib/completion-sound
 import { afterCountryIdentification, saveJourneyTrivia, startJourneyPhotos } from './lib/journey-session';
 import type { TriviaRound } from './lib/trivia';
 import { createVisitMusic, type VisitMusic } from './lib/visit-music';
-import { initializeOfflineSupport, checkForUpdates, getUpdateStatus, subscribeToUpdateStatus, setRoundActive, requestAppUpdate, type UpdateStatus } from './lib/offline';
+import { initializeOfflineSupport, checkForUpdates, getUpdateStatus, subscribeToUpdateStatus, setRoundActive, requestAppUpdate, requestContentUpdate, type UpdateStatus } from './lib/offline';
 
 type Screen='home'|'paint'|'quiz'|'trivia'|'visit'|'finish'|'album'|'album-visit'|'settings';
 type Feedback={kind:'correct'|'incorrect';target:'paint'|'quiz'|'trivia';id:string;sequence:number};
 const phaseNames:Record<UpdateStatus['phase'],string>={
+  available:'יש עדכון תוכן להורדה',
   'local-only':'תוכן מקומי מוכן · מקור עדכונים טרם הוגדר',idle:'מוכן',checking:'בודקים עדכונים…',downloading:'מורידים תוכן חדש…',ready:'תוכן חדש מוכן לסבב הבא',updated:'התוכן עודכן', 'up-to-date':'הגרסה מעודכנת',offline:'אין רשת · ממשיכים עם התוכן המקומי',error:'העדכון לא הושלם · התוכן הקיים זמין', 'requires-app-update':'התוכן החדש דורש עדכון של האפליקציה',
 };
 
@@ -47,6 +48,7 @@ export default function App() {
   const [photoError,setPhotoError]=useState(false);
   const [triviaOpen,setTriviaOpen]=useState(false);
   const [updateStatus,setUpdateStatus]=useState(getUpdateStatus);
+  const [updateDismissed,setUpdateDismissed]=useState(false);
   const [scale,setScale]=useState(()=>Math.min(window.innerWidth/1600,window.innerHeight/900));
   const [storageWarning,setStorageWarning]=useState(false);
   const audio=useRef<HTMLAudioElement|null>(null);
@@ -90,11 +92,13 @@ export default function App() {
   useEffect(()=>{
     let cancelled=false;
     void setRoundActive(Boolean(savedRef.current.session.activeCountryId));
-    const unsubscribe=subscribeToUpdateStatus(status=>{if(!cancelled)setUpdateStatus(status);});
+    const unsubscribe=subscribeToUpdateStatus(status=>{if(!cancelled){setUpdateStatus(status);if(status.phase==='checking')setUpdateDismissed(false);}});
     const contentUpdated=()=>void loadCatalog();
+    const resumed=()=>void checkForUpdates(true);
     window.addEventListener('journey:content-updated',contentUpdated);
+    window.addEventListener('journey:resume',resumed);
     void initializeOfflineSupport().then(()=>{if(!cancelled){void loadCatalog(true);void checkForUpdates();}});
-    return()=>{cancelled=true;unsubscribe();window.removeEventListener('journey:content-updated',contentUpdated);};
+    return()=>{cancelled=true;unsubscribe();window.removeEventListener('journey:content-updated',contentUpdated);window.removeEventListener('journey:resume',resumed);};
   },[loadCatalog]);
 
   useEffect(()=>{void setRoundActive(Boolean(saved.session.activeCountryId)||screen==='album-visit');},[screen,saved.session.activeCountryId]);
@@ -284,6 +288,7 @@ export default function App() {
       </>}
     </main>
     <footer className="app-footer"><div>{storageWarning&&<span className="storage-warning" role="status">השמירה אינה זמינה כרגע</span>}<button className="caregiver-button" onClick={()=>setScreen('settings')}><Icon name="settings" size={22}/>הגדרות</button></div></footer>
+    {!updateDismissed&&!['checking','downloading','error','offline'].includes(updateStatus.phase)&&(updateStatus.appUpdateAvailable||updateStatus.phase==='available')&&<div className="dialog-backdrop"><section className="album-reset-dialog" role="alertdialog" aria-modal="true" aria-labelledby="update-title"><Icon name="download" size={48}/><h2 id="update-title">יש עדכון חדש. להוריד אותו?</h2><div><button className="secondary-button" autoFocus onClick={()=>setUpdateDismissed(true)}>לא עכשיו</button><button className="primary-button" onClick={()=>{setUpdateDismissed(true);if(updateStatus.appUpdateAvailable)requestAppUpdate();else void requestContentUpdate();}}>הורדת העדכון</button></div></section></div>}
     <FlagCelebration active={flagCelebration!==null} sequence={flagCelebration||0} reduceMotion={settings.reduceMotion} label={screen==='paint'?'הדגל מוכן! זיקוקים וצליל ניצחון':'כל הכבוד! הטריוויה הושלמה. זיקוקים וצליל ניצחון'}/>
     <FeedbackOverlay active={feedback?.kind==='correct'&&(feedback.target!=='paint'||!completed)} sequence={feedback?.sequence||0} reduceMotion={settings.reduceMotion}/>
   </div></div>;

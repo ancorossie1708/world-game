@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
-import { initializeOfflineSupport, checkForUpdates, getUpdateStatus, setRoundActive, applyPendingContentUpdate } from '../src/lib/offline.ts';
+import { initializeOfflineSupport, checkForUpdates, getUpdateStatus, setRoundActive, applyPendingContentUpdate, requestContentUpdate } from '../src/lib/offline.ts';
 
 class MemoryCache {
   entries = new Map();
@@ -73,13 +73,19 @@ test('content download is atomic and waits for the current round to end', async 
 
   let bytes = Buffer.from('{"version":"new"}');
   let candidate = nextManifest('2', bytes);
+  let resourceRequests = 0;
   Object.defineProperty(globalThis, 'fetch', { configurable: true, value: async (url) => {
     if (String(url) === manifestUrl) return responseAt(JSON.stringify(candidate), manifestUrl);
-    if (String(url) === resourceUrl) return responseAt(bytes, resourceUrl);
+    if (String(url) === resourceUrl) { resourceRequests++; return responseAt(bytes, resourceUrl); }
     throw new Error(`Unexpected network request ${url}`);
   } });
 
-  const ready = await checkForUpdates(true);
+  const available = await checkForUpdates(true);
+  assert.equal(available.phase, 'available');
+  assert.equal(resourceRequests, 0, 'checking must never download media before approval');
+  assert.equal(await control.match(pendingPointerUrl), undefined);
+  assert.equal(await requestContentUpdate(), true);
+  const ready = getUpdateStatus();
   assert.equal(ready.phase, 'ready');
   assert.equal(ready.contentVersion, '1');
   assert.equal((await (await control.match(activePointerUrl)).json()).cacheName, oldCacheName);
@@ -99,7 +105,9 @@ test('content download is atomic and waits for the current round to end', async 
   bytes = Buffer.from('{"version":"corrupt"}');
   candidate = nextManifest('3', bytes, false);
   const cachesBefore = await caches.keys();
-  const failed = await checkForUpdates(true);
+  assert.equal((await checkForUpdates(true)).phase, 'available');
+  assert.equal(await requestContentUpdate(), false);
+  const failed = getUpdateStatus();
   assert.equal(failed.phase, 'error');
   assert.equal(failed.contentVersion, '2');
   assert.deepEqual(await (await control.match(activePointerUrl)).json(), current);
@@ -169,7 +177,11 @@ test('native connection loss during download keeps bundled play available', asyn
   };
   const native = await import('../src/lib/offline.ts?native-offline');
   const result = await native.checkForUpdates();
-  assert.equal(result.phase, 'offline');
+  assert.equal(result.phase, 'available');
+  assert.equal(native.getUpdateStatus().phase, 'available');
+  await native.requestContentUpdate();
+  await Promise.resolve();
+  assert.equal(native.getUpdateStatus().phase, 'offline');
   assert.equal(result.contentVersion, '0.1.0');
   assert.equal(result.offlineReady, true);
 });
