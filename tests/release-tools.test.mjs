@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {mkdtemp,writeFile,mkdir,rm} from 'node:fs/promises';
 import {resolve} from 'node:path';
+import {tmpdir} from 'node:os';
 import {releasePlan,contentVersion} from '../scripts/prepare-release.mjs';
 import {signingConfiguration} from '../scripts/configure-signing.mjs';
 
@@ -22,7 +23,7 @@ test('invalid version values and mutable media refs cannot enter a release',()=>
 });
 
 test('content hashes ignore the bundled version stamp but change with actual content',async()=>{
- const prefix=resolve('.work/release-tests-');const directory=await mkdtemp(prefix);
+ const prefix=resolve(tmpdir(),'world-game-release-tests-');const directory=await mkdtemp(prefix);
  try{
   await writeFile(resolve(directory,'catalog.json'),JSON.stringify({schemaVersion:1,version:'0.1.0',countries:[{id:'egypt'}]}));
   await mkdir(resolve(directory,'fonts'));await writeFile(resolve(directory,'fonts/Heebo.ttf'),'old font');
